@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1667131913 source:e:\iti intake 43 sd\3- oop\day 3\3-1-copycomplex\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+

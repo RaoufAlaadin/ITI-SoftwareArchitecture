@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1667411621 source:e:\iti intake 43 sd\3- oop\day 5\5-1-drawing\main.cpp
+	<iostream>
+	"C:\Program Files\CodeBlocks\MinGW\include\graphics.h"
+
+1667301570 c:\program files\codeblocks\mingw\include\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

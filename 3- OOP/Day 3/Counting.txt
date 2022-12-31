@@ -1,0 +1,12 @@
+   static int Cons  ;
+    static int Dest  ;
+
+Cons++;
+
+        cout<<" Const calls : " << Cons <<endl;
+    
+
+Dest++;
+
+        cout<<" Dest calls : " << Dest << endl;
+
