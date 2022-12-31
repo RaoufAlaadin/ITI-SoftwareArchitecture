@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+.inter {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.centtable{
+    margin: auto;
+    
+}
+
+.center {
+    align-content: center;
+    width: 300px;
+    margin: auto;
+}
+
+.aligntext {
+    display: block;
+    text-align: center;
+}
+
+.alignsubmit
+{
+    align-content: center;
+    /* justify-content: center; */
+=======
+.inter {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.centtable{
+    margin: auto;
+    
+}
+
+.center {
+    align-content: center;
+    width: 300px;
+    margin: auto;
+}
+
+.aligntext {
+    display: block;
+    text-align: center;
+}
+
+.alignsubmit
+{
+    align-content: center;
+    /* justify-content: center; */
+>>>>>>> e64b6085fe04b329f34c02d29581551d472c7110
+}

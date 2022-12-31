@@ -1,0 +1,163 @@
+<<<<<<< HEAD
+/* TODO:
+
+1- change the font 
+2- move it the text to the left 
+3- center the img in the middle at all times 
+    by considering the page's border !!! 
+    I guess this means you will use margine. 
+*/
+
+img 
+{
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 5px ;
+}
+
+.center
+{  
+    /* This is going to be used for images.  */
+    display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 50%;
+
+/* border: 5px solid purple; */
+    
+}
+h1,h2,h3
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+/* NOTE: Ordered list items  */
+#font{
+    font-family: 'Courier New', Courier, monospace ;
+}
+#fontsize{
+    font-size: x-small;
+}
+#textcolor{
+    color: burlywood;
+}
+
+/* NOTE: Left and right items   */
+
+
+.right
+{    
+    /*
+    
+    we can use float to make right and left with
+    spacing in between ***search for it*** 
+    
+    */
+
+    /* we made an ID specially for it, because it's alliged right  */
+    display:flex;
+  align-items:right;
+  justify-content:right;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left
+{
+
+    /* we made an ID specially for it, because it's alliged right  */
+    display:flex;
+  align-items:left;
+  justify-content:left;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+=======
+/* TODO:
+
+1- change the font 
+2- move it the text to the left 
+3- center the img in the middle at all times 
+    by considering the page's border !!! 
+    I guess this means you will use margine. 
+*/
+
+img 
+{
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 5px ;
+}
+
+.center
+{  
+    /* This is going to be used for images.  */
+    display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 50%;
+
+/* border: 5px solid purple; */
+    
+}
+h1,h2,h3
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+/* NOTE: Ordered list items  */
+#font{
+    font-family: 'Courier New', Courier, monospace ;
+}
+#fontsize{
+    font-size: x-small;
+}
+#textcolor{
+    color: burlywood;
+}
+
+/* NOTE: Left and right items   */
+
+
+.right
+{    
+    /*
+    
+    we can use float to make right and left with
+    spacing in between ***search for it*** 
+    
+    */
+
+    /* we made an ID specially for it, because it's alliged right  */
+    display:flex;
+  align-items:right;
+  justify-content:right;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left
+{
+
+    /* we made an ID specially for it, because it's alliged right  */
+    display:flex;
+  align-items:left;
+  justify-content:left;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+>>>>>>> e64b6085fe04b329f34c02d29581551d472c7110

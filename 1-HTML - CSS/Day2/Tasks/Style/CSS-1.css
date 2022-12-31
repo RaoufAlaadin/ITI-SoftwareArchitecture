@@ -1,0 +1,227 @@
+<<<<<<< HEAD
+/* TODO:
+
+1- change the font 
+2- move it the text to the left 
+3- center the img in the middle at all times 
+    by considering the page's border !!! 
+    I guess this means you will use margine. 
+*/
+
+img {
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+.center {
+    /* This is going to be used for images.  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    justify-content: ;
+
+    /* border: 5px solid purple; */
+
+}
+
+h1,
+h2,
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* NOTE: Ordered list items  */
+#font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#fontsize {
+    font-size: x-small;
+}
+
+#textcolor {
+    color: burlywood;
+}
+
+/* NOTE: Left and right items   */
+
+
+.flex-container1 {
+
+
+    /* Research:
+    
+    Best resources:
+    1-  https://flexboxfroggy.com/
+    2- https://youtu.be/fYq5PXgSsbE
+    3- https://youtu.be/zqrmL6HEZtg
+
+
+    --- use gap instead of margine
+    or only    row-gap or column-gap 
+
+    BUT !!!! Safari does not support gap for flex box
+    just yet....
+
+    https://www.falldowngoboone.com/blog/the-curious-case-of-flexbox-gap-and-safari/#:~:text=Unfortunately%2C%20Safari%20already%20supports%20gap,have%20been%20proposals%20for%20workarounds.
+    
+    someone had a task to convert 300+ gaps to margines
+    because of that problem. 
+     
+    */
+
+    display: flex;
+
+    /* 
+    
+    Added height to provide more space 
+    for our content to be vertically aligned
+    comfortably using (aligned-items)
+            ,without adding more <br>.
+    
+    */
+    height: 100px;
+
+
+    /* NOTE:
+    space-between only cares about the space between 
+    our items
+    it sets the 2 items each on one side which divide 
+    the space between them evenly. 
+
+    --- if we want them to come closer,
+    We can activate this padding to move them away
+    from the page's layout.   
+                    padding: 50px; 
+     
+     */
+    
+    /* justify-content ----- horizontally
+        align-items ----- Vertically 
+         */
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+=======
+/* TODO:
+
+1- change the font 
+2- move it the text to the left 
+3- center the img in the middle at all times 
+    by considering the page's border !!! 
+    I guess this means you will use margine. 
+*/
+
+img {
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+.center {
+    /* This is going to be used for images.  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    justify-content: ;
+
+    /* border: 5px solid purple; */
+
+}
+
+h1,
+h2,
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* NOTE: Ordered list items  */
+#font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#fontsize {
+    font-size: x-small;
+}
+
+#textcolor {
+    color: burlywood;
+}
+
+/* NOTE: Left and right items   */
+
+
+.flex-container1 {
+
+
+    /* Research:
+    
+    Best resources:
+    1-  https://flexboxfroggy.com/
+    2- https://youtu.be/fYq5PXgSsbE
+    3- https://youtu.be/zqrmL6HEZtg
+
+
+    --- use gap instead of margine
+    or only    row-gap or column-gap 
+
+    BUT !!!! Safari does not support gap for flex box
+    just yet....
+
+    https://www.falldowngoboone.com/blog/the-curious-case-of-flexbox-gap-and-safari/#:~:text=Unfortunately%2C%20Safari%20already%20supports%20gap,have%20been%20proposals%20for%20workarounds.
+    
+    someone had a task to convert 300+ gaps to margines
+    because of that problem. 
+     
+    */
+
+    display: flex;
+
+    /* 
+    
+    Added height to provide more space 
+    for our content to be vertically aligned
+    comfortably using (aligned-items)
+            ,without adding more <br>.
+    
+    */
+    height: 100px;
+
+
+    /* NOTE:
+    space-between only cares about the space between 
+    our items
+    it sets the 2 items each on one side which divide 
+    the space between them evenly. 
+
+    --- if we want them to come closer,
+    We can activate this padding to move them away
+    from the page's layout.   
+                    padding: 50px; 
+     
+     */
+    
+    /* justify-content ----- horizontally
+        align-items ----- Vertically 
+         */
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+>>>>>>> e64b6085fe04b329f34c02d29581551d472c7110
