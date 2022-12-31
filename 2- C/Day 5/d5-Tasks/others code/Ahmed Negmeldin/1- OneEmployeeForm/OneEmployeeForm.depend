@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666264125 source:f:\study\iti\iti_courses\c\day5\tasks\oneemployeeform\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+

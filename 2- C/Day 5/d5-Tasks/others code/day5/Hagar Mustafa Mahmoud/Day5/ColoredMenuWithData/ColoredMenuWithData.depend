@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1666421104 source:c:\users\hager\documents\myprojectss\magicbox\coloredmenuwithdata\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1666395474 source:e:\iti intake 43 sd\2- c\day 5\d5-tasks\others code\day5\hagar mustafa mahmoud\day5\coloredmenuwithdata\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1666261623 source:d:\test\sara\formapp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+

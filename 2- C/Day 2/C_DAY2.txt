@@ -1,0 +1,21 @@
+* Assignments:
+
+      1) Magic Box.
+      2) Receive numbers from the user, and exit when the sum exceeds 100.
+      3) Simple Menu with 3 choices.
+
+		 3 cases or offers and it breaks when u choose one. 
+
+
+//////////////////////////////////////////
+
+void gotoxy( int column, int line )
+  {
+  COORD coord;
+  coord.X = column;
+  coord.Y = line;
+  SetConsoleCursorPosition(
+    GetStdHandle( STD_OUTPUT_HANDLE ),
+    coord
+    );
+  }

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666290226 source:d:\iti me\backend\c\day 5\lab\employee struck\employee struct\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

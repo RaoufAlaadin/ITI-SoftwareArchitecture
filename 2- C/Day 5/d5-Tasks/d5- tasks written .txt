@@ -1,0 +1,90 @@
+task 5-1:  1- We have a single employee ( we do not need an array )
+
+                      2- take his data from the user-input (reading data)
+            ** we will input all of his data despite not needing everything for output**
+
+                      3- print out --- Employee ID , name , net
+-----------------------------------------------------------------------------------
+
+task 5-2:  1- integrate employee with menu 
+                      2- array of 3 employees 
+                      3 - new : Enter data for 3 employees 
+                            a- the screen will have all the data tags and the cursor will move
+                            b- to a writing point each time you press enter 
+                            c- it clears the screen afterwards and loads another form
+                                to let you write the next employee's data
+                                
+                    4- display : this function will display the following
+                                a- id
+                                b- name 
+                                c- net salary
+                        ** idk if we should show each employee in a different screens or just one screen**
+                        ** if it's just one screen, we would need to squeeze the data in coloumns**
+                        
+                        
+                          note: What if i want to only read the data of one employee ? 
+                          ---->  This is is what we need in task 5-3  !!!!!
+                          
+                        
+                    5- exit : it's the just the same, it ends the program. 
+
+--------------------------------------------------------------------------------------------
+
+task 5-3:  1- Array of 10 employees 
+                      2- new : here it will only take one employee, 
+                                you would need to press it again to enter  
+                                more employees.....
+                                
+                                OR !! we could ask the user for the number of employees he want to enter
+                                    and then view the number of the forms that he asked for, one by one. 
+                                    
+                        BOUNS: check if the id already have data.. 
+                                and ask the user if he wants to override ??? or Enter a new index to store in. 
+                                    
+                                    
+                     3- Display: Ask for employee's ID 
+                            if ( ID == e[i].id) 
+                                printf(" Emp id : ... ,Name : ... ,Net Salary);
+                            else
+                                printf("No data found on that id
+                                       
+                        I think it would  need 
+                                a- for loops 
+                                b- flag 
+                                c- return statements as it's going to be a function.
+                                d- the use of linear search. 
+                        
+                        ** without the use of external data structure. ****
+                    
+                        
+                     
+                     
+                     4- Display all: 
+                     this  function will display all the employees data, that I have entered
+                     WITHOUT !!!!  displaying garbage employees !!!!
+                     
+                     Ex. any employee that has their data not entered will have an id of (zero). 
+                                       
+                    5- Delete by id 
+                    
+                    6- delete by name. 
+                        this will use strcmp i guess. 
+                        
+                    7- exit. 
+                     
+               summary : menu + struct + functions.
+
+
+
+typedef struct employee
+{int id,age;
+    char gender, name[100],address[200];
+    double salary, overtime, deduct;
+
+    // net = (salary + overtime ) - deduct.
+    // we will use this formula everytime we want the net. salary !!
+
+}employee;
+
+
+

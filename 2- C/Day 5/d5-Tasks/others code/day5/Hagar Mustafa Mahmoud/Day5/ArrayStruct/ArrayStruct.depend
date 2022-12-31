@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666355550 source:c:\users\hager\documents\myprojectss\day5\arraystruct\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

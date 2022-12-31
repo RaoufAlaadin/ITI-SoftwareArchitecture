@@ -1,0 +1,158 @@
+
+void addNewEmp(int index)
+{
+    int item = 0;
+    char line[11] = {'\0'};
+
+
+    printHighLight(20,5 + 3 * item);
+
+    _flushall();
+    lineEditor(20, 5 + 3 * item, 48, 57, line);
+    emp[index].id = atoi(line);
+
+    removeHighLight(20, 5 + 3 * item, line);
+
+    item++;
+
+    printHighLight(20,5 + 3 * item);
+
+    _flushall();
+    lineEditor(20, 5 + 3 * item, 48, 57, line);
+    emp[index].age = atoi(line);
+
+    removeHighLight(20, 5 + 3 * item, line);
+
+    item++;
+
+    printHighLight(20,5 + 3 * item);
+
+    gotoxy(20, 5 + 3 * item);
+    _flushall();
+    char gender;
+    do
+    {
+        gender = _getch();
+    } while (toupper(gender) != 'M' && toupper(gender) != 'F');
+    printf("%c", gender);
+    emp[index].gender = gender;
+    gotoxy(20, 5 + 3 * item);
+    textattr(normalColor);
+    printf("%-11c", gender);
+    item++;
+
+    printHighLight(20,5 + 3 * item);
+    _flushall();
+    lineEditor(20, 5 + 3 * item, 97, 122, emp[index].name);
+    removeHighLight(20, 5 + 3 * item, emp[index].name);
+    item++;
+
+    printHighLight(55,5 + 3 * (item - 4));
+    _flushall();
+    lineEditor(55, 5 + 3 * (item - 4), 97, 122, emp[index].address);
+    removeHighLight(55, 5 + 3 * (item - 4), emp[index].address);
+    item++;
+
+
+    char *ptr;
+    printHighLight(55,5 + 3 * (item - 4));
+    _flushall();
+    lineEditor(55, 5 + 3 * (item - 4), 46, 57, line);
+    emp[index].salary = strtod(line, &ptr);
+    removeHighLight(55, 5 + 3 * (item - 4), line);
+    item++;
+
+    printHighLight(55,5 + 3 * (item - 4));
+    _flushall();
+    lineEditor(55, 5 + 3 * (item - 4), 46, 57, line);
+    emp[index].overtime = strtod(line, &ptr);
+    removeHighLight(55, 5 + 3 * (item - 4), line);
+    item++;
+
+    printHighLight(55,5 + 3 * (item - 4));
+    _flushall();
+    lineEditor(55, 5 + 3 * (item - 4), 46, 57, line);
+    emp[index].deduct = strtod(line, &ptr);
+    removeHighLight(55, 5 + 3 * (item - 4), line);
+}
+
+
+
+
+************************************************************************************
+********************************************************************************
+**************************************************************************
+
+void lineEditor(int xPos, int yPos, char start, char end, char *line)
+{
+    char *pCurrent = line, *pEnd = line;
+    int counter = 0;
+    int exitFlag = 0;
+
+    do
+    {
+
+        gotoxy(xPos, yPos);
+
+        char input = getch();
+        switch(input)
+        {
+        case Enter:
+            *(pEnd + 1) = '\0';
+            exitFlag = 1;
+            break;
+
+        case Esc:
+            gotoxy(0, 20);
+            exit(1);
+            break;
+        case ExtendedKey:
+            input = getch();
+            switch(input)
+            {
+            case leftArrow:
+                if (pCurrent != line)
+                {
+                    xPos--;
+                    pCurrent--;
+                }
+                break;
+            case rightArrow:
+                if (pCurrent != pEnd)
+                {
+                    xPos++;
+                    pCurrent++;
+                }
+                break;
+            case Home:
+                xPos -= (pCurrent - line);
+                pCurrent = line;
+                break;
+            case End:
+                xPos += (pEnd - pCurrent) + 1;
+                pCurrent = pEnd + 1;
+                break;
+
+            default:
+                break;
+            }
+            break;
+        default:
+            if (pCurrent != (line + 10) && (start <= input && input <= end) || input == ' ')
+            {
+                printf("%c", input);
+                *pCurrent = input;
+                if (pCurrent == (pEnd + 1))
+                {
+                    pEnd++;
+                    counter++;
+                }
+                pCurrent++;
+                xPos++;
+
+            }
+            break;
+        }
+    } while (exitFlag != 1);
+
+}

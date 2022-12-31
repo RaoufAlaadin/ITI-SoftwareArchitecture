@@ -1,0 +1,25 @@
+Assignments:
+      1) Input and output an array using 2 for loops.
+      2) Get Minimum and Maximum value of an array.
+      3) Calculate sum of each row in a 2D Array.
+      4) Bonus: Calculate average of each column in a 2D Array.
+
+
+1------- multiplication ---
+
+ 3x2   2x1 
+
+the result matrix 3x1 
+
+2----------rows and column from user -- 
+
+making it more dynamic. 
+
+ this is a must :c1 = r1
+prevent anything that rejects that.  
+
+nxm 
+
+mxk
+
+m is common, this is a rule for 2d matrix multiplication. 

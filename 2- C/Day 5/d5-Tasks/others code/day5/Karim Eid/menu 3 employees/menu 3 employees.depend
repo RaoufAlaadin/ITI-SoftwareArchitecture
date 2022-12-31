@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666355019 source:d:\iti me\backend\c\day 5\lab\menu of 3 employees\menu 3 employees\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	<windows.h>
+

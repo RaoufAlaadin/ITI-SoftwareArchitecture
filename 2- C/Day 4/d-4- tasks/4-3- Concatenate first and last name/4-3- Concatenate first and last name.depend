@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666211678 source:e:\iti intake 43 sd\2- c\day 4\d-4- tasks\4-3- concatenate first and last name\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

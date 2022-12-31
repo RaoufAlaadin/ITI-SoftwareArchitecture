@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666370696 source:h:\iti project\c\day5\task1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+

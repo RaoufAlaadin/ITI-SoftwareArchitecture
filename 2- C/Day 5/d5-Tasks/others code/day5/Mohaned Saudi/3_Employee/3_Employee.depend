@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666355732 source:e:\iti intake 43 sd\2- c\day 5\d5-tasks\others code\day5\mohaned saudi\3_employee\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1666386714 source:f:\c examples in lecture\d05_3\main.c
+	<windows.h>
+	<stdbool.h>
+
+1666373544 source:e:\iti intake 43 sd\2- c\day 5\d5-tasks\others code\day5\ahmed muhammed\d05_3\main.c
+	<windows.h>
+	<stdbool.h>
+	<string.h>
+

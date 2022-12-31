@@ -1,0 +1,4 @@
+ Assignments:
+      1) Highlight Menu.
+      2) Receive character by character and then place the string terminator upon pressing enter, then display the string.
+      3) Receive first name and last name, and concatenate them in one name and display on screen.

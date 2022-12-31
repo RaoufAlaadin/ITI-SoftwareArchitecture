@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666766058 source:e:\iti intake 43 sd\2- c\day 7\7-2- multi-line editor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	<unistd.h>
+

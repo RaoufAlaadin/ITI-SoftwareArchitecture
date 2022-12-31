@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666273528 source:f:\study\iti\iti_courses\c\day5\tasks\menutenemployees\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+

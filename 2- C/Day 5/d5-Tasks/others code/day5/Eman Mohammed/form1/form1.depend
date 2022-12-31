@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666272480 source:h:\iti sd swa\sd(pd, swa) 43\2-c\d05\task\form1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

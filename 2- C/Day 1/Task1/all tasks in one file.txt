@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+
+// TODO:  1- HELLO WORLD
+
+void main()
+{
+
+    printf("Hello world \n");
+}
+
+
+
+
+
+
+#include <stdio.h>
+
+
+
+// TODO:  2- INPUT NUM
+
+void main()
+{
+    int number;
+
+    printf("Enter a number ! \n ");
+    scanf("%d", &number);
+
+    // print hex
+    printf("%X \n",number);
+
+    // prints a letter
+    printf("%c \n",number);
+}
+
+
+
+
+#include <stdio.h>
+
+
+
+
+// TODO:  3- INPUT CHAR
+
+void main()
+{
+    char letter;
+
+    printf("Enter a number ! \n ");
+    scanf("%c", &letter);
+
+
+    //prints the Ascii number
+
+    printf("%d \n",letter);
+}
+
+
+

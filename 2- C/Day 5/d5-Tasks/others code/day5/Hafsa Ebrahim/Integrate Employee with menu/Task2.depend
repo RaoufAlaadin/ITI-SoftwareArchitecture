@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666524334 source:c:\sources\c-day 5\task2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	<unistd.h>
+
