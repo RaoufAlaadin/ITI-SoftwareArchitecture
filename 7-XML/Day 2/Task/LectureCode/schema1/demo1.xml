@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookStore  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="demo2.xsd">
+	<Book>
+		
+	 <Title>String</Title>
+	 <Author>String</Author>
+	 <Date>String</Date>
+	 <Publisher>String</Publisher>
+	 <ISBN>String</ISBN>
+	</Book>
+	<Book>
+		
+	 <Title>String</Title>
+	 <Author>String</Author>
+	 <Date>String</Date>
+	 <Publisher>String</Publisher>
+	 <ISBN>String</ISBN>
+	</Book>
+</BookStore>
+

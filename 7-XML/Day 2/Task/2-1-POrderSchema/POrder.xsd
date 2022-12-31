@@ -1,0 +1,85 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="purchaseOrder">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="shipTo" type="shippingData" />
+				<xs:element name="billTo" type="shippingData" />
+				<xs:element name="comment" type="xs:string" />
+				<xs:element ref="items" />
+
+			</xs:sequence>
+			<xs:attribute name="orderDate" type="xs:date" />
+
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Note: We created a seperate dataType as these child elements
+				were found to be repeating -->
+
+	<xs:complexType name="shippingData">
+		<xs:sequence>
+			
+			<xs:group ref="xyz"/>
+			<xs:element name="city" type="xs:string" />
+			<xs:element name="state" type="xs:string" />
+			<xs:element name="zip" type="xs:integer" />
+		</xs:sequence>
+		<!-- note: I included the attributes that the (elements who
+				took the complex type) have. 
+			
+			this part of the Venetian Blind scheme model, but it was 
+			useful here instead of repeating the childs for each of the elements
+		-->
+		<xs:attribute name="country" type="xs:string" />
+	</xs:complexType>
+
+	<!--  just for testing groups -->
+
+	<xs:group name="xyz">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="street" type="xs:string" />
+		</xs:sequence>
+		
+	</xs:group>
+
+
+
+	<xs:element name="items">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="item" type="itemData" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+
+	</xs:element>
+
+	<xs:complexType name="itemData">
+		<xs:all>
+			<!--  I changed it to (all) instead of (sequance) 
+				because the seocnd item have extra element 
+			so we want to not care about the order 	-->
+			<xs:element name="productName" type="xs:string" />
+			<xs:element name="quantity" type="xs:integer" />
+			<xs:element name="USPrice" type="xs:decimal" />
+
+			<!-- both of the following attributes happen at one item and not the
+				other !! 
+				so we have to change it's default minOccurs from (1)
+				to (0) ... so the (item) elements can acccept the code
+				if any of them were not entered. -->
+				
+					<xs:element name="comment" type="xs:string" minOccurs="0" />
+					<xs:element name="shipDate" type="xs:date" minOccurs="0" />
+
+			
+			
+
+		</xs:all>
+		<xs:attribute name="partNum" type="xs:string" />
+	</xs:complexType>
+
+	
+	
+
+</xs:schema>

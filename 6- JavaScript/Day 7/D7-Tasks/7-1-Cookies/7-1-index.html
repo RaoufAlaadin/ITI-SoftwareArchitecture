@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload=" intial()">
+<!-- 
+    1- Use your functions to create the required cookies
+2- display a greeting message to your visitor with displaying an image as his
+profile pic referring to his gender
+3-inform him with his number of visits to the site. 
+4- Display user name and number of visits 
+            with font color according to his choices.
+Note:
+• Do not use <form> tag in the registration page.
+• Replace the registration page with the profile page using
+location object -->
+
+<!-- Lesson: We will not use the form tag, so we are storing the data in the cookies 
+        and moving to the next welcoming page using the location object under window.  -->
+
+         <!-- 1- Name  -->
+        <br>
+        <div> 
+
+            <label for="usrname">Enter your name </label>
+            <input id="usrname" name="usrname" type="text">
+        </div>
+        <br> <hr> <br>
+
+        <!-- 2- Age  -->
+        <div> 
+
+            <label for="age" >Enter your Age </label>
+            <input id="age" type="number">
+        </div>
+        <br> <hr> <br>
+
+        <div> 
+
+            <fieldset>
+                <legend> Select you Gender: </legend>
+
+                <!-- We wrapped the image tag by the label ,,, and we have a for attribute on the label
+                    so now by pressing on the image we select the radio button
+                -->
+
+                <label  for="male"> <img src="1.jpg" width="120" height="200"> male </label>
+                <input type="radio" id="male" name="gender" value="male" >
+    
+                <label  for="female"> <img src="2.jpg" width="200" height="200"> female </label>
+                <input type="radio" id="female" name="gender" value="female">
+    
+
+            </fieldset>
+
+        </div>
+
+        <br> <hr> <br>
+
+        <div>
+            <label>Select your favorite color</label>
+
+            <select id="favColor" value="favC olor">
+
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+                <!-- We will use that ID to call it in the js file and use the onClick -->
+            <input type="button" id="register" value="register"> 
+            
+        </div>
+       
+
+
+
+    
+    <script src="7-1-cookiesLibrary.js"></script>
+    <script src="7-1-cookiesBussiness.js"></script>
+</body>
+</html>

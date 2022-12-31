@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container1">
+
+        <div id="cardContainer">
+            <h1 style="color: chocolate;">Get Well soon ❤ </h1>
+
+            <!-- We wrapped the image tag by the label ,,, and we have a for attribute on the label
+                so now by pressing on the image we select the radio button
+            -->
+
+            <div id="picOptions">
+
+                <label for="1"> <img src="1.jpg" width="200" height="200"> </label>
+                <input type="radio" id="1" name="card" value="1" checked>
+
+                <label for="2"> <img src="2.jpg" width="200" height="200"> </label>
+                <input type="radio" id="2" name="card" value="2" >
+
+                <label for="3"> <img src="3.jpg" width="200" height="200"> </label>
+                <input type="radio" id="3" name="card" value="3">
+
+                <label for="4"> <img src="4.jpg" width="200" height="200"> </label>
+                <input type="radio" id="4" name="card" value="4">
+
+                <label for="5"> <img src="5.jpg" width="200" height="200"> </label>
+                <input type="radio" id="5" name="card" value="5">
+
+                <label for="6"> <img src="6.jpg" width="200" height="200"> </label>
+                <input type="radio" id="6" name="card" value="6">
+
+
+
+            </div>
+
+
+
+            <h3> Personal massege </h3>
+            <textarea id="box1" rows="10" cols="40" placeholder="Enter your text"> Wish you a quick recovery 
+            </textarea>
+
+            <div>
+                <input type="button" id="generate" value="generate">
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="8-3-cardGenerator.js"></script>
+</body>
+
+</html>

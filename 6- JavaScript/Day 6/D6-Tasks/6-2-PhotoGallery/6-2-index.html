@@ -1,0 +1,50 @@
+<!-- 
+    A.2.1. Photo gallery with Next, Previous, and Slideshow.
+
+• The next button goes to the next pic and stops when
+reaching the last image
+• Previous goes back to the previous image and stops when
+reaching the first image
+• The slideshow button will circulate, i.e. when reaches the
+last image it should continue displaying starting from the
+first image
+• The stop button will stop slideshow behavior.
+• Let the delay between every two images last 2 seconds 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Showing Pictures</h1>
+
+    <hr>
+
+    <div>
+
+        <!-- input type button is better than <button> if you do not plan on submiting data -->
+            
+        <input type="button" value="after" onclick="nextPic()">
+        <input type="button" value="back" onclick="prevPic()">
+        <input type="button" value="slideOn" onclick="slideStart()">
+        <input type="button" value="stop" onclick="slideStop()">
+    </div>
+
+    <br>
+    <div> 
+
+        <img id="baby" src="1.jpg" height="300" width="300">
+    </div>
+    
+
+    
+<script src="6-2-PhotoGallery.js"></script>
+    
+</body>
+</html>

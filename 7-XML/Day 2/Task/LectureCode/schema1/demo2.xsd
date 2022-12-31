@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="price" type="myInteger"/>
+	
+	<xs:simpleType name="mylist">
+		<xs:list itemType="xs:integer"/>
+	</xs:simpleType>
+	
+	<xs:element name="product">
+		<xs:simpleType>
+			<xs:restriction  base="xs:string">
+				<xs:enumeration value="Milk"/>
+				<xs:enumeration value="Cheese"/>
+				<xs:enumeration value="bread"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+	
+	<xs:simpleType name="phoneNumber">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{2}-\d{8}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="phone" type="phoneNumber"/>
+	
+	<xs:simpleType name="shapes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Oval"/>
+			<xs:enumeration value="Square"/>
+			<xs:enumeration value="Rectangle"/>
+		</xs:restriction>	
+	</xs:simpleType>
+	
+	<xs:element name="Polygon" type="shapes"/>
+	
+	<xs:simpleType name="myInteger">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0" fixed="true"/>
+		</xs:restriction>	
+	</xs:simpleType>
+	
+	<xs:simpleType name="new">
+		<xs:restriction base="myInteger">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="1000"/>
+		</xs:restriction>
+	
+	</xs:simpleType>
+	<!--<xs:element name="name">
+		<xs:simpleType>
+			<xs:restriction></xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	-->
+	
+	
+	<!--complex Type-->
+	<!--1)Nested Elements-->
+	
+	<!--<person>
+	<firstname></firstname>
+	<lastname></lastname>
+</person>-->
+<xs:element name="person">
+	<xs:complexType>
+	<!--	<xs:sequence>
+			<xs:element name="firstname" type="xs:string" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="lastname" type="xs:string" minOccurs="2" maxOccurs="3"/>
+		</xs:sequence>-->
+		<!--<xs:all>
+			<xs:element name="firstname" type="xs:string" minOccurs="0"/>
+			<xs:element name="lastname" type="xs:string" />
+		</xs:all>-->
+		<xs:choice>
+			<xs:element name="firstname" type="xs:string" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="lastname" type="xs:string" minOccurs="2" maxOccurs="4"/>
+			<xs:element name="midname" type="xs:string"/>
+		</xs:choice>
+	</xs:complexType>
+</xs:element>
+	
+	
+<!--2)text+attribute-->
+<!--<son age="10">ahmed</son>-->
+<xs:element name="son">
+	<xs:complexType>
+		<xs:simpleContent>
+			<xs:extension base="xs:integer">
+				<xs:attribute name="age" type="xs:integer" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:element>	
+
+
+<!--3)Mixed Content-->
+<!--<manager>Nour
+	<dept>sd</dept>
+	<employees>4</employees>
+</manager>-->
+
+<xs:element name="manager">
+	<xs:complexType mixed="true">
+		<xs:all>
+			<xs:element name="dept" type="xs:string"/>
+			<xs:element name="employees" type="xs:integer"/>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+
+
+<!--4)nested elements + attribute-->
+<!--<father job="doctor">
+	<mother></mother>
+	<daughter></daughter>
+	<son age="20">ahmed</son>
+</father>
+-->
+<xs:element name="father" type="info">
+	
+</xs:element>
+
+
+
+<!--Empty content-->
+
+<!--<product price=""/>-->
+<xs:element name="productInfo">
+	<xs:complexType>
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:attribute name="price" type="xs:decimal"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:element>
+
+
+<xs:complexType name="info">
+		<xs:sequence>
+			<xs:element ref="mother"/>
+			<xs:element name="daughter" type="xs:string" fixed="mona"/>
+			<xs:element name="son" type="sonInfo">
+			
+			</xs:element>
+		</xs:sequence>
+		<xs:attributeGroup ref="fatherAttributes"/>
+</xs:complexType>
+
+<xs:attributeGroup name="fatherAttributes">
+		<xs:attribute ref="job"/>
+		<xs:attribute name="age" type="xs:integer"/>
+</xs:attributeGroup>
+
+<xs:attribute name="job">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Doctor"/>
+					<xs:enumeration value="Teacher"/>
+					<xs:enumeration value="Engineer"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+
+<xs:element name="mother">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="name"/>
+			<xs:element name="job" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+<xs:element name="name">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="firstname" type="xs:string"/>
+			<xs:element name="lastname" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>			
+	<xs:complexType name="sonInfo">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="age" type="xs:integer"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+
+
+<xs:complexType name="Publication" final="#all">
+	<xs:sequence>
+		<xs:element name="Title" type="xs:string" maxOccurs="unbounded"/>
+		<xs:element name="Author" type="xs:string"/>
+	</xs:sequence>
+</xs:complexType>
+
+<!--
+<xs:complexType name="rest_Book">
+	<xs:complexContent>
+		<xs:restriction base="Publication">
+			<xs:sequence>
+				<xs:element name="Title" type="xs:string"/>
+				<xs:element name="Author" type="xs:string"/>
+			</xs:sequence>
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+-->
+<xs:element name="Book2" type="Publication"/>
+	<!--
+<xs:complexType name="BookPublication">
+	<xs:complexContent>
+		<xs:extension base="Publication">
+		<xs:sequence>
+			<xs:element name="ISBN" type="xs:string"/>
+			<xs:element name="publisher" type="xs:string"/>
+		</xs:sequence>
+		</xs:extension>	
+	</xs:complexContent>
+</xs:complexType>	
+	
+	
+	-->
+	
+<xs:element name="BookStore">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="Book"  maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>	
+<xs:element name="Book">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="Title" type="xs:string"/>
+			<xs:element name="Author" type="xs:string"/>
+			<xs:element name="Date" type="xs:string"/>
+			<xs:element name="Publisher" type="xs:string"/>
+			<xs:element name="ISBN" type="xs:integer"/>
+		</xs:sequence>
+		<xs:attribute name="Category" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="autobiography"/>
+					<xs:enumeration value="fiction"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="InStock">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="True"/>
+					<xs:enumeration value="False"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+</xs:element>	
+	
+	
+</xs:schema>

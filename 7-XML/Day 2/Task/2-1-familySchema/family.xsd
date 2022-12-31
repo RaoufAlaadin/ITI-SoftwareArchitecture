@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<!-- note: it's important to close the the schema at the end with  </xs:schema>
+	it might be forgetten as we go along in the code and cause an error. -->
+
+	<!-- simple types are basically one liners.. with no sub elements or attributes. -->
+	<!-- but here Family is a complex data type as it will gather tons of info per family -->
+
+
+	<!-- this -->
+	<xs:element name="family">
+		<xs:complexType>
+
+			<!-- note: because we have childs we cannot use (simple content)
+				and we can't use complex content because we don't have extension
+				or restraction 
+				and we cannot use them as you have to put elements inside of it. 
+			-->
+
+			<xs:sequence>
+				<xs:element ref="grandfather" />
+			</xs:sequence>
+			<!-- this attribute is the one that has the schema details. -->
+			<xs:attribute name="name" type="xs:string" default="myfamilytree" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="grandfather">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="father"/>
+				<xs:element name="uncle"  type="xs:string" maxOccurs="unbounded"/>
+				<xs:element ref="aunt"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="father">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="mother"/>
+				<xs:element ref="daughter"/>
+				<xs:element ref="son"/>
+			</xs:sequence>
+			<xs:attribute name="job" type="xs:string" default="Engineer"></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="mother">
+		<xs:complexType>
+			<xs:simpleContent>
+				<!-- note: it's like we are saying extra to have string text
+				between the tags, we also have an attribute for this element -->
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" type="xs:string" default="Hoda" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="daughter">
+		<xs:complexType>
+			<xs:simpleContent>
+				<!-- note: it's like we are saying extra to have string text
+				between the tags, we also have an attribute for this element -->
+				<xs:extension base="xs:string">
+					<!-- age should be integer but oh well-->
+					<xs:attribute name="age" type="xs:string" default="medium" />
+					<xs:attribute name="job" type="xs:string" default="Hoda" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="son">
+		<xs:complexType>
+			<xs:simpleContent>
+				<!-- note: it's like we are saying extra to have string text
+				between the tags, we also have an attribute for this element -->
+				<xs:extension base="xs:string">
+					<!-- age should be integer but oh well-->
+					<xs:attribute name="age" type="xs:integer" default="21" />
+					<xs:attribute name="sport" type="xs:string" default="football" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="aunt">
+		<xs:complexType>
+			<xs:simpleContent>
+				<!-- note: it's like we are saying extra to have string text
+				between the tags, we also have an attribute for this element -->
+				<xs:extension base="xs:string">
+					<!-- age should be integer but oh well-->
+					<xs:attribute name="sons" type="xs:integer" default="2" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+
+</xs:schema>
