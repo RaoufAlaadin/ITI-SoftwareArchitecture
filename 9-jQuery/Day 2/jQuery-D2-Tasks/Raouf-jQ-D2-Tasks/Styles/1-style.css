@@ -1,0 +1,28 @@
+
+#raceCar{
+    position: absolute;
+    width: 300px;
+    left: 10px;
+    top: 200px;
+
+   
+}
+
+#carDiv {
+
+    height: 300px;
+    border: solid;
+
+}
+
+/* #data{
+
+
+} */
+
+/* #img2{
+    top: 80px;
+}
+#img3{
+    top: 150px;
+} */

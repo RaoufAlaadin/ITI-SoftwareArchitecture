@@ -1,0 +1,17 @@
+#blackhole{
+
+    width: 500px;
+    height: 600px;
+}
+
+#rabbitDiv{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#rabbit{
+    width: 150px;
+    height: 150px;
+}

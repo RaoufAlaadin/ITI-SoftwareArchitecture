@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../Libraries/jQueryDevMin.js"></script>
+    <script src="../Scripts/script.js"></script>
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+    <title>Hotel-WebPage</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="header1">Welcome to this hotel</h1>
+    </div>
+
+    <div class="container">
+      <div id="btnDiv" >
+        <input class="highlighter" type="button" value="About" id="btnAbout" />
+        <input class="highlighter" type="button" value="Gallery" id="btnGallery" />
+
+        <div class="listContainer" >
+
+            <div class="list">
+
+                <!-- lesson: This is the method for adding multiple classes
+                                you can't write the attribute twice !!  -->
+                <input class="highlighter" type="button" value="Services" id="btnServices" />
+                <input class="highlighter menuBtn" type="button" value="Services" />
+                <input class="highlighter menuBtn" type="button" value="Services" />
+                <input class="highlighter menuBtn" type="button" value="Services" />
+            </div>
+        </div>
+        
+
+        <input class="highlighter" type="button" value="Complain" id="btnComplain" />
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container">
+      <div id="div1">
+        <p>Welcome to our hotel,</p>
+        <p>have a nice stay.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="div2">
+        <img
+          class="highlighter"
+          id="btnBack"
+          src="../Images/left.png"
+          width="50px"
+          height="50px"
+        />
+        <img id="snowMan" src="../Images/1.jpg" width="200px" height="200px" />
+        <img
+          class="highlighter"
+          id="btnNext"
+          src="../Images/right.png"
+          width="50px"
+          height="50px"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="div3">
+        <p>drop down menu</p>
+        <!-- <p> have a nice stay. </p> -->
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div id="div4">
+
+        <!-- lesson: I made something really random here, just to test my understand of css
+        turned the block into in line so the text align center can work on it
+            then used <br> after it to keep space between it and below elements. -->
+        <h3 style="border:solid 3px; background-color: beige; width: 300px; display: inline-block;">
+            Complain form</h3>
+        
+        <br>
+            <label for="name"> Name: </label>
+            <input type="text" id="name">
+
+            <br>
+            <label for="email"> Email: </label>
+            <input type="email" id="email">
+            <br>
+            <label for="phone"> Phone: </label>
+            <input type="number" id="phone">
+            <br>
+            <label for="area"> <h4> Complain: </h4>  </label>
+            
+
+            <textarea id="review" name="w3review" rows="4" cols="50">Improve the roomService please.</textarea>
+            <br>
+            <input class="highlighter" type="button" value="Send" id="btnSend" />
+            
+        <!-- <input class="highlighter menuBtn" type="button" value="Services" /> -->
+        <!-- <p> have a nice stay. </p> -->
+      </div>
+    </div>
+
+
+    <div class="container">
+        <div id="div5">
+  
+          <!-- lesson: I made something really random here, just to test my understand of css
+          turned the block into in line so the text align center can work on it
+              then used <br> after it to keep space between it and below elements. -->
+          <h3 style="border:solid 3px; background-color: beige; width: 300px; ">
+              Your complain details are: </h3>
+          <h3 id="info1" style="border:solid 3px; background-color: beige; width: 300px; ">
+              Your complain details are: </h3>
+            
+            <h3 id="info2" style="border:solid 3px; background-color: beige; width: 300px; ">
+                Your complain details are: </h3>
+
+                <h3 id="info3" style="border:solid 3px; background-color: beige; width: 300px;">
+                <h3 id="info4" style="border:solid 3px; background-color: beige; width: 300px;">
+                    Your complain details are: </h3>
+
+              <br>
+              <input class="highlighter" type="button" value="BacktoEdit" id="btnBacktoEdit" />
+              
+          <!-- <input class="highlighter menuBtn" type="button" value="Services" /> -->
+          <!-- <p> have a nice stay. </p> -->
+        </div>
+      </div>
+
+
+  </body>
+</html>

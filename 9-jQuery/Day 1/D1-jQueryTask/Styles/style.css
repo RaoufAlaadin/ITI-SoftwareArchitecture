@@ -1,0 +1,101 @@
+/* 
+
+    https://flexbox.malven.co/
+    https://yoksel.github.io/flex-cheatsheet/
+*/
+
+body {
+  border: solid;
+  background-color: #ffd4b2;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+img {
+  box-shadow: black 3px 5px;
+  border-radius: 3px;
+  border: solid blueviolet;
+}
+
+/* note: this is the styling for any button */
+input , #review {
+  background-color: #3d5656; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+
+  /* border: solid #68B984; */
+  box-shadow: black 3px 5px;
+}
+
+
+.highlighter:hover {background-color: #3e8e41}
+
+.highlighter:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid burlywood;
+  /* the padding gives a space between the inner elements and the container. */
+  padding: 20px;
+}
+
+.listContainer {
+
+    display: inline-block;
+}
+.list{
+
+    display: flex;
+
+    /* note: this is so important in creating the menu !!!  */
+    flex-direction: column;
+    /* justify-content: flex-start; */
+}
+
+#div1 {
+  display: flex;
+  /* note: We made the flex-direction to be column 
+            to be able to aline things vertically. */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff6bd;
+  height: 150px;
+  width: 300px;
+  border: solid;
+  /* text-align: center; */
+  box-shadow: black 3px 5px;
+}
+
+#div2 {
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+#div4,#div5{
+    text-align: center;
+    margin-bottom: 200px;
+    border: solid;
+    box-shadow: black 3px 5px;
+    padding: 20px;
+}
