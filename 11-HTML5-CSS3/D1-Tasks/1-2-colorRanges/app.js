@@ -1,4 +1,8 @@
 
+var redControl = document.getElementById("redColor");
+var greenControl = document.getElementById("greenColor");
+var blueControl = document.getElementById("blueColor");
+
 
 var colorTester = document.getElementById("colorTester");
 
@@ -26,9 +30,7 @@ function updateColors() { colorTester.style.color = `rgb(${redControl.value},${g
 
 /*   ---- bad and long method. ---
 
-var redControl = document.getElementById("redColor");
-var greenControl = document.getElementById("greenColor");
-var blueControl = document.getElementById("blueColor");
+
 
  redControl.addEventListener("click",updateColors);
  greenControl.addEventListener("click",updateColors);
