@@ -18,7 +18,13 @@ var colorTester = document.getElementById("colorTester");
 
 for (var element of document.getElementsByClassName("changeColor"))
 {
-    element.addEventListener("click",updateColors);
+    /* note: we have to use (input) to update the colors without having to wait for the click to finish
+                both (click) and (change) we will wait until we lift our finger from the click to update the screen
+                
+                https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element
+        */
+    
+    element.addEventListener("input",updateColors);
 }
 
 
