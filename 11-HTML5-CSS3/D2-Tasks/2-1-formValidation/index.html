@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    
+    </head>
+    <body>
+
+        <h1>Change Email Address</h1>
+
+        <form action="">
+
+            <!-- https://stackoverflow.com/a/16878766/19319830          ====> this explain the oninput to get the error messge to work without messing
+                                                                                with the validation -->
+
+            <input type="text" name="" id="userName" placeholder="UserName"
+                required pattern="[a-zA-Z]+"  oninvalid="setCustomValidity('Minimum length is 6 characters')" 
+                oninput="setCustomValidity('')">
+            <span>the required user name may only be a series of alphabetical
+                characters</span>
+            <br>
+
+
+            <!-- 
+
+                https://stackoverflow.com/a/8897615/19319830    =>> email validation.
+             -->
+            <input type="email" name="" id="email" placeholder="Email"  pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+"  required  
+            oninvalid="setCustomValidity('the only allowed special character is @')" 
+            oninput="setCustomValidity('')"
+            >
+            <span>the required email address may not include any special characters other than the '@' sign
+               </span>
+            <br>
+
+            <button type="submit" value="Change">Change</button>
+
+        </form>
+
+
+        <script src="app.js"></script>
+
+
+
+
+    </body>
+</html>

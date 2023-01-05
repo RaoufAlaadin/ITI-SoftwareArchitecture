@@ -1,0 +1,61 @@
+
+@keyframes anim {
+
+    from {
+        width: 0px;
+        height: 0px;
+        border-right: 60px solid transparent;
+        border-top: 60px solid red;
+        border-left: 60px solid red;
+        border-bottom: 60px solid red;
+  
+  
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        
+    }
+   
+    to {
+        border: 60px solid red;
+        border-radius: 60%;
+        
+    }
+
+    
+}
+
+
+
+#circle {
+    width: 0px;
+        height: 0px;
+        border-right: 60px solid transparent;
+        border-top: 60px solid red;
+        border-left: 60px solid red;
+        border-bottom: 60px solid red;
+  
+  
+
+        /* if you add this part to the hover, it will wait for the mouse. */
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+
+        animation-name: anim;
+        animation-duration: 0.2s;
+        /* animation-delay: 2s; */
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        animation-direction: alternate;
+
+  }
+
+  #circle:hover{
+
+  
+    
+  }
+

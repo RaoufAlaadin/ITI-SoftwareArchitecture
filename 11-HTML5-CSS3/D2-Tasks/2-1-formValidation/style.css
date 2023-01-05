@@ -1,0 +1,25 @@
+input,button{
+
+  margin: 10px;
+}
+
+span{
+  display: block;
+}
+
+/* as long the tag has required applied on it, 
+then it will take this css styling  */
+input:required {
+outline: 2px solid red;
+}
+
+
+input:valid+span {
+display: none;
+}
+
+/* this means the span that is directly after the input tag and the input is invalid */
+input:invalid+span {
+color: red;
+/* display: inline; */
+}

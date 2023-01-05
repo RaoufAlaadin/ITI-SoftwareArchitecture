@@ -1,0 +1,81 @@
+
+/*  transation needs to be actived by something like hover
+
+    while animation starts on it's own !!! ===> that's why we call animation... the implicity transation.
+
+    https://www.geeksforgeeks.org/difference-between-animation-and-transition-in-css/
+
+
+
+    https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html
+
+*/
+
+
+
+img{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    background: red;
+    /* opacity: 1; */
+
+
+
+    /* everything related to the (transation control) is on the main element.
+        
+        we could have just said ====> transation: all 2s .. this will apply everything the timing to everything we wrote.  */
+    transition: width 1s, height 1s, transform 1s, opacity 2s;
+    transition-timing-function: ease-in-out;
+}
+img:hover{
+    /* here we have what will happen after the transation is actived by hover */
+    width: 100px;
+    height: 100px;
+    transform: rotate(360deg);
+    box-shadow: 5px 10px  yellow;
+    opacity: 0;
+   
+
+}
+
+/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+
+button{
+
+    border-radius: 3px;
+    border: 1px solid;
+    height: 40px;
+    width: 100px;
+    background-color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+button:hover{
+    
+    animation: blink 1s infinite;
+    
+}
+
+@keyframes blink {
+    0% {
+      
+      box-shadow: 0 0 5px  rgb(255, 72, 0);
+    }
+
+    50% {
+      
+      box-shadow:0 0 50px  yellow;
+      /* color: blue; */
+    }
+    100% {
+        
+        box-shadow: 0 0 5px  rgb(173, 0, 241);
+      }
+  }
+
+div{
+    text-align: center;
+    height: 200px;
+}

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "myFont";
+    src: url(assests/fonts/WorkSans-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+p{
+
+    font-family: "myFont";
+}
+#container{
+    margin-top: 80px;
+    margin-left: 20px;
+    height: 250px;
+    width: 150px;
+    border: 3px solid red;
+    border-radius: 3%;
+}
+
+#topLeft{
+    position: relative;
+    left: 15px;
+}
+#bottomRight{
+    position: relative;
+    top: 120px;
+    left: 120px;
+}
+
+
+/* https://fonts.google.com/noto/specimen/Noto+Serif+TC?preview.text=A&preview.text_type=custom */
+
+
+/* https://codepen.io/paulv/pen/eWJzeE */
+
+/* We could have used this website by taking the heart and rotating it 
+    then attaching a triangle at the bottom of it. 
+
+https://css-tricks.com/the-shapes-of-css/#aa-egg-shape */
+.shape{
+    transform: rotate(180deg);
+    position: relative;
+    left: -50px;
+    top: 50px;
+
+   
+ }
+ .heart {
+   background-color: rgb(0, 0, 0);
+   display: inline-block;
+   height: 30px;
+   margin: 0 10px;
+   position: relative;
+   top: 0;
+   transform: rotate(-45deg);
+   width: 30px;
+ }
+ 
+ .heart:before,
+ .heart:after {
+   content: "";
+   background-color: rgb(0, 0, 0);
+   border-radius: 50%;
+   height: 30px;
+   position: absolute;
+   width: 30px;
+ }
+ 
+ .heart:before {
+   top: -15px;
+   left: 0;
+ }
+ 
+ .heart:after {
+   left: 15px;
+   top: 0;
+ }
+ 
+ .tale{
+   width: 0; 
+   height: 10; 
+   border-left: 4px solid transparent;
+   border-right: 4px solid transparent;
+   border-top: 20px solid rgb(0, 0, 0);
+   transform: rotate(45deg);
+   position:absolute;
+   bottom:20px;
+   right:-3px
+ }
+ 
