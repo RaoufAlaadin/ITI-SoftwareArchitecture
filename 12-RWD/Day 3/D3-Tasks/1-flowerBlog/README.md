@@ -1,1 +1,1 @@
-<img src="./quickLayoutDemo.gif" alt="">
+<img src="quickLayoutDemo.gif" alt="">
