@@ -1,0 +1,78 @@
+*{
+    border: solid black 1px;
+  }
+  
+  
+  
+   body{
+    height: 100vh;
+    
+    /* align-items: center;
+    justify-content: center; */
+
+   }
+
+   .container{
+
+    display: flex;
+    flex-direction: column;
+  
+   }
+
+   .midPage{
+
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+
+  }
+
+  .sideNav{
+    flex-grow: 1;
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
+  }
+
+  
+  .mainContent{
+    flex-grow: 2;
+    text-align: center;
+    background-color: greenyellow;
+   
+    padding: 10px;
+  }
+  
+  .sideBar{
+    flex-grow: 1;
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
+  }
+
+
+  .header,.footer{
+    background-color: lightblue;
+    height: 20vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  @media (max-width:450px){
+    .midPage{
+        flex-direction: column;
+    }
+    
+  }
+
+
+  
+
+
+  
+   
+ 
