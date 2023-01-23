@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\bin\Debug\net7.0\Task3-countOnes.exe
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\bin\Debug\net7.0\Task3-countOnes.deps.json
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\bin\Debug\net7.0\Task3-countOnes.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\bin\Debug\net7.0\Task3-countOnes.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\bin\Debug\net7.0\Task3-countOnes.pdb
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\refint\Task3-countOnes.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.pdb
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\Task3-countOnes.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task3-countOnes\obj\Debug\net7.0\ref\Task3-countOnes.dll

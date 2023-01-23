@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Task2-reverseOrder/1.0.0": {
+        "runtime": {
+          "Task2-reverseOrder.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Task2-reverseOrder/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

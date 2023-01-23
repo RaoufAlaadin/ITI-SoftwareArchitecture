@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\bin\Debug\net7.0\companySystem.exe
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\bin\Debug\net7.0\companySystem.dll
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.dll
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\refint\CompanySystem.dll
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.pdb
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\bin\Debug\net7.0\CompanySystem.deps.json
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\bin\Debug\net7.0\CompanySystem.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\bin\Debug\net7.0\CompanySystem.pdb
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\CompanySystem.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 3\D3-Tasks\companySystem\obj\Debug\net7.0\ref\CompanySystem.dll

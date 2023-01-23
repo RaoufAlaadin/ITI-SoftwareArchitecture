@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\bin\Debug\net7.0\Task1-arrayOfInt.exe
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\bin\Debug\net7.0\Task1-arrayOfInt.deps.json
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\bin\Debug\net7.0\Task1-arrayOfInt.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\bin\Debug\net7.0\Task1-arrayOfInt.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\bin\Debug\net7.0\Task1-arrayOfInt.pdb
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\refint\Task1-arrayOfInt.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.pdb
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\Task1-arrayOfInt.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task1-arrayOfInt\obj\Debug\net7.0\ref\Task1-arrayOfInt.dll

@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\bin\Debug\net7.0\Task2-reverseOrder.exe
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\bin\Debug\net7.0\Task2-reverseOrder.deps.json
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\bin\Debug\net7.0\Task2-reverseOrder.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\bin\Debug\net7.0\Task2-reverseOrder.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\bin\Debug\net7.0\Task2-reverseOrder.pdb
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\refint\Task2-reverseOrder.dll
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.pdb
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\Task2-reverseOrder.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 2\D2-Tasks\Task2-reverseOrder\obj\Debug\net7.0\ref\Task2-reverseOrder.dll
