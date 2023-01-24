@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\bin\Debug\net7.0\D5-Tasks.exe
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\bin\Debug\net7.0\D5-Tasks.deps.json
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\bin\Debug\net7.0\D5-Tasks.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\bin\Debug\net7.0\D5-Tasks.dll
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\bin\Debug\net7.0\D5-Tasks.pdb
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.dll
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\refint\D5-Tasks.dll
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.pdb
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\D5-Tasks.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 5\D5-Tasks\obj\Debug\net7.0\ref\D5-Tasks.dll
