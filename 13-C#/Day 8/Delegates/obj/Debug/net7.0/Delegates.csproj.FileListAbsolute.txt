@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\bin\Debug\net7.0\Delegates.exe
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\bin\Debug\net7.0\Delegates.deps.json
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\bin\Debug\net7.0\Delegates.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\bin\Debug\net7.0\Delegates.dll
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\bin\Debug\net7.0\Delegates.pdb
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.dll
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\refint\Delegates.dll
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.pdb
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\Delegates.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 8\D8-Task\Delegates\obj\Debug\net7.0\ref\Delegates.dll

@@ -1,0 +1,415 @@
+Which of the following is a relational database management system?
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
+Which of the following is a relational database management system?
+(a) - SQL 
+(b) - MySQL 
+(c) - Oracle 
+(d) - MongoDB 
+
+Which of the following is a SQL keyword used to select specific columns from a table?
+(a) - SELECT 
+(b) - FROM 
+(c) - WHERE 
+(d) - ALL 
+
+Which of the following SQL commands is used to delete all data in a table, but not the table itself?
+(a) - TRUNCATE 
+(b) - DROP 
+(c) - DELETE 
+(d) - CLEAR 
+
+Which of the following SQL keywords is used to combine rows from two or more tables based on a related column between them?
+(a) - JOIN 
+(b) - UNION 
+(c) - GROUP BY 
+(d) - HAVING 
+
+SQL stands for Structured Query Language.
+(a) - True 
+(b) - False 
+
+
+Which of the following is a column or set of columns in a database table that uniquely identifies each row in the table?
+(a) - Primary key 
+(b) - Foreign key 
+(c) - Index 
+(d) - Unique key 
+
+SQL databases use a fixed schema.
+(a) - True 
+(b) - False 
+
+
+Which of the following are properties of a database?
+(a) - ACID 
+(b) - BASE 
+(c) - Both ACID and BASE 
+(d) - Neither ACID nor BASE 
+
