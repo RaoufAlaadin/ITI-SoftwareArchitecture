@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\bin\Debug\net7.0\LinQCommandsTesting.exe
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\bin\Debug\net7.0\LinQCommandsTesting.deps.json
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\bin\Debug\net7.0\LinQCommandsTesting.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\bin\Debug\net7.0\LinQCommandsTesting.dll
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\bin\Debug\net7.0\LinQCommandsTesting.pdb
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.dll
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\refint\LinQCommandsTesting.dll
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.pdb
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\LinQCommandsTesting.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 10\D10-Task\LinQCommandsTesting\obj\Debug\net7.0\ref\LinQCommandsTesting.dll

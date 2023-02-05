@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\bin\Debug\net7.0\CompanyLayOffSystem.exe
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\bin\Debug\net7.0\CompanyLayOffSystem.deps.json
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\bin\Debug\net7.0\CompanyLayOffSystem.runtimeconfig.json
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\bin\Debug\net7.0\CompanyLayOffSystem.dll
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\bin\Debug\net7.0\CompanyLayOffSystem.pdb
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.dll
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\refint\CompanyLayOffSystem.dll
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.pdb
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\CompanyLayOffSystem.genruntimeconfig.cache
+E:\ITI intake 43 SD\19-C#\Day 9\D9-Tasks\CompanyLayOffSystem\obj\Debug\net7.0\ref\CompanyLayOffSystem.dll

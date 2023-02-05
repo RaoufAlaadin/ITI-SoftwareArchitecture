@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-Form", "2-Form\2-Form.csproj", "{0015C7BA-4EBC-439E-AE2E-7F96ABBC8F48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-DrawingCanvas", "1-DrawingCanvas\1-DrawingCanvas.csproj", "{98FBBF7A-6A22-42E3-9287-CC6D6ADCD69D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0015C7BA-4EBC-439E-AE2E-7F96ABBC8F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0015C7BA-4EBC-439E-AE2E-7F96ABBC8F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0015C7BA-4EBC-439E-AE2E-7F96ABBC8F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0015C7BA-4EBC-439E-AE2E-7F96ABBC8F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FBBF7A-6A22-42E3-9287-CC6D6ADCD69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FBBF7A-6A22-42E3-9287-CC6D6ADCD69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FBBF7A-6A22-42E3-9287-CC6D6ADCD69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FBBF7A-6A22-42E3-9287-CC6D6ADCD69D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BB983AA-3D7C-4CC6-B38D-16DA710F3628}
+	EndGlobalSection
+EndGlobal
