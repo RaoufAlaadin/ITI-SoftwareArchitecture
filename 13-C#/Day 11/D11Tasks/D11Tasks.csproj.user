@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="1-DialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="2-Paint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="3-DragANDdrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="4-Mickey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="5-MovingBall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="lec -4-dlgCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="lec-1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="lec-2-login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="lec-3-frmRTF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="lec-5-frmGDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="lec-6-frmNotRect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="lec-7-frmMickey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
