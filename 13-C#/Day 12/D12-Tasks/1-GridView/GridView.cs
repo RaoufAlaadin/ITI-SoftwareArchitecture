@@ -192,7 +192,7 @@ namespace _1_GridView
             categoriesNameColumn.DisplayMember = "CategoryName";
             categoriesNameColumn.ValueMember = "CategoryID";
 
-
+				
 
             /* Using the `dataPropertyname` basically sets the value of the suplier Name
              * Column, to the value of the column Called SupplierID in the grid. 
@@ -220,6 +220,8 @@ namespace _1_GridView
             */
             //grdPrds.Columns["SupplierID"].Visible = false;
             //grdPrds.Columns["CategoryID"].Visible = false;
+			
+			 
 
             /* Note:
              * Inserting the columns based on the location of others, because when I tried to
@@ -244,6 +246,12 @@ namespace _1_GridView
             //}
 
             /* This sets the form to `full screen` when data is read. */
+			
+			
+			/* This Prevent edits on the ID Column*/
+			grdPrds.Columns["ProductID"].ReadOnly = true;
+			
+			
             this.WindowState = FormWindowState.Maximized;
         }
 
