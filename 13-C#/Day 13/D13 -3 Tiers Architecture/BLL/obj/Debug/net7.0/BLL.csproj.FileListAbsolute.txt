@@ -1,0 +1,48 @@
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\bin\Debug\net7.0\BLL.deps.json
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\bin\Debug\net7.0\BLL.dll
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\bin\Debug\net7.0\BLL.pdb
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\bin\Debug\net7.0\DAL.dll
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\bin\Debug\net7.0\DAL.pdb
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\bin\Debug\net7.0\DAL.dll.config
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.dll
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\refint\BLL.dll
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\BLL.pdb
+C:\Users\pc\Desktop\SD43\D13 Tiers\BLL\obj\Debug\net7.0\ref\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\bin\Debug\net7.0\BLL.deps.json
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\bin\Debug\net7.0\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\bin\Debug\net7.0\BLL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\bin\Debug\net7.0\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\bin\Debug\net7.0\DAL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\bin\Debug\net7.0\DAL.dll.config
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\refint\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\BLL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\BLL\obj\Debug\net7.0\ref\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\bin\Debug\net7.0\BLL.deps.json
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\bin\Debug\net7.0\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\bin\Debug\net7.0\BLL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\bin\Debug\net7.0\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\bin\Debug\net7.0\DAL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\bin\Debug\net7.0\DAL.dll.config
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\refint\BLL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\BLL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\BLL\obj\Debug\net7.0\ref\BLL.dll

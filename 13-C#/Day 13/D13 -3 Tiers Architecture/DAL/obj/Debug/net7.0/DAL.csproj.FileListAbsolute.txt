@@ -1,0 +1,39 @@
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\bin\Debug\net7.0\DAL.dll.config
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\bin\Debug\net7.0\DAL.deps.json
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\bin\Debug\net7.0\DAL.dll
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\bin\Debug\net7.0\DAL.pdb
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\DAL.dll
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\refint\DAL.dll
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\DAL.pdb
+C:\Users\pc\Desktop\SD43\D13 Tiers\DAL\obj\Debug\net7.0\ref\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\bin\Debug\net7.0\DAL.dll.config
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\bin\Debug\net7.0\DAL.deps.json
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\bin\Debug\net7.0\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\bin\Debug\net7.0\DAL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\refint\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\DAL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13\D13 Tiers\D13 Tiers\DAL\obj\Debug\net7.0\ref\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\bin\Debug\net7.0\DAL.dll.config
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\bin\Debug\net7.0\DAL.deps.json
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\bin\Debug\net7.0\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\bin\Debug\net7.0\DAL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\refint\DAL.dll
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\DAL.pdb
+E:\ITI intake 43 SD\19-C#\Day 13\D13-Tasks\D13 Tiers\DAL\obj\Debug\net7.0\ref\DAL.dll
