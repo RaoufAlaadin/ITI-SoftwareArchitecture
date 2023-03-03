@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\bin\Debug\net7.0\2-GameObserver.exe
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\bin\Debug\net7.0\2-GameObserver.deps.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\bin\Debug\net7.0\2-GameObserver.runtimeconfig.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\bin\Debug\net7.0\2-GameObserver.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\bin\Debug\net7.0\2-GameObserver.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.AssemblyInfo.cs
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\refint\2-GameObserver.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\2-GameObserver.genruntimeconfig.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\2-GameObserver\obj\Debug\net7.0\ref\2-GameObserver.dll

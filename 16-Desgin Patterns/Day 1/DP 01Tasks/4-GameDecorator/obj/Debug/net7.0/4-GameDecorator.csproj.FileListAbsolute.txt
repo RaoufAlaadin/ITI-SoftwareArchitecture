@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\bin\Debug\net7.0\4-GameDecorator.exe
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\bin\Debug\net7.0\4-GameDecorator.deps.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\bin\Debug\net7.0\4-GameDecorator.runtimeconfig.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\bin\Debug\net7.0\4-GameDecorator.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\bin\Debug\net7.0\4-GameDecorator.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.AssemblyInfo.cs
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\refint\4-GameDecorator.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\4-GameDecorator.genruntimeconfig.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\4-GameDecorator\obj\Debug\net7.0\ref\4-GameDecorator.dll

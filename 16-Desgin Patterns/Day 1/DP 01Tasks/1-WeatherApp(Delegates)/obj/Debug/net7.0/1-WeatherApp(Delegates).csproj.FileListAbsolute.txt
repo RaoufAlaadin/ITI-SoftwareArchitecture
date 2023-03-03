@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).AssemblyInfo.cs
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\bin\Debug\net7.0\1-WeatherApp(Delegates).exe
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\bin\Debug\net7.0\1-WeatherApp(Delegates).deps.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\bin\Debug\net7.0\1-WeatherApp(Delegates).runtimeconfig.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\bin\Debug\net7.0\1-WeatherApp(Delegates).dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\bin\Debug\net7.0\1-WeatherApp(Delegates).pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\refint\1-WeatherApp(Delegates).dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\1-WeatherApp(Delegates).genruntimeconfig.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\1-WeatherApp(Delegates)\obj\Debug\net7.0\ref\1-WeatherApp(Delegates).dll

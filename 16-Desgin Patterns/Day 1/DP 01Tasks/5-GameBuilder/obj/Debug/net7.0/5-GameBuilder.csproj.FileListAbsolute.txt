@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\bin\Debug\net7.0\5-GameBuilder.exe
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\bin\Debug\net7.0\5-GameBuilder.deps.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\bin\Debug\net7.0\5-GameBuilder.runtimeconfig.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\bin\Debug\net7.0\5-GameBuilder.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\bin\Debug\net7.0\5-GameBuilder.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.AssemblyInfo.cs
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\refint\5-GameBuilder.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\5-GameBuilder.genruntimeconfig.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\5-GameBuilder\obj\Debug\net7.0\ref\5-GameBuilder.dll

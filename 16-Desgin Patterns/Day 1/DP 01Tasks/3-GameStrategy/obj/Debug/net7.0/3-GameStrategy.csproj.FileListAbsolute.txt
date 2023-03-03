@@ -1,0 +1,15 @@
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.AssemblyInfo.cs
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\bin\Debug\net7.0\3-GameStrategy.exe
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\bin\Debug\net7.0\3-GameStrategy.deps.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\bin\Debug\net7.0\3-GameStrategy.runtimeconfig.json
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\bin\Debug\net7.0\3-GameStrategy.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\bin\Debug\net7.0\3-GameStrategy.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\refint\3-GameStrategy.dll
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.pdb
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\3-GameStrategy.genruntimeconfig.cache
+E:\ITI intake 43 SD\23- Design patterns\Day 1\D1-DP-Tasks\DP 01Tasks\3-GameStrategy\obj\Debug\net7.0\ref\3-GameStrategy.dll
