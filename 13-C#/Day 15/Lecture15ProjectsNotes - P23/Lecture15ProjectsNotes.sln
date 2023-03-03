@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanDBAPP", "CompanDBAPP\CompanDBAPP.csproj", "{13965974-737F-486A-9E0D-4596225C41BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWindConsoleAPP", "NorthWindConsoleAPP\NorthWindConsoleAPP.csproj", "{8C510CA5-E09B-44D9-B812-832AFFDFD1DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13965974-737F-486A-9E0D-4596225C41BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13965974-737F-486A-9E0D-4596225C41BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13965974-737F-486A-9E0D-4596225C41BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13965974-737F-486A-9E0D-4596225C41BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C510CA5-E09B-44D9-B812-832AFFDFD1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C510CA5-E09B-44D9-B812-832AFFDFD1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C510CA5-E09B-44D9-B812-832AFFDFD1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C510CA5-E09B-44D9-B812-832AFFDFD1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E7CD990-5E88-4198-8A66-A8EB4102942E}
+	EndGlobalSection
+EndGlobal
