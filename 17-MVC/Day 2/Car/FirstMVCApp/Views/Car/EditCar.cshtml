@@ -1,0 +1,19 @@
+﻿@using FirstMVCApp.Models;
+@{
+    ViewBag.Title = "EditCar";
+
+    Car editedCar = ViewBag.selectedCar;
+}
+
+<h2>EditCar</h2>
+
+<form method="post" action="/Car/EditCar">
+
+    <input type="text" name="Num" value="@editedCar.Num" />
+    <input type="text" name="Color" value="@editedCar.Color" />
+    <input type="text" name="Model" value="@editedCar.Model" />
+    <input type="text" name="Manufacture" value="@editedCar.Manufacture" />
+
+    <input type="submit"  value="Save changes" />
+
+</form>

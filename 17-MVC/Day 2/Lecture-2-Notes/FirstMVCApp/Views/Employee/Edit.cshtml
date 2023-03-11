@@ -1,0 +1,19 @@
+﻿@using FirstMVCApp.Models;
+@{
+    ViewBag.Title = "Edit";
+
+    Employee editedEmp = ViewBag.selectedEmp;
+}
+
+<h2>Edit</h2>
+
+<form method="post" action="/Employee/Edit">
+
+    <input type="text" name="id" value="@editedEmp.Id" />
+    <input type="text" name="name" value="@editedEmp.Name" />
+    <input type="text" name="age" value="@editedEmp.Age" />
+    <input type="text" name="email" value="@editedEmp.Email" />
+
+    <input type="submit"  value="Save changes" />
+
+</form>

@@ -1,0 +1,21 @@
+﻿@using FirstMVCApp.Models;
+@{
+    ViewBag.Title = "CreateNewCar";
+    int newCarID = ViewBag.newCarID;
+}
+
+<h2>CreateNewCar</h2>
+
+
+
+
+<form method="post" action="/Car/CreateNewCar">
+
+    <input type="text" name="Num" value="@newCarID" />
+    <input type="text" name="Color" value="green" />
+    <input type="text" name="Model" value="honda cevic" />
+    <input type="text" name="Manfacture" value="Toyotaaa" />
+
+    <input type="submit" value="Add Car" />
+
+</form>

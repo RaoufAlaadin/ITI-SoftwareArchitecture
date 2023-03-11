@@ -1,0 +1,23 @@
+﻿@using FirstMVCApp.Models;
+
+@model int
+@*@{
+    ViewBag.Title = "Create";
+    int newEmpID = ViewBag.newEmpID;
+}
+*@
+<h2>Create</h2>
+
+
+
+
+<form method="post" action="/Employee/Create">
+
+    <input type="text" name="id" value="@Model" />
+    <input type="text" name="name" value="Tamer" />
+    <input type="text" name="age" value="50" />
+    <input type="text" name="email" value="MVC@gmail.com" />
+
+    <input type="submit" value="Add Employee" />
+
+</form>

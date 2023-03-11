@@ -1,0 +1,166 @@
+﻿@using DemoWebApp;
+
+@*@{ Layout = "_myCustomLayout.cshtml";}*@
+
+@{ Layout = "_MasterLayout.cshtml";}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    @{
+        var imgPath = "";
+    }
+    <form method="post">
+
+        <select name="imageList">
+            <option value="1.jpg">Image_1</option>
+            <option value="2.jpg">Image_2</option>
+            <option value="3.jpg">Image_3</option>
+            <option value="4.jpg">Image_4</option>
+            <option value="5.jpg">Image_5</option>
+            <option value="6.jpg">Image_6</option>
+        </select>
+
+
+
+        <input type="submit" name="name" value="Choose" />
+
+        @* if you check the network tab, you will notice that
+            The select returns the selected value as the following pair
+                imageList = 2.jpg   => so it uses the select element name as Name
+                                       and the selected as the value.
+               --That's why we used ["imageList"] as our key to complete the imgpath.
+        *@
+
+    </form>
+    @{ if (IsPost)
+        {
+            imgPath = "/images/" + Request["imageList"];
+
+            <div>
+
+                <img src="@imgPath" alt="Alternate Text" />
+            </div>
+
+        }
+    }
+
+
+
+
+
+
+</body>
+</html>
+
+@section mySection{
+
+    <ol>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+
+    </ol>
+}
+
+
+@*Trying the ASP.net Helpers.*@
+@{
+
+    List<Product> Products = new List<Product>()
+{
+        new Product () {ID = 1, Name ="HiThereProd", Price = 200},
+        new Product () {ID = 3, Name ="HiThereProd", Price = 200},
+        new Product () {ID = 2, Name ="HiThereProd", Price = 200}
+
+
+    };
+
+}
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Price</td>
+
+    </tr>
+
+    @foreach (var item in Products)
+    {
+        <tr>
+            <td> @item.ID</td>
+            <td> @item.Name</td>
+            <td> @item.Price</td>
+
+        </tr>
+    }
+</table>
+
+@{ 
+    /* The main thing is to give ===> WebGrid(Source) */
+    WebGrid grid = new WebGrid(Products);
+}
+
+
+
+
+@grid.GetHtml()
+
+@*@RenderPage("FooterPage.cshtml")*@
+
+@*    1-RenderBody()
+    // used in _myCustomLayout in the place where the content should be loaded.
+
+      2-RenderMethod
+
+
+      3-RenderPage
+    // takes the `path` of the page u want to show here.
+
+      4-RenderSection("mySection",false)
+
+        // used inside the layout , if a section with that name available
+        // it gets displayed
+
+        Note: false means that it's not necessary that all the pages that apply the layout,
+        will have a section called `mySection`.
+
+        --to define a section use the following
+
+            @section mySection{ }
+        ==> orderlists will have some weird spacing, I think there is a fix for that
+
+    ---------------------------------
+    1)
+
+    _PageStart  (a very special page name)
+           ==> The engine goes to this page first and apply what's inside it, on all the other pages.
+     Why?
+     This way you won't need to add the `layout tag` in the top of every page !!
+
+    Note:
+    every page has one layout, if you already have a layout applied from inside the page,
+    it's going to be the one that takes effect.
+
+    2)
+    _AppStart
+
+    Code that runs first and only one time.
+
+
+    -----------------------------------------------
+
+    ASP.NET helpers ( 15 helper)
+
+
+
+*@

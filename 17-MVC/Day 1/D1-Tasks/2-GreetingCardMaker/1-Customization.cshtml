@@ -1,0 +1,153 @@
+﻿@using _2_GreetingCardMaker;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body style="background-color:lightgoldenrodyellow">
+ 
+
+    <form method="post" action="~/2-Preview.cshtml" class="container">
+
+
+        <div>
+
+            <label>Choose a BackgroundColor:</label>
+
+            <select name="backgroundList" style="display:block">
+                <option value="0.jpg">Background_1</option>
+                <option value="1.jpg">Background_2</option>
+                <option value="2.jpg">Background_3</option>
+                <option value="3.jpg">Background_4</option>
+                <option value="4.jpg">Background_5</option>
+                <option value="5.jpg">Background_6</option>
+                <option value="6.jpg">Background_7</option>
+                <option value="7.jpg">Background_8</option>
+                <option value="8.jpg">Background_9</option>
+                <option value="9.jpg">Background_10</option>
+                <option value="10.jpg">Background_11</option>
+                <option value="11.jpg">Background_12</option>
+            </select>
+
+        </div>
+
+        <br />
+        <div>
+
+
+            <label>Choose a Font color:</label>
+            <select name="fontList" style="display:block">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+        <label>Choose a greeting type:</label>
+
+        <div>
+            <input type="radio" name="occasion" value="Happy Birthday!!" id="birthday">
+            <label for="birthday">Birthday</label>
+        </div>
+        <div>
+            <input type="radio" name="occasion" value="getwellsoon" id="getwellsoon">
+            <label for="getwellsoon">Get Well Soon</label>
+        </div>
+        <div>
+            <input type="radio" name="occasion" value="valentine" id="valentine">
+            <label for="valentine">Valentine</label>
+        </div>
+        <div>
+            <input type="radio" name="occasion" value="congrats" id="congrats">
+            <label for="congrats">Congratulations</label>
+        </div>
+
+        <br />
+        <br />
+
+        <div>
+            <input type="checkbox" name="AddPicture" value="true" checked />
+            <label>Add the picture</label>
+        </div>
+
+        <br />
+        <br />
+
+        <label for="greeting">Enter the Greeting Messge below: </label>
+        <textarea style="display:block" id="greeting" name="greeting" rows="4" cols="50">hope u have a blast</textarea>
+
+
+
+        <br />
+        <input style="width: 200px;" type="submit" name="name" value="Choose" />
+
+        <br />
+    </form>
+
+</body>
+</html>
+
+<!-- #region Helpers data and references -->
+@*https://learn.microsoft.com/en-us/aspnet/web-pages/overview/data/7-displaying-data-in-a-chart?source=recommendations*@
+
+@{
+    List<Card> Cards = new List<Card>()
+{
+        new Card () {ID = 1, Name ="Birthday", Price = 200},
+        new Card () {ID = 3, Name ="GetWellSoon", Price = 500},
+        new Card () {ID = 2, Name ="Congrats", Price = 300}
+
+
+    };
+
+    WebGrid grid = new WebGrid(Cards);
+
+}
+
+<!-- #endregion -->
+
+
+<!-- #region RenderedSection for ( WebGridHelper and Chart Helper ) -->
+
+
+@section introSection{
+
+
+    <p>
+        "Welcome to our gift card shop! We offer a wide variety of gift cards for every occasion, from birthdays and weddings to graduations and holidays. Our selection includes popular retailers, restaurants, and online stores, so you can find the perfect gift for anyone on your list. Plus, our gift cards are easy to use and make great last-minute gifts. Whether you're looking for something specific or just browsing, we're here to help you find the perfect gift card for any occasion. Thank you for choosing our shop, and happy gifting!
+    </p>
+
+    @grid.GetHtml()
+
+    <img width="300" height="300" src="ChartHelper.cshtml" alt="Alternate Text" />
+
+    <br />
+    <hr />
+
+}
+
+<!-- #endregion -->

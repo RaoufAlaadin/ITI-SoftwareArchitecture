@@ -1,0 +1,19 @@
+﻿@using FirstMVCApp.Models
+@{ 
+
+
+    Img newImg = ViewBag.Img;
+
+}
+
+
+<h2>ShowDetails</h2>
+
+<br />
+<hr />  
+
+
+<p> Your ID is : @newImg.Id</p>
+<p> Your Name is : @newImg.Name</p>
+
+<img src="~/Models/images/@newImg.ImgNumber"  width="200" height="200" alt="Alternate Text" />

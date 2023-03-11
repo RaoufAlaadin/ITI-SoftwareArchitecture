@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    @{
+
+        var name = "Raouf";
+     }
+</head>
+<body>
+
+    <div>   Hello from my web app @name  </div>
+
+
+    @{ var txt = string.Empty;
+        if (DateTime.Now.Hour < 12)
+        {
+            txt = $"Have a Great morning {DateTime.Now.Hour}" ;
+        } 
+        else
+        {
+            txt = $"Good evening sir {DateTime.Now.Hour}" ;
+        }
+    }
+
+        <h2> @txt       </h2>
+</body>
+</html>

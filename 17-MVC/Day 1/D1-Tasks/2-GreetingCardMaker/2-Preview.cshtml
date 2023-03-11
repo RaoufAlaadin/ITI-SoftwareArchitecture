@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body >
+
+    <div style="width:550px; height:500px; background-image:url(backgrounds/@Request["backgroundList"])" class="container">
+
+
+
+
+        @{
+            var imgPath = "";
+            var occasion = Request["occasion"];
+
+            // based on the switch,We set the img path.
+            switch (occasion)
+            {
+                case "Happy Birthday!!":
+                    imgPath = "/images/1.jpg";
+                    break;
+                case "getwellsoon":
+                    imgPath = "/images/2.jpg";
+                    break;
+                case "valentine":
+                    imgPath = "/images/3.jpg";
+                    break;
+                case "congrats":
+                    imgPath = "/images/4.jpg";
+                    break;
+                default:
+                    imgPath = "/images/5.jpg";
+                    break;
+            }
+
+        }
+
+
+        @{ if (IsPost)
+            {
+
+                <p style="color:@Request["fontList"]; font-size:x-large; background-color:blanchedalmond">
+                    @occasion
+                </p>
+
+
+                <br />
+                <br />
+
+                if (Request["AddPicture"] == "true")
+                {
+                    <div>
+                        <img width="200" height="200" src="@imgPath" alt="Alternate Text" />
+                    </div>
+                }
+
+                <div style="color: @Request["fontList"];font-size: x-large;background-color: blanchedalmond">
+                    @Request["greeting"]
+                </div>
+
+
+            }
+
+        }
+
+    </div>
+
+
+</body>
+</html>

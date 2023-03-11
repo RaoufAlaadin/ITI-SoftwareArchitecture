@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <form method="post">
+        <div>
+            <label>Name:</label>
+            <input type="text" name="Name" value="Mohamed" />
+        </div>
+        <div>
+            <label>Birthdate:</label>
+            <input type="date" name="Birthdate" value="1990-12-15" />
+        </div>
+        <div>
+            <label>IsGraduated</label>
+            <input type="checkbox" name="IsGraduated" value="true" checked />
+        </div>
+        <div>
+
+            <input type="submit" value="Go" />
+        </div>
+    </form>
+
+    @if (IsPost)
+    {
+        <p style="color:red">Hello  @Request["Name"]</p>
+        <p style="color:blue">Your Birthdate is:  @Request["Birthdate"]</p>
+        if (Request["IsGraduated"] == "true")
+        {
+            <p>yesssss , Am Graduated </p>
+        }
+        else
+        {
+            <p>Nope , Didn't graduate yet. </p>
+        }
+
+
+    }
+
+
+    @*  To choose the specific date format you want to print out. 
+
+                 DateTime birthdate = DateTime.Parse(Request["Birthdate"]);
+        string formattedDate = birthdate.ToString("dd/MM/yyyy");
+        <p style="color:blue">Your Birthdate is:  @formattedDate</p>
+
+
+    *@
+
+</body>
+</html>

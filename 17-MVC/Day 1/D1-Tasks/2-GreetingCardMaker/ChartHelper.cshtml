@@ -1,0 +1,13 @@
+﻿ @{var cardData = new List<int>
+        () { 100, 50, 75 }; // number of Birthday, GetWellSoon, and Congrats cards sold, respectively
+
+     // Set up the chart
+     var chart = new Chart(width: 600, height: 400)
+     .AddTitle("Card Sales")
+     .AddSeries(
+     chartType: "bar",
+     xValue: new[] { "Birthday", "GetWellSoon", "Congrats" },
+     yValues: cardData)
+     .SetXAxis("Card Type")
+     .SetYAxis("Number of Cards Sold").Write();
+ }

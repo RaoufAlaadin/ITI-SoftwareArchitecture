@@ -1,0 +1,46 @@
+﻿@using FirstMVCApp.Models;
+@{
+    ViewBag.Title = "GetAllCars";
+
+    List<Car> myCarList = ViewBag.cars;
+}
+
+<h2>GetAllCars</h2>
+
+
+<a href="/Car/CreateNewCar">Create new Car</a>
+<div>
+
+    <table border="1" width="100%">
+        <tr style="text-align:center; font-weight:bold;">
+            <td> Num </td>
+            <td> Color </td>
+            <td> Model </td>
+            <td> Manufacture </td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+
+        </tr>
+        @* Note:
+            if I used ViewBag directly here, it will not autocomplete because it's
+            Type is dynamic, that's why we casted it as a List
+        *@
+        @foreach (var item in myCarList)
+        {
+            <tr style="text-align:center; ">
+
+                <td> @item.Num </td>
+                <td> @item.Color </td>
+                <td> @item.Model </td>
+                <td> @item.Manufacture </td>
+                <td> <a href="/Car/SelectCarById/@item.Num">Select Car</a> </td>
+                <td> <a href="/Car/EditCar/@item.Num">Edit Car</a> </td>
+                <td> <a href="/Car/DeleteCar/@item.Num">Delete Car</a> </td>
+
+
+
+            </tr>
+        }
+    </table>
+</div>

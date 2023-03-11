@@ -1,0 +1,13 @@
+﻿@model  HandleErrorInfo 
+
+@{
+    ViewBag.Title = "myErrorPage";
+}
+
+<h2>myErrorPage</h2>
+
+<h3 style="color:red;">Error raouf happened</h3>
+
+<h3> Error message: @Model.Exception.InnerException</h3>
+
+<h4> Controller @Model.ActionName </h4>

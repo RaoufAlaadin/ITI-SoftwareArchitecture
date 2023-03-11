@@ -1,0 +1,22 @@
+﻿@model  HandleErrorInfo
+
+
+
+@{
+    ViewBag.Title = "FinancePageNotFound";
+}
+
+<h2>FinancePageNotFound</h2>
+
+<h3 style="color:red">
+    ********* custom Error Page **********
+</h3>
+
+
+<h3 >
+    Error messge : @Model.Exception.InnerException 
+</h3>
+
+<h4>
+    Controller: @Model.ControllerName ************* Action: @Model.ActionName 
+</h4>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <form method="post">
+
+        Name: <input type="text" name="name" value="" />
+        City: <input type="text" name="city" value="" />
+        <input type="submit" value="Save" />
+
+    </form>
+
+    <div>
+        @*
+        1- This can also be used.
+
+        @if (!Request.Form["name"].IsEmpty() && !Request.Form["city"].IsEmpty())
+
+        You can check the `form collection` when debugging to check the sent values.
+
+
+        2- @if (Request.Form.Count > 2) => this was my idea, but it's still hardcoded.
+            the IsPost is better as it returns true, when any amout of values are sent.
+
+        3- Request["name"]
+
+            the complier will search for the value in the following order:
+                1- Cookies
+                2- form collection
+                3- queryString => will be there incase of a `Get` Method
+                
+        *@
+
+        @{var CheckData = IsPost; }
+
+        @if (CheckData)
+        {
+            <div>
+                Hello in my first web app: @Request.Form["name"] <br />
+                From city: @Request.Form["city"]
+
+            </div>
+
+        }
+
+
+
+
+    </div>
+</body>
+</html>
+
+
+@*
+    used with GET =>  @Request.QueryString["name"]
+
+    used with POSt = > @Request.form[0]  or @Request.form["name"]
+
+*@

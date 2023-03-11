@@ -1,0 +1,149 @@
+﻿@model IEnumerable<MVC_EF.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Index</h2>
+
+<!-- #region using the filterView -->
+@*
+
+    @using (Html.BeginForm("FilterBySupplier", "Product", FormMethod.Post))
+    {
+    <div>
+            @Html.DropDownList("SupplierID", new SelectList(ViewBag.Suppliers, "SupplierID", "CompanyName"), htmlAttributes: new { @class = "form-control" })
+    </div>
+
+    <div>
+        <input type="submit" value="Filter" class="btn btn-default" />
+    </div>
+    }
+
+*@
+
+<!-- #endregion -->
+
+
+
+@using (Html.BeginForm("Index", "Product", FormMethod.Post))
+{
+    <div>
+        @*  Note: 
+            The null check is important for this case, 
+            but I didn't need it when I had a separate filter view.
+            '*@
+        @if (ViewBag.Suppliers != null)
+        {
+            @Html.DropDownList("SupplierID", new SelectList(ViewBag.Suppliers, "SupplierID", "CompanyName"), htmlAttributes: new { @class = "form-control" })
+        }
+        else
+        {
+            <p>No suppliers found.</p>
+        }
+    </div>
+
+    <div>
+        <input type="submit" value="Filter" class="btn btn-default" />
+    </div>
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@*<div class="form-group">
+        @Html.LabelFor(model => model.SupplierID, "SupplierID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("SupplierID", new SelectList(ViewBag.Suppliers, "SupplierID", "CompanyName"), htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SupplierID, "", new { @class = "text-danger" })
+        </div>
+    </div>*@
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Supplier.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuantityPerUnit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitsInStock)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.UnitsOnOrder)
+            </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.ReorderLevel)
+            </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.Discontinued)
+            </th>*@
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Supplier.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantityPerUnit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitsInStock)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.UnitsOnOrder)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReorderLevel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discontinued)
+                </td>*@
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ProductID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ProductID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ProductID })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
