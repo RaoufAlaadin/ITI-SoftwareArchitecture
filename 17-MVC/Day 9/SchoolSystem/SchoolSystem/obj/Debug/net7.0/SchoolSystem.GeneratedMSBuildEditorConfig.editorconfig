@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SchoolSystem
+build_property.RootNamespace = SchoolSystem
+build_property.ProjectDir = E:\ITI intake 43 SD\24- MVC\Day 9\D9-Tasks\SchoolSystem\SchoolSystem\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\ITI intake 43 SD\24- MVC\Day 9\D9-Tasks\SchoolSystem\SchoolSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Courses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Courses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Tracks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Tracks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Tracks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Tracks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Tracks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/TraineeCourses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZUNvdXJzZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/TraineeCourses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZUNvdXJzZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/TraineeCourses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZUNvdXJzZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/TraineeCourses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZUNvdXJzZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/TraineeCourses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZUNvdXJzZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Trainees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Trainees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Trainees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Trainees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Trainees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI intake 43 SD/24- MVC/Day 9/D9-Tasks/SchoolSystem/SchoolSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-drl6fxd3p2

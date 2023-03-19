@@ -1,0 +1,54 @@
+﻿@model IEnumerable<SchoolSystem.Models.TraineeCourse>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>TraineeCourses</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Trainee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.notes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Trainee.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.Topic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.notes)
+            </td>
+            <td>
+
+
+                    @Html.ActionLink("Edit", "Edit", 
+                    new { traineeId = @item.Trainee.ID , courseId = @item.Course.ID }) 
+
+                    @Html.ActionLink("Details", "Details", 
+                    new { traineeId = @item.Trainee.ID , courseId = @item.Course.ID }) 
+
+                    @Html.ActionLink("Delete", "Delete", 
+                    new { traineeId = @item.Trainee.ID , courseId = @item.Course.ID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
