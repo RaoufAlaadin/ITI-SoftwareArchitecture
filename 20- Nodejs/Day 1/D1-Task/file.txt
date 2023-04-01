@@ -1,0 +1,13 @@
+3
+Our calc sum is => -8
+Our calc sum is => 4
+Our calc sum is => 3
+Our calc sum is => 4
+Our calc sum is => 9
+Our calc sum is => 4
+Our calc sum is => 8
+Our calc sum is => 12
+Our calc sum is => 3
+Our calc sum is => 8
+Our calc sum is => 4
+Our calc sum is => 12
