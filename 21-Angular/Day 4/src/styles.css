@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+/* h1{
+  color: red;
+  background-color: aqua;
+  text-align: center;
+} */
+
+
+.active{
+  color: red;
+}
+
+
+
+/* app-root{
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} */
+
+/* body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  border: solid greenyellow;
+
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+} */
+
+/* body {
+height: 100vh;
+} */
+
+/* body::before {
+  display: block;
+  content: '';
+  height: 60px;
+} */
+
+/* #map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+ */
+
+
+ /* Had to apply it here as this styling is the one applied on the `final html build`
+  which will include the component that comes after router-outlet
+
+  This will result in us finding the target.. then applying the styling.
+ */
+ /* .routerGrow + * {
+
+  flex-grow: 1;
+ } */
+
+router-outlet + * {
+
+  flex-grow: 1;
+ }

@@ -1,0 +1,45 @@
+<!-- <h1>Welcome PD, SWA, Mobile &hearts;</h1> -->
+
+<!-- <div style="border: 2px solid red;">
+</div> -->
+<!-- <app-first></app-first> -->
+
+<!-- <app-second></app-second> -->
+
+<!-- Day3 -->
+<!-- <app-all-in-one></app-all-in-one> -->
+<!-- Component Interaction -->
+<!--From Parent To Child  <child [attr]="Parent"> -->
+<!--From Child To Parent <child (urEvent)="Parentfun($event)" > -->
+
+
+  <!-- from registeration to parent,
+
+    `StudentData` is set as output.
+    where getdata() is a parent method.. that stores data
+  in a parent property called `DataFromRegisteration` -->
+<app-registeration (StudentData)="getData($event)"></app-registeration>
+
+
+<!-- from parent to student
+We pass the data stored in `Students` to the
+attribute set as Input inside of students called `StudentsForm`  -->
+<app-students [StudentsForm]="Students" ></app-students>
+
+<!-- <div>
+  <h1>Parent</h1>
+  <p>Data: {{DataParent}}</p>
+  <div>
+    <app-home [DataFromParent]="DataFromRegisteration" [Dala3]="fName"></app-home>
+  </div>
+  <div>
+    <app-login (EventDala3)="getData($event)"></app-login>
+  </div>
+  <p>Data:{{DataFromRegisteration}}</p>
+</div> -->
+
+
+
+<!--Explain-->
+<!-- <input [value]="fName" /> -->
+<!-- <input (input)="getData($event)" > -->

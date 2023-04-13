@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+  <div class="container ">
+
+    <!-- on submit event, will call the getValue Method.
+      In our current task, We didn't connect the components.
+  -->
+    <!-- Alert element -->
+    <div class="alert alert-info col-5 m-auto my-5 text-center "
+      *ngIf="showAlert">
+      <strong>Name:</strong> {{ nameValid }}<br />
+      <strong>Age:</strong> {{ ageValid }}<br />
+      <strong>Email:</strong> {{ emailValid }}<br />
+      <strong class="text-bg-secondary">Form:</strong> {{ formValid }}<br />
+    </div>
+
+
+    <form (ngSubmit)="getValue()" [formGroup]="formValidation" class="col-5
+      m-auto
+      mt-5">
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input formControlName="name" type="text" class="form-control" id="name"
+          aria-describedby="nameHelp">
+
+        <!-- formValidation.get('name')?.value ==> will return `undefined`
+      if the input is empty.
+
+        had to use `?` in case of nulls.
+      -->
+        <div *ngIf="!NameValid && formValidation.get('name')?.value"
+          style="color:
+          red; text-align: center;">
+          Name Not Valid
+        </div>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input formControlName="age" type="text" class="form-control" id="age"
+          aria-describedby="emailHelp">
+        <div *ngIf="!AgeValid && formValidation.get('age')?.value" style="color:
+          red; text-align: center;">
+          20 &lt; Age &lt; 40
+        </div>
+
+      </div>
+
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input formControlName="email" type="email" class="form-control"
+          id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        <div *ngIf="!EmailValid && formValidation.get('age')?.value"
+          style="color:
+          red; text-align: center;">
+          Email Not Valid
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-outline-success ">Submit</button>
+      </div>
+    </form>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col">
+      <form (ngSubmit)="getValue()" [formGroup] = "formValidation" class="form">
+
+
+        <div class="form-group d-flex m-auto mb-2">
+          <label class="col-3">Name</label>
+          <input formControlName="name" type="text" class="form-control"/>
+          <div *ngIf="!NameValid" style="color: red; text-align: center;">
+            Name Not Valid
+          </div>
+        </div>
+
+
+        <div class="form-group d-flex m-auto mb-2">
+          <label class="col-3">Age</label>
+          <input formControlName="age" type="number" class="form-control"/>
+          <div *ngIf="!AgeValid" style="color: red; text-align: center;">
+             20 &lt; Age &lt; 40
+          </div>
+        </div>
+        <div class="form-group text-center m-auto mb-2">
+          <input type="submit" value="Submit" class="btn btn-outline-success"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+ -->

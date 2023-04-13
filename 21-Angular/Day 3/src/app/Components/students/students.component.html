@@ -1,0 +1,25 @@
+<!-- <p>students works!</p> -->
+
+
+
+<h1>Students</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--Directive-->
+    <tr *ngFor="let s of DataFromParent">
+      <td>{{s.name}}</td>
+      <td>{{s.age}}</td>
+      <!-- <td *ngIf="+s.age < 50">{{s.age}}</td> -->
+    </tr>
+  </tbody>
+</table>
+
+<input type="button" value="Show data" (click)="print()" >
+
+

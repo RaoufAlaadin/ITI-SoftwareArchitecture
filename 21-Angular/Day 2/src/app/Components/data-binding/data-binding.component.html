@@ -1,0 +1,17 @@
+<h3>data-binding works!</h3>
+
+<!-- We will basically use the 2 methods of binding -->
+
+<!-- 2 Way binding
+
+from view to compenent ...
+then displaying the value stored in the
+component in the view again inside the label below-->
+<input type="text" placeholder="Enter ur Last Name" [(ngModel)]="lname" />
+<p>{{lname}}</p>
+
+
+<!-- Event binding, when we  click we change the
+value of lname in the `component` to "", which will clear it. -->
+<input type="button" value="Reset"  (click)="clearInput()">
+

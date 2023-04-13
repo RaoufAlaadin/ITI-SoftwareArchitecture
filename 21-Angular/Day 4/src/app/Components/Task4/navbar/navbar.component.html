@@ -1,0 +1,97 @@
+<style>
+  .nav-item .active {
+    color: yellow;
+  }
+
+
+  .nav-link{
+    color: aliceblue;
+  }
+</style>
+
+<!-- Always check the `css in inspect elemens` to know which
+attribute needs to be overriden to achieve what u want
+ -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+  <div class="container mt-2">
+  <a class="navbar-brand fs-3" href="#">EpicGames</a>
+
+  <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+    aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav m-auto mt-lg-0 text-white">
+
+      <!-- <li class="nav-item ">
+        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+      </li> -->
+
+      <li class="nav-item ">
+        <a class="nav-link "
+
+        [routerLinkActiveOptions]="{exact:true}"
+        routerLinkActive="active" routerLink="/"
+
+         aria-current="page">Home </a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link  "
+
+        routerLinkActive="active" routerLink="/blaba"
+
+        aria-current="page">Error </a>
+      </li>
+      <li class="nav-item mt-2 ms-5">
+        <i class="bi bi-bell-fill text-white " ></i>
+      </li>
+
+
+      <li class="nav-item ms-5">
+        <a class="nav-link  "
+        [routerLinkActiveOptions]="{exact:true}"
+        routerLinkActive="active" routerLink="/student"
+         aria-current="page">Student </a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link  "
+        routerLinkActive="active" routerLink="/student/3"
+         aria-current="page">StudentDetails </a>
+      </li>
+
+
+
+    </ul>
+    <form class="d-flex my-2 my-lg-0">
+      <input class="form-control me-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+</nav>
+
+
+
+
+
+<!-- <ul>
+   <li><a [routerLinkActiveOptions]="{exact:true}"
+    routerLinkActive="active" routerLink="/">Users</a></li>
+
+  <li><a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+     routerLink="/users">Users</a></li>
+  <li><a routerLinkActive="active" routerLink="/student">Home</a></li>
+  <li><a routerLinkActive="active" routerLink="/student/id">studentDetail</a></li>
+  <li><a routerLinkActive="active" routerLink="/afeeg">Error</a></li>
+</ul>
+
+ -->
+
+
