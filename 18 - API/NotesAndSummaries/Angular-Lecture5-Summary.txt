@@ -1,0 +1,424 @@
+Directives types 
+
+1- Components - 
+	It is the most common type of directive and is used with a template
+
+2- Attribute directives [ngModal] => 2way binding 
+	- Changes the appearance or behavior of an element, component, or another directive
+
+3- Structural directives *ngif *ngfor and so on. 
+	- Change the DOM layout by adding and removing DOM elements
+
+
+Today we took 4- Custom directive 
+
+ng g d custom --skip-tests 
+
+
+app-custom 
+
+
+<h1  [app-custom] = "{fc:"yellow", bc:"blue"}" > 
+
+1- allows us the control the style of any element that takes the `app-custom` directive 
+2- add events like click events to those elements to change their behaviour
+( this is why it's better than just in-line style) 
+
+========================================================================================
+
+pipes 
+
+	it's goal to adjust the value to represent something different in the UI
+	than what is used inside our software. 
+
+<h1> {{fname|uppercase}} </h1> 
+
+or lowercase or currency :"USD"
+
+
+--custome pipe 
+
+
+ng g p custom --skip-tests
+
+
+{{fname|custom: "/" : "*" : "%" }}
+  ----		-----------------
+  this is the	--- These are `array of args` sent to the custom pipe
+`value` that got sent	
+
+========================================================================================
+
+Creating a new project and ===> accept the routing 
+
+this will create a separete module for the routing 
+
+our main steps in any new projects are :
+
+*************************************
+
+1- ng new final 
+
+*************************************
+2- npm i bootstrap 
+
+Note: 	and we include the path for css (normal and icons )
+	and path for Js file also 
+
+
+*************************************
+
+3- Creating the following folders inside of `APP`
+		
+	1- Component
+	2- Directives 
+	3- Pipes
+	4- Services
+
+  *************************************
+
+4- Assests folder that has the following folders 
+
+	1- images
+	2- videos 
+	3- icons 
+	 	and so on.....
+
+    *************************************
+
+5- add the usual imports lie formModuel and ReactiveFormsModule
+
+
+            import { NgModule } from '@angular/core';
+            import { BrowserModule } from '@angular/platform-browser';
+
+            import { AppRoutingModule } from './app-routing.module';
+            import { AppComponent } from './app.component';
+            import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+            import { UsersComponent } from './Components/users/users.component';
+            import { UserDetailsComponent } from './Components/user-details/user-details.component';
+            import { ErrorComponent } from './Components/error/error.component';
+            import { HeaderComponent } from './Components/header/header.component';
+            import {HttpClientModule} from '@angular/common/http'
+            import { UsersService } from './Services/users.service';
+            import { AddUserComponent } from './Components/add-user/add-user.component';
+            import { UserItemComponent } from './Components/user-item/user-item.component';
+
+            @NgModule({
+              declarations: [
+                AppComponent,
+                UsersComponent,
+                UserDetailsComponent,
+                ErrorComponent,
+                HeaderComponent,
+                AddUserComponent,
+                UserItemComponent
+              ],
+              imports: [
+                BrowserModule,
+                AppRoutingModule,
+                FormsModule,
+                ReactiveFormsModule,
+                HttpClientModule
+              ],
+              providers: [
+                /**
+                 * 5- Service
+                 */
+                UsersService
+              ],
+              bootstrap: [AppComponent]
+            })
+            export class AppModule { }
+
+
+
+            *************************************
+
+
+6- you would note that now we have a separate routes module `app-routing.module.ts`
+
+
+	import { NgModule } from '@angular/core';
+	import { RouterModule, Routes } from '@angular/router';
+	import { UsersComponent } from './Components/users/users.component';
+	import { UserDetailsComponent } from './Components/user-details/user-details.component';
+	import { ErrorComponent } from './Components/error/error.component';
+	import { AddUserComponent } from './Components/add-user/add-user.component';
+
+	const routes: Routes = [
+  	{path:"",component:UsersComponent},
+ 	 {path:"users",component:UsersComponent},
+	  {path:"users/:id",component:UserDetailsComponent},
+	  {path:"adduser",component:AddUserComponent},
+	  {path:"**",component:ErrorComponent}
+		];
+
+	@NgModule({
+	  imports: [RouterModule.forRoot(routes)],
+	  exports: [RouterModule]
+	})
+	export class AppRoutingModule { }
+
+
+
+  *************************************
+
+
+7- We will start creating services, that we will inject later on
+
+	injecting using dependency injection allows us to adjust only
+	the service file, and every component that uses that service will be effected.
+
+	we are using `constructor injection` 
+
+	--  Every Service will need httpClient, which is resposible for making the 
+	http requests to the API
+
+	note: .net have a class with same name for the same purpose.
+
+      import { HttpClient } from '@angular/common/http';
+      import { Injectable } from '@angular/core';
+
+---------
+
+      //HttpClient [Get-Post-Delete-Put-Patch]
+      @Injectable({
+        providedIn: 'root'
+      })
+      export class UsersService {
+
+        constructor(private readonly myClient:HttpClient) {  }
+
+        // private readonly URL = "https://jsonplaceholder.typicode.com/users";//API
+        private readonly URL = "http://localhost:3000/users";//API
+        getAllUsers(){
+          return this.myClient.get(this.URL);
+        }
+        getUserByID(id:any){
+          return this.myClient.get(this.URL+'/'+id);
+        }
+        AddNewUser(user:any){
+          return this.myClient.post(this.URL, user);
+        }
+
+        UpdateUserByID(id:any,user:any){
+          return this.myClient.put(this.URL+"/"+id, user);
+        }
+
+        DeleteUserByID(id:any){
+          return this.myClient.delete(this.URL+"/"+id);
+        }
+      }
+
+
+*************************************
+
+8- Inside any of the components typescript we inject the service
+
+	it's important to use `subscribe` even if we are adding (dunno why) 
+	it's purpose to listen to any changes and update our view data.
+
+
+
+import { Component, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/Services/users.service';
+
+@Component({
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styles: [
+  ]
+})
+export class UsersComponent implements OnInit {
+  constructor(private myService:UsersService){}
+
+  users:any;
+
+  //Call API [OnInit]
+  ngOnInit(): void {
+ 
+    this.myService.getAllUsers().subscribe(
+      {
+        next:(data)=>{
+          //console.log(data)
+          this.users = data;
+        },
+        error:(err)=>{console.log(err)}
+      }
+    );
+  }
+
+
+}
+
+
+*************************************
+
+9- Inside userDetails where u need the ID from the URL's querystring
+	We will use the `ActivatedRoute` class 
+
+
+
+import { Component,OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { UsersService } from 'src/app/Services/users.service';
+
+@Component({
+  selector: 'app-user-details',
+  templateUrl: './user-details.component.html',
+  styles: [
+  ]
+})
+export class UserDetailsComponent implements OnInit {
+  ID:any;
+  user:any;//undefined ==> falsy Value
+  constructor(myActivated:ActivatedRoute, private myService:UsersService){
+    this.ID = myActivated.snapshot.params["id"];
+  }
+  ngOnInit(): void {
+    this.myService.getUserByID(this.ID).subscribe({
+      next:(data)=>{
+        //console.log(data)
+        this.user = data;
+      },
+      error:(err)=>{console.log(err)},
+    })
+  }
+
+}
+
+
+
+*************************************
+
+10- it's imporntant to add a loading screen, While we wait for our data to load.
+
+
+
+<div *ngIf="user; else loadingBlock" class="alert alert-info">
+  <h5>Name: {{user.name}}</h5>
+  <!-- <h5>UserName: {{user.username}}</h5> -->
+  <!-- <h5>Address: {{user.address.street}}, {{user.address.city}}</h5> -->
+  <h5>Email: {{user.email}}</h5>
+  <h5>Phone: {{user.phone}}</h5>
+</div>
+<ng-template #loadingBlock>
+  <h1 style="color: red;">Loading...</h1>
+</ng-template>
+
+
+
+*************************************
+
+
+
+11- Instead of fakeAPI , we can create an api server using a json file 
+
+
+	npm install -g json-server
+
+	json-server data.json --watch => inside the json file path, it will run the server.
+					 it's default port is : 3000 	
+
+note: make sure to fill the `json file` with some data similar to the structure u want.
+
+
+*************************************
+
+
+12- note how we made `add-user` => we should have used reactiveForm module
+
+	note also we used `subscribe` with the add. 
+
+
+<div class="form">
+  <div class="form-group d-flex m-2">
+    <label class="col-3">Name</label>
+    <input #name type="text" class="form-control"/>
+  </div>
+  <div class="form-group d-flex m-2">
+    <label class="col-3">Email</label>
+    <input #email type="email" class="form-control"/>
+  </div>
+  <div class="form-group d-flex m-2">
+    <label class="col-3">Phone</label>
+    <input #phone type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <input type="button" value="ADD" (click)="Add(name.value, email.value, phone.value)" class="btn btn-outline-success"/>
+  </div>
+</div>
+
+
+
+import { Component } from '@angular/core';
+import { UsersService } from 'src/app/Services/users.service';
+
+@Component({
+  selector: 'app-add-user',
+  templateUrl: './add-user.component.html',
+  styles: [
+  ]
+})
+export class AddUserComponent {
+  constructor(private myService:UsersService){}
+
+  Add(name:any, email:any, phone:any){
+    //service==>AddNewUser().subscribe()
+    let newUser = {name, email, phone};
+    this.myService.AddNewUser(newUser).subscribe();
+  }
+
+}
+
+
+
+*************************************
+
+13- Make a component inside a component, we have a userItem component
+which gets the data of each user by passing the data from the parent to the child 
+
+
+	---this helps in separation -----
+
+
+
+<app-user-item [oneUser]="u" *ngFor="let u of users"></app-user-item>
+
+
+
+	--- then inside the child component...
+
+
+<div class="alert alert-success">
+  <h5>Name: {{oneUser.name}}</h5>
+  <h5>Email:<a routerLink="/users/{{oneUser.id}}">{{oneUser.email}}</a> </h5>
+</div>
+
+
+
+
+
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-user-item',
+  templateUrl: './user-item.component.html',
+  styles: [
+  ]
+})
+export class UserItemComponent {
+  @Input() oneUser:any;
+}
+
+
+
+------THE END.
+
+ 
+
+
+
+
+

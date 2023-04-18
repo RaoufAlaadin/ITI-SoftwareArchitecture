@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfConsumer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfConsumer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <ListBox Name="DeptListItem" Height="100" SelectionChanged="DeptListItem_SelectionChanged">
+
+            <ListBox.ItemTemplate>
+
+                <ItemContainerTemplate>
+                   <!-- StackPanel or WrapPanel is used to add more than one property.
+                    
+                    But we use the wrap panel get each item in 
+                    one line 
+                    -->
+                    <WrapPanel>
+
+                        <TextBlock Text="{Binding name}"></TextBlock>
+                        <TextBlock Text="--"></TextBlock>
+                        <TextBlock Text="{Binding manger}"></TextBlock>
+                        
+                    </WrapPanel>
+                </ItemContainerTemplate>
+            </ListBox.ItemTemplate>
+            
+            
+            <!--
+            <ListBox.ItemTemplate>
+                <ItemContainerTemplate >
+                    <TextBlock Text="{Binding name}"></TextBlock>
+                </ItemContainerTemplate>
+            </ListBox.ItemTemplate>
+            -->
+            
+        </ListBox>
+        <Button Height="83" Click="Button_Click" Content="GetData"/>
+    </StackPanel>
+</Window>

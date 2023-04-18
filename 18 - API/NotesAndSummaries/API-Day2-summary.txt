@@ -1,0 +1,260 @@
+
+
+1- Ctrl+K+E ==> removes all the Un-used `using statement` 
+
+-------------------------------------------------------------------
+
+2- To structure our project we have 
+
+    a- ProjectName.DAL => Data Access layer 
+
+            => Both `repos` and `DBContext` need to be
+                     injected in the IOC. 
+
+            Folders Structure: 
+
+                1- Data 
+                    a- DBContext
+                    b- Models
+                2- Migrations 
+                3- Repos:
+                    A Folder for each Entity,
+                    Each folder contains the interface and 
+                    the implementation
+
+
+            It has our: 
+                1- DBContext
+                2- Models
+                3- Migrations
+                4- Simple repo pattern, that preform raw CRUD on 
+                    each Entity we have. 
+
+                    note: The DBContext is injected in each repo we have,
+                            and We include it in the IOC container using 
+
+                                Builder.Service.AddDBContext(options=> 
+                                options.UseSqlserver ........ 
+                                ) 
+                        
+                        Injecting it is important so if we used a different 
+                        type of database, we just adjust the configurations 
+                        in the IOC container
+
+                                                                Remember: `IOC container` is : Inversion of control container, 
+                                                                            Where delegate the creation of object instances to the 
+                                                                            software instead of us doing it by ourselves. 
+                
+
+            Packages used in this layer: 
+
+                1- EF-Core :
+                    It supports LINQ queries, change tracking, updates, and schema migrations.
+
+                2- EF-Core-SqlServer:
+                    Allows the connection to sqlServer using the connectionString. 
+
+                3- EF-Core-Tools:
+                    Enables these commonly used commands using `PackagesConsoleManger`:
+                        Add-Migration
+                        Bundle-Migration
+                        Drop-Database
+                        Get-DbContext
+                        Get-Migration
+                        Optimize-DbContext
+                        Remove-Migration
+                        Scaffold-DbContext
+                        Script-Migration
+                        Update-Database
+
+    ---------------------------------------------------------------------------------------------------------
+    b- ProjectName.BL => Bussines Logic layer 
+
+
+
+        ***The necessary repos from the `DataAccessLayer` gets Injected here.
+
+
+                Folders Structure: 
+
+                    1- DTO  
+                        Each Entity gets a folder that contains their DTO
+                    2- Mangers
+                        Each Entity gets a folder that has Both
+                            a- interface
+                            b- Implementation 
+                  
+
+
+        Here We have manipulate the raw data we get from the DataAcess repos 
+        using : 
+        1- DTO => Data Transfer Object. 
+        2- EntityMangers
+
+            1- DTO ( You can use either `Record` or normal `Class`)
+
+                Using it we specifiy the naming and properties we want to 
+                View to our API Consumer. 
+
+                It's like adding a level of Abstraction the hide details about 
+                our `DataAccessLayer Model's Structure` for : 
+
+                    a- Secuirty reasons
+                    b- To show only the necessary data
+                        In a clean manner.  
+
+                    c- (IMPORTNAT) => It removes the `circular reference` problem
+                        That happens when serilizingn json objects
+
+                        if the original Models were used, then the navigationl properties
+                        Will result in that problem. 
+
+            2- Entity Mangers 
+
+                It Bussiness methods that describs what we exactly want from the raw data,
+                Then we fill the filtred data into the DTO we created.
+
+
+
+
+
+
+
+
+		Important NOTE :::: 
+
+		Api should reference BussinusLogicLayer
+		BussinessLogicLayer should reference the DataAccessLayer
+		
+		This is how we keep the connection. 
+
+
+    ---------------------------------------------------------------------------------------------------------
+    C- ProjectName.API => This is our gateway... our "Postman" you could say 😂
+            It will have the controllers and all the web API template files.
+
+            It also has `program.cs` which is the key for running our program.
+
+        Inside our Controllers,
+            The actions should include minimal code 
+            (only the status code needed for each case) 
+            As we did most of the Filtration and logic in the
+                    BussinessLogic layer 
+
+
+    General notes : 
+
+    1- When using `Add-Migration`,
+       a- have the `startup porject` as => the presentation layer (API)
+       b- DataAccessLayer as => PackagesConsoleManger selection
+            Because it's the one that has the EF-Core Packages.
+
+        This way we establish the relation between the projects.
+            Getting the connectionString and configs from `API layer`
+            and doing the Data Accessing using the `DataAccessLayer`. 
+
+
+    2- Use ==> .Include() 
+                .thenInclude()
+            To join 3 tables together. 
+
+    3- EagerLoading vs LazyLoading 
+
+        a- EagerLoading (the default in EF-Core)
+
+            ex: Include().thenInclude()
+
+            If we want to load the data we have to use Include at first. 
+            This loads all the data weather we use it later on or note
+
+            This can be a burden for large databases.
+
+        b- LazyLoading:
+            Data gets loaded each time you try to access it only. 
+
+             1- `virtual` before the navigational property
+             2- use LazyLoadingProxies in IOC container
+
+        c- Explicit Loading: 
+            It's like LazyLoading where you get specificly what
+            you tried to acces, but yo `explicitly` state using 
+               `.load() `
+
+               Ex: 
+
+                using (var context = new BloggingContext())
+                    {
+                        var blog = context.Blogs
+                            .Single(b => b.BlogId == 1);
+
+                        context.Entry(blog)
+                            .Collection(b => b.Posts)
+                            .Load();
+
+                        context.Entry(blog)
+                            .Reference(b => b.Owner)
+                            .Load();
+                    } 
+
+
+
+                    So the three types are:
+
+                Lazy: Related entities are loaded when you try and access them.
+
+                Eager: Related entities are loaded when you load the parent entities.
+
+                Explicit: Related entities are only loaded when you say "Load!"
+
+                Lazy is fine if you rarely need the related entities. If you almost always access the related entities there's an overhead because you're constantly going back to the database. It's also harder to handle errors. If you lazy load a related collection and the DB is busy, you now need to have db error handling code in any method that might trigger a lazy load.
+
+                Eager is great if you know you're going to need the related entities. Just get the lot in one hit and you're golden. This is my preferred mode because I pretty much always need the related entities and error handling is easy.
+
+                Explicit simply gives you control over if and when the related entities are loaded. Imagine you have a table with 100 parent entities and each has 1,000,000 related entities. You might want to pull back the 100 parents, look at them and then only do the expensive load on the parents that have related entities you need.
+
+                You can wrap this all up so it looks like an Eager load, with the same one off error handling. You may be able to Eager load simply by using a better where clause, but sometimes you need to get the entity before you can decide if you need the related entities.
+
+                Contrived example, you load the parent record, pass various fields to a web service that calculates a statistic, you then look at that statistic, compare it to the time of the day and then load the related entities if you get a match.            
+
+
+                When you don't know what your doing = Explicit / Lazy Loading
+
+                When you do know what your doing = Eager Loading
+
+                When you really know what your doing and everyone on your team does as well = Both
+
+
+
+-------------------------------------------------------------------
+ 3- use notracking when loading data you are going to readonly and will not write to it.    
+
+ -------------------------------------------------------------------
+4-    public void AssignPatientsToDoctor(AssignPatientsToDoctorDto assignPatientsDto)
+    {
+        //Get Doctor from Repo 
+        Doctor? doctor = _doctorsRepo.GetWithPatientsById(assignPatientsDto.DoctorId);
+        if (doctor is null)
+        {
+            return;
+        }
+        //Clear Doctor Patients
+        doctor.Patinets.Clear();
+        //Get New patients From Db
+        ICollection<Patient> newPatients = _patientsRepo
+            .GetByPatientsIds(assignPatientsDto.PatientsIds)
+            .ToList();
+        //Assign New patients to Doctor
+        doctor.Patinets = newPatients;
+        //SaveChanges
+        _doctorsRepo.SaveChanges();
+    }
+
+
+    using doctor.Patinets.Clear(); here is important, 
+    to keep the tracker up to date with what I am doing.
+
+
+
+
+
+

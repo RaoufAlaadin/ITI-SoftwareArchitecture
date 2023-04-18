@@ -1,0 +1,164 @@
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\appsettings.Development.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\appsettings.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.exe
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.deps.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.runtimeconfig.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\AutoMapper.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Azure.Core.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Azure.Identity.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Memory.Data.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.BL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.DAL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.BL.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.DAL.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.csproj.AssemblyReference.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.GeneratedMSBuildEditorConfig.editorconfig
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.AssemblyInfoInputs.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.AssemblyInfo.cs
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.csproj.CoreCompileInputs.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.MvcApplicationPartsAssemblyInfo.cs
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.MvcApplicationPartsAssemblyInfo.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.DepartementTask.APIs.Microsoft.AspNetCore.StaticWebAssets.props
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.build.DepartementTask.APIs.props
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DepartementTask.APIs.props
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DepartementTask.APIs.props
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets.pack.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets.build.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets.development.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\scopedcss\bundle\DepartementTask.APIs.styles.css
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.csproj.CopyComplete
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\refint\DepartementTask.APIs.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.genruntimeconfig.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\obj\Debug\net7.0\ref\DepartementTask.APIs.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Humanizer.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Mono.TextTemplating.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.CodeDom.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\appsettings.Development.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\appsettings.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.exe
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.deps.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.runtimeconfig.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.APIs.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\AutoMapper.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Azure.Core.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Azure.Identity.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Humanizer.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.CodeDom.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Memory.Data.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.BL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.DAL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.BL.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\bin\Debug\net7.0\DepartementTask.DAL.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.AssemblyInfo.cs
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.MvcApplicationPartsAssemblyInfo.cs
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.MvcApplicationPartsAssemblyInfo.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.DepartementTask.APIs.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.build.DepartementTask.APIs.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DepartementTask.APIs.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DepartementTask.APIs.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\scopedcss\bundle\DepartementTask.APIs.styles.css
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.csproj.CopyComplete
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\refint\DepartementTask.APIs.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\DepartementTask.APIs.genruntimeconfig.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask\obj\Debug\net7.0\ref\DepartementTask.APIs.dll

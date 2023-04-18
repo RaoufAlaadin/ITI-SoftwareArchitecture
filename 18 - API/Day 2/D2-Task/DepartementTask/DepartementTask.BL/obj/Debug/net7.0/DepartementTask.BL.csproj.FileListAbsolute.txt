@@ -1,0 +1,34 @@
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.deps.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.DAL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.DAL.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.csproj.AssemblyReference.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.GeneratedMSBuildEditorConfig.editorconfig
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.AssemblyInfoInputs.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.AssemblyInfo.cs
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.csproj.CoreCompileInputs.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.csproj.CopyComplete
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\refint\DepartementTask.BL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\ref\DepartementTask.BL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.runtimeconfig.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.genruntimeconfig.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.deps.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.runtimeconfig.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.BL.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.DAL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\bin\Debug\net7.0\DepartementTask.DAL.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.AssemblyInfo.cs
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.csproj.CopyComplete
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\refint\DepartementTask.BL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\DepartementTask.BL.genruntimeconfig.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.BL\obj\Debug\net7.0\ref\DepartementTask.BL.dll

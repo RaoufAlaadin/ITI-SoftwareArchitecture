@@ -1,0 +1,28 @@
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.deps.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.csproj.AssemblyReference.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.AssemblyInfoInputs.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.AssemblyInfo.cs
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.csproj.CoreCompileInputs.cache
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\refint\DepartementTask.DAL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.pdb
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\ref\DepartementTask.DAL.dll
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.runtimeconfig.json
+F:\WEBAPI External\WEP API SD43\D02\lab03Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.genruntimeconfig.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.deps.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.runtimeconfig.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\bin\Debug\net7.0\DepartementTask.DAL.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.AssemblyInfo.cs
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\refint\DepartementTask.DAL.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\DepartementTask.DAL.genruntimeconfig.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 2\D2-Task\DepartementTask\DepartementTask.DAL\obj\Debug\net7.0\ref\DepartementTask.DAL.dll

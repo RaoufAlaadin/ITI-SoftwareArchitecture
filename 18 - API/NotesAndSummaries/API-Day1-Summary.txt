@@ -1,0 +1,451 @@
+Day 1 -
+
+1- ActionResult is used to customize your return. 
+
+    If we write return `Mobile.mobile`.. The default will be returned 
+    which is Ok code:200
+
+2- 500-IneteralServerError => Will be thrown if use `First` instead of `FirstOrDefault`
+        using `FirstOrDefault` we will get 404 not found.
+
+3- Generating an ID example: 
+    a- mobile.Id = new Random().Next(10,1000);
+    b- database Identity. 
+    c- using new GUID 
+
+
+4-  return CreatedAtAction(   => returns 201, for object creation 
+
+            actionName: "GetById",              
+            routeValues: new {id = mobile.Id},
+                        ===> both of the Action and Id will be used in creating a 
+                            Location header that is sent in the response.
+
+                            note: 
+                            I think if we used only `return Created(object) => will return the newly
+                            created object in the return body.
+
+            value: new {Messge  = " Mobile has been added successfully}
+
+        ) 
+
+5- if You send me (Mobile mobile, int id) to update, and I find 
+            mobile.Id != id 
+
+            This means you wrote your request Id's wrong, 
+            Which is a badRequest() by you 👀
+
+
+            For update/delete => return NoContent(); => 204 
+                        as we have nothing to return to the user.
+
+
+        Summary :
+
+            BadRequest() => 400
+            NotFound() => 404 
+            NoContent() => 204  => used in put(update)/delete
+            Created() => 201 => used in post 
+
+
+          ================= AFTER BREAK (1) ==================
+
+1- We want to reenforce concepts about asp.net like middlewares. 
+
+        Validation and conversions should be sepearted from our controller.
+
+    App.UseHttpsRedirection() => if you send me http, I will redirect it to `https`
+
+2- All requests => middlewares
+    Actions or controllers or etc... only => fitlers 
+
+    filtering is done (after) modelbinding.
+
+
+3-           app.UseHttpsRedirection();
+
+            app.Use(async (context, next) =>
+            {
+                Console.WriteLine("Before Calling Next Middleware");
+                //Before Request
+                await next(context); // Moves you to the next Middleware. 
+                //After Reponse
+            });
+
+            app.UseAuthorization();
+
+
+4- Inside a folder called `Validator` 
+        We create an dataValidation that inherites from `ValidationAttribte`
+
+        It has 2 methods which we can override, 
+                a- one that gives you the object that attribute is put one
+                b- one that gives the `Value` only => We will use this one.....
+
+                steps=> 
+                a-checked if the value matched the type 
+                b- not null 
+                c- Is in the past compared to (DateTime.Now)
+
+                public class DateInPastAttribute : ValidationAttribute
+                    {
+                        public override bool IsValid(object? value) =>
+                            value is DateTime date && date < DateTime.Now;
+
+                        //public override bool IsValid(object? value)
+                        //{
+                        //    DateTime? date = value as DateTime?; 
+                        //    if (date is null)
+                        //    {
+                        //        return false;
+                        //    }
+
+                        //    if (date < DateTime.Now)
+                        //        return true;
+                        //    else return false;
+                        //}
+                    }
+
+
+5- Important note: 
+
+    You can't return annoynmous objects inside Ok() is SOOOOO WRONG !!!
+
+     return Ok(new { NewItemId = shop.Id }); xxxxxxxxx
+
+
+    Use DTO's instead ...
+
+
+6- Do not validate the `Model` inside the `Action` 
+
+7- When adding something new to the Model, Create a `V2` from you API Action, 
+    And use the `ActionFilter` to specificy which `Version` should be used 
+    based on the incomming.
+
+    Note: Reach your goal without creating Anti-patterns or violets 
+            The rules you are using in your code. 
+
+
+            public class ValidateShopLocationAttribute : ActionFilterAttribute
+                {
+                    private readonly ILogger<ValidateShopLocationAttribute> _logger;
+                    private readonly IConfiguration _configuration;
+
+                    public ValidateShopLocationAttribute(
+                        ILogger<ValidateShopLocationAttribute> logger,
+                        IConfiguration configuration)
+                    {
+                        _logger = logger;
+                        _configuration = configuration;
+                    }
+                    public override void OnActionExecuting(ActionExecutingContext context)
+                    {
+                        _logger.LogWarning("Filter execution started");
+                        var allowed = _configuration.GetValue<string>("AllowedLocations");
+                        Shop? shop = context.ActionArguments["shop"] as Shop;
+
+                        var regex = new Regex("^(EG|USA|UAE)$",
+                            RegexOptions.IgnoreCase,
+                            TimeSpan.FromSeconds(2));
+
+                        if (shop is null || !regex.IsMatch(shop.Location))
+                        {
+                            //Short Circuit with BadRequest
+                            context.ModelState.AddModelError("Location", "Location is not covered");
+                            context.Result = new BadRequestObjectResult(context.ModelState);
+                        }
+                    }
+                }
+
+
+    
+8-  
+        a- Inherite from the `ActionFilterAttribute` 
+                it has event for before/after action execution
+                    or before/after result excution. 
+        We want to apply our model validation before Action Excution so we use 
+
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            Shop? shop = context.ActionArguments["shop"] as Shop;  // This give us the Action Inputs. 
+        }
+
+
+        b- If we send a model that is not valid (Does not meet the validation on it)
+
+            ==> We are automatically given a badRequest() !!!! 
+                    In MVC: We had to use if(ModelState.IsValid) ..... 
+                            Here the model validation is done by default
+                            and there is even a way to cancel that automation 
+                            if we want. 
+
+        c-  notes of creating `Regex`
+
+                var regex = new Regex ("^(EG|USA|UAE)$",
+                                RegexOptions.IgnoreCase,
+
+            // The time limit is important, to return false if you were not able to 
+            // match in a certain time, because someone might making an attack on you
+            // to slow down your website. 
+
+                                TimeSpan.FromSeconds(2) 
+                                );
+
+                        if ( !regex.IsMatch(shop.Location))
+                        {
+                            //Now we short circut the code because not valid
+
+                             context.ModelState.AddModelError("Location", "Location is not covered");
+
+                             // This returns the Error we added above as badRequest().
+
+                             context.Result = new BadRequestObjectResult(context.ModelState);
+                        }
+
+
+        d- Why didn't we just add custom validation on top on the property in the Model itself ?????!!!
+                    Ex:   
+                                 [RegularExpression("^(EG|USA|UAE)$")]
+                                 public string Location { get; set; } = string.Empty; //EG,USA,UAE
+
+                                 xxxxxxxxxxxx This is bad !! 
+                        
+                        As it's going to apply the validation on both `V1` and `V2` 
+                        And we wanted our filter to affect only `V2` without affecting
+                        The logic that `V1` used to have. 
+
+                        For whatever reason, as there might be ton of methods that
+                        depend on that specific output for `V1`
+
+
+          ================= AFTER BREAK (2) ==================
+
+
+
+1- using Logger, To store error messges in a text fily maybe ,
+                        But We have to inject it first. 
+                Useful in Try-Catch sititation.
+
+            private readonly ILogger<MobilesController> _logger;
+
+
+            private readonly IConfiguration _configuration;
+
+            public MobilesController(ILogger<MobilesController> logger
+                , IConfiguration configuration)
+            {
+                _logger = logger;
+                _configuration = configuration;
+            }
+
+            ===> It has some extra settings in aspsettings.json
+
+
+                   ==> prints the word in consoleLog in `red`             
+            Ex:         _logger.LogCritical("Test"); 
+
+
+2- Always get your data from the appsettings.json using `IConfiguration` ===> `Inject it` 
+
+        var allowed = _configuration.GetValue<string>("AllowedLocations");
+
+
+3-          private readonly ILogger<ValidateShopLocationAttribute> _logger;
+            private readonly IConfiguration _configuration;
+
+            public ValidateShopLocationAttribute(
+                ILogger<ValidateShopLocationAttribute> logger,
+                IConfiguration configuration)
+            {
+                _logger = logger;
+                _configuration = configuration;
+            }
+
+
+            ``````private readonly ILogger<ValidateShopLocationAttribute> _logger``````
+
+            Note: We have to use the class type you are going to use the `ILogger` for. 
+
+
+4- If we want to include `Ilogger` and `IConfiguration` in our filter => `ValidateShopLocationAttribute`
+    We have to 
+    
+    a- use the attribute has the following 
+
+        [ServiceFilter(typeof(ValidateShopLocationAttribute))]
+
+    b- use the following injection in the IOC Container 
+
+            builder.Services.AddScoped<ValidateShopLocationAttribute>();
+
+    ...... This way it can access built-in services and other injected services.
+
+
+
+
+          ================= tryingggggggg ==================
+
+
+
+1- How do we return `Moblie.mobile` when the return should be `ActionResult<List<Mobile>>` ??
+
+    by overloading the conversion operators `Implicity`, which means no extra things to write
+
+                ***Overloading***
+
+            // We return only the Id, which will match the requeired `Int` 
+
+            public static implicit operator int (Employee e)
+            {
+                return e.Id;
+            }
+
+                // Returning an object to an int will invoke
+                // conversion from Object to int...
+                // And the Implicit conversion we wrote... will be used...
+
+                static int GetEmployee()
+                    {
+                        return new Employee(10, "");
+                    }
+
+2- in  C#9 
+         public record EmployeeRec(int Id, string Name);
+
+
+    a- Immutable class, when you create an object from it, It cannot be changed. 
+            It uses `Init` instead of `set` as you can Initialize it's values once and can 
+            never set it again.
+
+    b- equality in record is valueType not reference type.
+
+            var e1 = new EmployeeRec(10, "E1");
+        var e2 = new EmployeeRec(10, "E1");
+
+        Console.WriteLine(e1 == e2);
+            
+            // Returns `True` as record compares each value from the object. 
+
+            // if it was classes it will return `False`, as it compares references
+            // and both reference different objects. 
+   
+
+    c- It's `ToString()` is overloaded to write the data of the object,
+            while a `class` cannot handle that, it has to be done manually. 
+
+
+
+
+
+
+3- Crating a counter that counts any request that comes to our program and 
+    then create a controller to give us that count. 
+        
+
+        Solution ==> I think we can use a middleWare to increament our count. 
+
+                                                Yes, you can use middleware to achieve this as well. Here's how you can create a middleware to count the number of requests your program receives:
+
+                                    Create a new class called RequestCounterMiddleware:
+                                    csharp
+                                    Copy code
+                                    using Microsoft.AspNetCore.Http;
+                                    using System.Threading.Tasks;
+
+                                    public class RequestCounterMiddleware
+                                    {
+                                        private readonly RequestDelegate _next;
+                                        private static  int _requestCount;
+
+                                        public RequestCounterMiddleware(RequestDelegate next)
+                                        {
+                                            _next = next;
+                                        }
+
+                                        public async Task InvokeAsync(HttpContext context)
+                                        {
+                                            _requestCount++;
+                                            await _next(context);
+                                        }
+
+
+
+                                        /*    Another option for that method. 
+                                        
+                                             public async Task InvokeAsync(HttpContext context)
+                                            {
+                                                // Increment request count
+                                                Interlocked.Increment(ref _requestCount);
+
+                                                // Call the next middleware in the pipeline
+                                                await _next(context);
+                                            }
+                                        
+                                        
+                                        
+                                        */
+
+                                        public int GetRequestCount()
+                                        {
+                                            return _requestCount;
+                                        }
+                                    }
+
+
+
+
+                                    In the InvokeAsync method, we increment the _requestCount field each time the middleware is invoked. We then call the next middleware in the pipeline using the next parameter.
+
+                                    In the GetRequestCount method, we return the current value of the _requestCount field.
+
+                                    In your Startup class, add the middleware to the pipeline in the Configure method:
+
+
+
+
+
+                                    csharp
+                                    Copy code
+                                    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+                                    {
+                                        // ...
+
+                                        app.UseMiddleware<RequestCounterMiddleware>();
+
+                                        // ...
+                                    }
+                                    To create a controller that prints the count, add a new controller with a single action that retrieves the count from the middleware:
+                                    csharp
+                                    Copy code
+
+
+
+
+
+                                    [ApiController]
+                                    [Route("api/[controller]")]
+                                    public class RequestCountController : ControllerBase
+                                    {
+                                        private readonly RequestCounterMiddleware _requestCounter;
+
+                                        public RequestCountController(RequestCounterMiddleware requestCounter)
+                                        {
+                                            _requestCounter = requestCounter;
+                                        }
+
+                                        [HttpGet]
+                                        public int Get()
+                                        {
+                                            return _requestCounter.GetRequestCount();
+                                        }
+                                    }
+                                    When the Get action is called, it retrieves the request count from the RequestCounterMiddleware instance that was injected into the constructor.
+
+                                    Finally, you can access the count by making a GET request to the /api/RequestCount endpoint.
+
+
+
+                                                        
+
+4- To get one of the Actions to be deprecated we use => ResourceFilters

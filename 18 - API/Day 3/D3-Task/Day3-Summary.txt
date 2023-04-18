@@ -1,0 +1,330 @@
+
+
+
+*** Avoid nested if's ****
+
+***
+
+i- We used the following to change the tables names created by the identity 
+
+  protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        builder.Entity<Employee>().ToTable("Employees");
+        builder.Entity<IdentityUserClaim<string>>().ToTable("EmployeesClaims");
+    }
+
+----------------------------------------------------------------------------
+ii- in DBContext we inherite from ====== > IdentityDbContext<ApplicationUser>    
+
+    To get both Identity and our main Database in one database. 
+
+-------------------------------------------------------
+iii - Allowing CORS => cross-origin resource sharing.
+
+        **Must be enabled to allow users from different domains to 
+        Send Requests to your API 
+
+            services.AddCors(CorsOptions =>
+                        {
+                            CorsOptions.AddPolicy(
+                                "myPolicy",
+                                CorsPolicyBuilder =>
+                                {
+                                    //CorsPolicyBuilder.WithOrigins("http://127.0.0.1:5500");
+                                    CorsPolicyBuilder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                                }
+                            );
+                        });
+
+            app.UseCors("myPolicy");
+
+
+-------------------------------------------------------
+
+iv - 
+    AspNetUsers: User registration data storage. (Size varies per user data)
+    AspNetUserClaims: Store user-specific claims data. (Key-Value pairs for user info)
+
+    AspNetUserLogins: External login provider information storage. (Stores provider data and user key)
+
+    AspNetUserRoles: Associates users with roles. (Stores user and role ID)
+    AspNetRoles: Role data storage. (Stores role name and description)
+
+    AspNetRoleClaims: Stores role-specific claims data. (Key-Value pairs for role info)
+    AspNetUserTokens: Stores verification tokens for users. (Stores generated tokens for various tasks)
+
+            
+
+
+
+
+****    
+
+1- unauthorized() ==> 401 
+
+---------------------------------------------------------------
+
+2- In registeration 
+
+    a- We store the user data
+
+                var employeeToAdd = new Employee
+                    {
+                        UserName = registerDto.UserName,
+                        Email = registerDto.Email,
+                        Department = registerDto.Department
+                    };
+    b- hash his password (CreateAsync() Hashes the password..
+                That's why we didn't include password in the object above. )
+
+                var result = await _userManager.CreateAsync(employeeToAdd, registerDto.Password);
+                    if (!result.Succeeded)
+                    {
+                        return BadRequest(result.Errors);
+                    }
+
+
+    c- create list of claims that can be used when he login later. 
+
+
+                var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, employeeToAdd.Id),
+                        new Claim(ClaimTypes.Role, employeeToAdd.Department)
+                    };
+
+                    await _userManager.AddClaimsAsync(employeeToAdd, claims);
+
+                    return NoContent();
+
+---------------------------------------------------------------
+
+3- In Login 
+
+    a- First we have to verifiy that his Id and pw exists in our DB 
+
+        var user = await _userManager.FindByNameAsync(credentials.UserName);
+        if (user == null)
+        {
+            return NotFound();
+        }
+
+        var isAuthenitcated = await _userManager.CheckPasswordAsync(user, credentials.Password);
+        if (!isAuthenitcated)
+        {
+            return Unauthorized();
+        }
+
+    -----------------------------------------------------------------------------    
+
+    b-  We retrive the list of claims we stored 
+
+                var claimsList = await _userManager.GetClaimsAsync(user);
+
+
+                                        Note: we can add the following to the List of claims. 
+
+                                                    // list of default claims used by the jwt standard 
+                                                    // JTI is => json token identifier, which is a unique 
+
+                                                    // that's why we used Guid to create a unique string each time.
+                                                    // Guid => globally unique identifer.
+                                                    new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
+
+
+    -----------------------------------------------------------------------------    
+
+    c- We transform our secret key into a singingKey that can be used to 
+        Encrypt our data. 
+
+        Note: using the .GetValue<>() help us handle excpetions in some way,
+                It's better than using [].
+
+
+
+        var secretKeyString = _configuration.GetValue<string>("SecretKey") ?? string.Empty;
+        var secretKeyInBytes = Encoding.ASCII.GetBytes(secretKeyString);
+        var secretKey = new SymmetricSecurityKey(secretKeyInBytes);
+
+        //Combination SecretKey, HashingAlgorithm
+        var siginingCreedentials = new SigningCredentials(secretKey,
+            SecurityAlgorithms.HmacSha256Signature);
+    -----------------------------------------------------------------------------    
+
+    d- Create the token and return it 
+
+        var expiry = DateTime.Now.AddDays(1);
+
+        var token = new JwtSecurityToken(
+            claims: claimsList,
+            expires: expiry,
+            signingCredentials: siginingCreedentials);
+
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var tokenString = tokenHandler.WriteToken(token);
+
+        return new TokenDto(tokenString, expiry);
+
+
+                Note: you can include the following when creating the token,
+                        if you plan on validating them later on. 
+
+                            issuer: config["JWT:ValidIssure"], // our api link
+                            audience: config["JWT:ValidAudiance"], // consumer URL (angular)
+
+
+
+    ===> A token has been generated !!!! 
+
+
+---------------------------------------------------------------
+
+4- Getting authroized 
+
+        note: Include the ====> app.UseAuthentication();    
+
+Note: Your token should be sent in the header of every request 
+        like ex:   Bearer {your token} 
+        So the server can check your Authorization level. 
+
+
+401 => not authenticated on our website on any levels
+403 => You are authenticated, but you are not authroized to acces that end-point
+
+        *** The following allows the use of JWT instead of `Cookies` which are the default.****
+
+
+                services
+                        .AddAuthentication(options =>
+                {
+                    // The following accpets token only.
+
+
+                    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    // prompt the user the autheticate themselves when trying to access something
+                    // that they do not have authorization to.
+
+                    // That's `challenging` the system acess.
+                    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+                    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                .AddJwtBearer(options =>
+                {
+                    // This validate the token
+
+                    // save the token after authentication.
+                    options.SaveToken = true;
+
+                    options.RequireHttpsMetadata = false;
+
+                    options.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidateIssuer = true,
+                        ValidIssuer = Configuration["JWT:ValidIssure"],
+                        // there is also audcienceS , for declaring many consumers
+                        // Which is usually the case with APIs
+                        ValidateAudience = true,
+                        ValidAudience = Configuration["JWT:ValidAudiance"],
+                        // We already know the Hashing Algorithm used by looking at the token,
+                        // That's why we only need the `key`
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes(Configuration["JWT:Secret"])
+                        )
+                    };
+                });
+
+
+
+---------------------------------------------------------------
+
+5- Roles vs Claims Policy
+
+    Our heirarcy is Authentication is as following 
+
+                        Claim principle (User currently loggedIn) => 
+                        multiple Identities (Because of multiple Emails or Roles)
+                        But usually we would have only one Identity.
+
+                        Each Identity => Has multiple claims (key-value pairs)
+
+
+
+                           
+
+
+
+    a- Roles: 
+
+    You will just include a role claim when you register a user. 
+
+                            new Claim(ClaimTypes.Role, user.Role)
+
+    Then use [Authorize("Roles ="Admin")]
+
+    or 
+        [Authorize(Roles ="Admin,Seller")]
+
+    ....BUT!! this is too restrictive... What if I want to check multiple claims 
+                Instead of the Role claim only ? 
+
+    --------------------------------------------------------------
+
+    b- Claims Policy
+
+        It's like grouping the Role claim and other claims
+        To create a customized Authorization based on multiple parameters.
+
+
+                        builder.Services.AddAuthorization(options =>
+                            {
+                                options.AddPolicy("AllowEngineers", policy => policy
+                                    .RequireClaim(ClaimTypes.Role, "Engineering", "Management")
+                                    .RequireClaim(ClaimTypes.NameIdentifier));
+
+                                options.AddPolicy("AllowManagers", policy => policy
+                                    .RequireClaim(ClaimTypes.Role, "Management"));
+                            });
+
+
+            And it's applied similar to roles:
+
+            ===>    [Authorize(Policy = "AllowManagers")]
+
+
+            The loggedIn user that have those specific claims 
+            Is the one allowed to the controller. 
+
+
+
+---------------------------------------------------------------
+
+6- Tips 
+
+    a- To reach claims 
+
+        User.claims
+
+    b- Reach the user object inside the asp.netuser table 
+
+        ***Method-1**
+        var id = User.Claims.First(c=> c.Type == ClaimTypes.NameIdentifier).Value;
+
+        var user = await _userManager.FindByIdAsync(id);
+
+        ***Method-2***
+
+        var user = await _userManager.GetUserAsync(User);
+    
+        ---- for this method to work **YOU MUST** have the NameIdentifier opposite to the 
+            record Id that you entered( here Id is generated using GUID)
+
+            EX: 
+            new Claim(ClaimTypes.NameIdentifier, Guid.NewGuid().ToString())
+
+---------------------------------------------------------------
+
+\
+

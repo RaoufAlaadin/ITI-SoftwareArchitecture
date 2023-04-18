@@ -1,0 +1,66 @@
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\appsettings.Development.json
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\appsettings.json
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\D01Cars.exe
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\D01Cars.deps.json
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\D01Cars.runtimeconfig.json
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\D01Cars.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\D01Cars.pdb
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.csproj.AssemblyReference.cache
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.AssemblyInfoInputs.cache
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.AssemblyInfo.cs
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.csproj.CoreCompileInputs.cache
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.MvcApplicationPartsAssemblyInfo.cs
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.MvcApplicationPartsAssemblyInfo.cache
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.D01Cars.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.build.D01Cars.props
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.D01Cars.props
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.D01Cars.props
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\scopedcss\bundle\D01Cars.styles.css
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.csproj.CopyComplete
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\refint\D01Cars.dll
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.pdb
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\D01Cars.genruntimeconfig.cache
+E:\ITI\ITI_New_Data_43\DotNet\API\Jamal Ali\Day-One\Task\D01Cars\obj\Debug\net7.0\ref\D01Cars.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\appsettings.Development.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\appsettings.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\D01Cars.exe
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\D01Cars.deps.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\D01Cars.runtimeconfig.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\D01Cars.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\D01Cars.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.AssemblyInfo.cs
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.MvcApplicationPartsAssemblyInfo.cs
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.MvcApplicationPartsAssemblyInfo.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.D01Cars.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.build.D01Cars.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.D01Cars.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.D01Cars.props
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\staticwebassets.build.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\staticwebassets.development.json
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\scopedcss\bundle\D01Cars.styles.css
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.csproj.CopyComplete
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\refint\D01Cars.dll
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.pdb
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\D01Cars.genruntimeconfig.cache
+E:\ITI intake 43 SD\25- API\Jamal Ali\Day 1\D1-Task\D01Cars\obj\Debug\net7.0\ref\D01Cars.dll

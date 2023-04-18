@@ -1,0 +1,597 @@
+
+        ***DevCreed***
+
+            https://www.youtube.com/playlist?list=PL62tSREI9C-e6nQ47brLj00iSGddiee73
+
+
+
+************************************************************************
+
+NOTE: 1-  in `Expression <Func<T,bool>>` is not a predicate !!!! 
+        It's delegate that can take up to 16 input and has one return parameter
+        ***That doesn't have to be boolen !!! ***
+
+            Func<in T, out TResult>
+
+      2- Action delegate:
+
+                Action<in T>
+
+             takes up to 16 inputs and return VOID !!!! 
+             usually used in events where u don't expect a retrun
+
+
+      3- Predicate    
+
+                Predicate<in T>
+                
+            Takes Only one input parameter, Returns boolen 
+            Commonly used in filtering or Searching data. 
+
+
+
+**********************************************************
+
+1- For a genric class, the interface should be also genric.
+
+
+    Genric Interface => 
+    
+                    public interface IBaseRepository<T> where T : class
+                        {
+                            T GetById(int id);
+                        }
+
+    Genric Class => 
+
+                        public class BaseRepository<T> : IBaseRepository<T> where T : class
+                        {
+                            protected ApplicationDbContext _context;
+
+                            public BaseRepository(ApplicationDbContext context)
+                            {
+                                _context = context;
+                            }
+
+                        
+                            public T GetById(int id)
+                            {
+                                return _context.Set<T>().Find(id);
+                            }
+
+                        }
+
+
+    Inject the service =>
+                              // We have to use <> as both of them are Genric. 
+
+                            services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+
+
+
+            So now if we want to use that Genric Class for the  "Author" class we have 
+                Or any other class really, We just need to replace the `T` With the name of 
+                The class we want. 
+
+
+    Inside `AuthorController` ==> 
+
+                                // *****VeryImportant****
+
+                                // As always when injecting we use the `interface` not the actual `class`
+                                // but we gave a type for that interface inside the <> 
+                                // Which made it special to the `Author` Class.  
+
+                                Private readonly IBaseRepository<Author> _authorRepository; 
+
+                                public AuthorController(IBaseRepository<Author> authorRepository)
+                                {
+
+                                    _authorRepository = authorRepository;
+                                }
+
+                                and We then normally, we will get to use the methods implemented in the 
+                                BaseRepository<Author>, as It will be injected by the IOC container when 
+                                the Interface instance is found inside our controller. 
+
+
+
+    ---------------------------------------------------------------------------------------
+
+
+2- To create an `Async` copy of our method 
+
+
+
+  Genric Interface => 
+    
+                    public interface IBaseRepository<T> where T : class
+                        {
+                            // Changed the return type to Task<T>, 
+                            // Which is the one to handle async methods.
+
+                            Task<T> GetById(int id);
+                        }
+
+    Genric Class => 
+
+                        public class BaseRepository<T> : IBaseRepository<T> where T : class
+                        {
+                            protected ApplicationDbContext _context;
+
+                            public BaseRepository(ApplicationDbContext context)
+                            {
+                                _context = context;
+                            }
+
+                            // Added the Async,because we used the await in the implementation
+
+                            public Async Task<T> GetById(int id)
+                            {
+                                return await _context.Set<T>().FindAsync(id);
+                            }
+
+
+                        }
+
+
+
+---------------------------------------------------------------------------------------
+
+
+3- To create a find that takes a `Lamda expression` 
+        This is great because it does not only allow for search by Id,
+        But basically anything else. 
+
+        ******** This one is sooo goood 🙌 , 
+                        We have used it before as FilterAsync() 
+                                                                **********
+
+
+  Genric Interface => 
+    
+                    public interface IBaseRepository<T> where T : class
+                        {
+                            //Where `T` is the `input`
+                            //And `bool` is the return type of the predicate 
+
+                            // We call this delegate a `predicate` because that term is 
+                            // Used in math when a function take an input and return a boolen. 
+
+                            // The use of the Expression<> which is called an `Expression Tree`
+                            // It allows for more flexbility when using EF-Core
+
+                            Task<T> FindAsync( Expression <Func<T,bool>> match , string [] includes = null )
+                        }
+
+    Genric Class => 
+
+                        public class BaseRepository<T> : IBaseRepository<T> where T : class
+                        {
+                            protected ApplicationDbContext _context;
+
+                            public BaseRepository(ApplicationDbContext context)
+                            {
+                                _context = context;
+                            }
+
+                            // Added the Async,because we used the await in the implementation
+                            
+                            public Async Task<T> FindAsync(Expression <Func<T,bool>> match, string [] includes)
+                            {
+                                    IQueryable query = _context.Set<T>()
+
+                                    /* In the case of using `Eager Loading` 
+                                        Then we send an array of all the includes we want to load 
+                                        And this strucutre will add it to the query. 
+                                    */
+
+                                    foreach( var Include in Includes)
+                                        query = query.Include(incluse);
+
+
+                                return await query.FindAsync(match);
+                            }
+
+                        }
+
+---------------------------------------------------------------------------------------
+
+4- deferred execution allows for building your query on multiple lines as It does not get
+    Excuted until you try to access the result (Ex: using foreach() )
+
+        ==> It's better for large data sets as it doesn't preform the whole query all at once. 
+
+
+---------------------------------------------------------------------------------------
+
+5- IEnumerable vs IQueryable  
+
+
+        https://www.youtube.com/watch?v=DKr16qsi4RA&ab_channel=Metigator%7C%D8%B9%D8%B5%D8%A7%D9%85%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%86%D8%A8%D9%8A
+
+    ( We Will test the same example for each of them, 
+        And check the result of the SqlProfiler to see the requested query)
+
+        IEnumerable: 
+
+
+                        var db = new BookContext();
+
+                        IEnumerable<Book> books = db.Books;
+                        
+                        //Enumerable
+                        var booksOver50 = books.Where(x => {
+                            Console.WriteLine($"Processing : {x.Id}");
+                            return x.Price > 50;
+                        });
+
+
+                        foreach (var item in booksOver50)
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        Console.ReadKey();
+
+
+            It implements the interface =>  IEnumrator 
+
+            Which provides the `foreach()` like behaviour using a method called `MoveNext()`
+            That's why it loads all the data *locally* then move on each one of them 
+            to check which one meets the condition. 
+
+            Creates a sqlQuery that loads all the data from the database into local memeory, 
+            Then we filter the data locally....
+            Which is soooooooo Bad for large databases
+
+        IQueryable:  
+
+                
+                            var db = new BookContext();
+
+                            IQueryable<Book> books = db.Books;
+
+                            //Queryable
+
+                            var booksOver50 = books.Where(x => x.Price > 50);
+
+                            foreach (var item in booksOver50)
+                            {
+                                Console.WriteLine(item);
+                            }
+
+                            Console.ReadKey();
+
+
+
+
+            It implements IEnumerable !!! but it Adds extra features on it !! 
+
+            Which allows the excution of the full query on the server-side,
+            With any filtrations that needs to be done. 
+
+
+            The sqlProfiler query will have a `Where clause` to filter the
+            Data on the remote sql Server itself !!!!
+
+            Which is GREAT for large databases.  
+
+                ---------------------------------------------------
+        Summary: 
+
+        -If your database on a `remote server` then it's best to use `IQueryable` 
+        This will enable us to use the memory resources of that server for the filtering 
+        Instead of doing it locally on my device 
+        
+        -If both the progam and the SqlServer are on my device, 
+            Then both IQueryable and IEnumerable will perform the filtration on
+            My memory anyway...
+
+            So you can just use `IEnumerable` as it will get the job done. 
+
+                ---------------------------------------------------
+
+        Extra notes (VERY IMPORTANT): 
+
+        Each of them have `static classes` that they get thier filtering methods from as 
+        Extension methods: 
+
+            Queryable and Enumerable 
+
+            The difference between both is the Expression tree !!!!!!
+
+            Enumerable : 
+
+                Just sends the predict we want to use 
+
+                        Func<T,bool>
+
+            Enumerable : 
+
+                Also sends `the way` you want to implement that predict,
+                Which includes the predicate in an Expression tree to make it do 
+                the filteration on the sql side of things. 
+
+                    Expression <Func<T,bool>>          
+
+                        
+
+
+---------------------------------------------------------------------------------------
+
+6- Notes: 
+                TEntity is the same as T 
+                It's the genric type we are passing to our main generic Class and interface 
+
+                public interface IEntityRepo<TEntity> where TEntity : class
+
+
+                ---------------------------
+
+        a- This Method is prepared to take tons of stuff 😂,
+            So because for sure we will miss the order of the inputs..
+            We state the name of the input variable used in the implementation 
+
+            ex: ( Selector: ItemHelper.HomeDtoselctor)
+
+
+        b- ItemHelper
+
+            It has all the queries that you might need,
+
+            i- Selector: 
+                Projects the choosen properties from entity you sent as input
+                To an anonymous object that will be of the Output type we have
+                Which is a DTO. 
+
+                The mapping from `item` to `DTO` is done implicity due to
+                The lamda expression and the delegate return.
+
+                We are returning data to the DTO in the same structure that
+                It has.  
+
+            b- Predicate
+
+                We use the predicate to check the result of a the boolen expression
+                That is usually used for search or filtering 
+
+                as it takes an expression and always return a boolen.
+
+            c- include 
+
+                Includes the tables you want based on your input,
+                We could have also based the Includes we want as an array of 
+                Strings, Each time we want something. 
+
+
+
+            public Task<TResult?> FindAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
+            Expression<Func<TEntity, bool>> predicate
+            , Func<IQueryable<TEntity>
+            , IIncludableQueryable<TEntity, object>>? include = null
+            , bool disableTracking = true);
+
+
+
+
+                                public async Task<HomeItemDto?> FindItemAsync(Guid id)
+                                    {
+                                        try
+                                        {
+                                            return await _unitOfWork.Items.FindAsync
+                                                (
+                                                    selector: ItemHelper.HomeDtoSelector,
+                                                    predicate: i => id == i.Id,
+                                                    include: ItemHelper.HomeDtoInclude
+                                                );
+                                        }
+                                        catch (Exception) { return null; }
+                                    }
+
+
+                 public static Expression<Func<Item, HomeItemDto>> HomeDtoSelector = i => new
+                    (
+                        i.Id,
+                        i.Name,
+                        i.Model,
+                        i.Price,
+                        i.Rating,
+                        i.SellerId,
+                        i.Seller!.Name,
+                        i.Brand!.Name,
+                        Convert.ToBase64String(i.Image!)
+                    );
+
+
+                     public static Func<IQueryable<Item>, IIncludableQueryable<Item, object>> HomeDtoInclude = source => source
+                    .Include(i => i.Seller).Include(i => i.Brand).Include(i => i.Reviews);
+
+
+-----------------------------------------------------------------------------------                    
+
+
+
+
+6- Unit of work: 
+
+        We want the relation between our repositories to be like 
+        The relation betweeb DBContext and it's sets 
+
+        Ex: You only need to write Dbcontext.Savechanges() once 
+            For it register any action that has been done on any of the 
+            Dbsets like 
+
+                Dbcontext.Author.Add()
+                Dbcontext.Author.Remove()
+                etc........
+
+        The benfits the unit of work pattern will give me : 
+
+        1- I will have to only inject the `Unit of work` interface in the controller..
+            And by the default it will give me access to all the repo entities I have created...
+
+            So oneline instead of 1000000000 line, weather u needed one repo in your controller,
+            Or needed the use of the 10000000 repo all together. 
+
+                Cleaaaaan 👏
+
+        2- using the complete method that call saveChanges,You will have to call it once at the end of 
+            You controller action, so Instead of doing it with every single CRUD, 
+            You will do it once with the final
+
+
+
+
+            -------------------------------------------------------------------------------------
+
+            Our strucutre will be as the following: 
+
+
+                1-    
+                    a- BaseRep is the `genric class` that has all the common repos, but we give the 
+                        Type `Book` based on our Entity. 
+
+                        It inherites from the IBaseRepository
+
+
+                    b- IBooksRepository is an `interface` that,
+                             Inherties from the IBaseRepository<Book>
+                        
+                        ==> It's used to add any extra or `special Method` specificly
+                            For that entity. 
+
+                    c- so now, both the interface and class are coming from the IBaseRepository interface
+                        Which mean it's methods need to be implemented, which was done already in the 
+                        BaseRepository<Book> class and we inherited that... so the implementation for those
+                        Are done ✔✔✔
+
+
+                    d- What's left is the `SpecialMethod` from IBooksRepository ===> implement It
+                        And to create Ctor that will `inject` the Context into the `base ctor` again.
+
+
+                    public class BooksRepository : BaseRepository<Book>, IBooksRepository
+                        {
+                            private readonly ApplicationDbContext _context;
+
+                            public BooksRepository(ApplicationDbContext context) : base(context)
+                            {
+                            }
+
+                            public IEnumerable<Book> SpecialMethod()
+                            {
+                                throw new NotImplementedException();
+                            }
+                        }
+
+
+                2- In the `IUnitOfWork` interface,
+
+                        a- We inhertie the `IDisposable` interface so we can 
+                            Add the context.dispose() => which clears any allocated resources
+                            After using the context.SaveChanges();
+
+                        b- We write `get` properties for all the repos that we would want to use,
+                            Just so mentioning in the inherited class work. 
+
+
+                                ***** I don't know why exactly *************   =====================================> ASK !!!!!!!!
+
+                        public interface IUnitOfWork : IDisposable
+                        {
+                            IBaseRepository<Author> Authors { get; }
+                            IBooksRepository Books { get; }
+
+                            int Complete();
+                        }
+
+
+
+                    3-  We write `get` properties and associate them with 
+                        new Instances of the implementation we will use at the end,
+
+                        We pass in context to them, because that's their only constructor    
+
+
+                            public class UnitOfWork : IUnitOfWork
+                            {
+                                private readonly ApplicationDbContext _context;
+
+                                public IBaseRepository<Author> Authors { get; private set; }
+                                public IBooksRepository Books { get; private set; }
+
+                                public UnitOfWork(ApplicationDbContext context)
+                                {
+                                    _context = context;
+
+                                    Authors = new BaseRepository<Author>(_context);
+                                    Books = new BooksRepository(_context);
+                                }
+
+                                public int Complete()
+                                {
+                                    return _context.SaveChanges();
+                                }
+
+                                public void Dispose()
+                                {
+                                    _context.Dispose();
+                                }
+                            }
+
+                    4- Remember to inject Unitofwrok in the IOC container. 
+
+                              services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+                        And we remove the following 
+                            //services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+
+                        Because we created an instances from the repos manually using `new` inside the
+                        UnitofWork class, So there is no point in the IOC container. 
+
+                    5- Finally, inject the Unitofwork in the controller 
+
+
+                            [Route("api/[controller]")]
+                            [ApiController]
+                            public class AuthorsController : ControllerBase
+                            {
+                                private readonly IUnitOfWork _unitOfWork;
+
+                                public AuthorsController(IUnitOfWork unitOfWork)
+                                {
+                                    _unitOfWork = unitOfWork;
+                                }
+
+                                [HttpGet]
+                                public IActionResult GetById()
+                                {
+                                    return Ok(_unitOfWork.Authors.GetById(1));
+                                }
+
+                                [HttpGet("GetByIdAsync")]
+                                public async Task<IActionResult> GetByIdAsync()
+                                {
+                                    return Ok(await _unitOfWork.Authors.GetByIdAsync(1));
+                                }
+                            }
+
+    
+         
+            -------------------------------------------------------------------------------------
+    BUUUUUTTTTTTTT, Our real project structure is different, 
+                Because we have a repo called `MangerRepo` Which includes extra bussinesLogic
+
+                So instead of injecting the UnitofWork in the controller, 
+                
+                    1- We inject the UnitofWork in the the Manger
+                    
+                    2- We do our extra logic 
+
+                    3- We inject the manger in the controller 
+
+
+                As a result, our IOC container will have injection of 
+                            a- UnitofWork
+                            b- and all of the Mangers Repos
