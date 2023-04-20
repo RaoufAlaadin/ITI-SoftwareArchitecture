@@ -1,0 +1,75 @@
+﻿@model List<Product>
+
+<h1>Products</h1>
+
+<a href="@Url.Action("Create", "Product")" class="btn btn-primary mb-3">Add Product</a>
+
+
+<div id="GridList" class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card card-cotainer">
+                <img class="card-img-top img-fluid" src="@Url.Content(product.ProductImage)" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">@product.Description</p>
+                    <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js" integrity="sha512-k8WL9L2jG8KyG3pCJA4mHMdg2YSoWrdB5QNqLIhROv69udwp87WvbqzbsiAL65wy7T9jHU7rAoePr1ToPBc0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var connection =
+            new signalR.HubConnectionBuilder().withUrl("/ProductHub").build();
+        //2- Start connection with hub server==> Clients
+        connection.start().then(function () {
+            console.log("Connection Success!!");
+        });//online client on hub
+
+        //3- send server
+
+        //function Add() {
+        //    var obj = { "Id": 1, "Name": "Ahmed", "Salary": 8000 };
+        //    connection.invoke("AddNEW", obj);
+        //}
+
+        //4- recive
+        connection.on("NotifyNewProduct", function (newProduct) {
+            console.log(newProduct);
+
+            var newProductHTML = `<div class="col-md-4 mb-3">
+                        <div class="card card-cotainer">
+                            <img class="card-img-top img-fluid" src="${newProduct.productImage}" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">${newProduct.name}</h5>
+                                <p class="card-text">${newProduct.description}</p>
+                                <a href="#" class="btn btn-primary details-link">Details</a>
+                            </div>
+                        </div>
+                    </div>`;
+
+            var newElement = document.createElement('div');
+            newElement.innerHTML = newProductHTML;
+            document.getElementById("GridList").appendChild(newElement);
+
+            // we added the razor page part separatly 
+            var detailsLink = newElement.querySelector('.details-link');
+            detailsLink.href = '@Url.Action("Details", "Product")' + '/' + newProduct.id;
+
+            alert(`Product: ${newProduct.name} has been added`);
+
+
+        });
+
+
+
+
+    </script>
+}

@@ -1,0 +1,160 @@
+        1- var connection =
+                    new signalR.HubConnectionBuilder().withUrl("/EmployeeHub").build();
+
+                    Adding a `/` seperates this from the URL ==> really important
+
+
+        2- When I send a json from client to the Hub, 
+            The hub deserilaize it implicitly.
+
+            Note: C# makes the firstword-firstLetter to be small when deserializing,
+                    Despite the model being uppercase. 
+
+        3- We have to store the data of the users connected to a specific rooms
+            In the database, so they can be remembered for later interaction.
+
+        4- We use the user Identtiy Id from the database instead of the `connection Id`
+            As we get a new `connection Id` everytime we connect. 
+
+        5- using a dictionary to store the userName and the current connectionId
+
+            key ==> logged in client name 
+
+            value ==> connectionId 
+                            Note: This value gets updated Whenever the user re-connect.
+
+
+-------------------------------
+
+(3)- Topic => using the Hub in the controller 
+
+    1- The `Hub` is a service so you cannot make an object from it, 
+        We need to inject a service called `IHubContext`
+        It exists already in the IOC container when we wrote
+        
+                builder.serive.AddSignlar()
+
+    2- 
+
+        private readonly IHubContext<EmployeeHub> empHub; 
+        Public EmployeeController(IHubContext<EmployeeHub> _empHub)
+        {
+            empHub = _empHub; 
+        }
+
+        empHub.Clients.All....... 
+
+
+    3- ShowAll() method is one interested in reciving notification when 
+        A new user is added..
+        So We connect that page to the `Hub`.
+
+
+-------------------------------------
+
+(4)- Topic => Creating a chat  between `webApp` and desktopApp(WPF)
+
+
+    1-  We need the correct package to connect to the hub on the MVC webApp
+
+            From NugetPackageManger =>     MIcrosoft.AspNetCore.SignalR.client
+
+    2-      
+            a- Declare Connection
+
+                    // Because it's going to be used in multiple places.
+
+                HubConnection connection; 
+
+
+                 public MainWindow()
+                {
+                    InitializeComponent();
+                    
+                    //1- Deckare Hub 
+                        connection =
+                            new HubConnectionBuilder().withUrl("http://localhost:......);   
+
+                    //2-
+
+                        connection.StartAsync(); 
+
+                    //4- Recive 
+
+                        // We need to specify the type of the inputs using the 
+                        // `Generic` .On<> , as we don't know the types by default.
+
+                        connection.On<string,string>("NotifyNewMessage",(n,m) => {
+
+                            //display msg hub in Listview
+
+                                    //MessageBox.Show(name);  ==> This is like console.log to test 
+
+                                MsgList.Items.Add($"{name}:{msg}"); 
+
+                        });
+
+                        Note: Run with debug so errors appear to you. 
+
+                                Run with dispatcher and threading to fix error ??!                ===> min(1:43:00)
+                                    so it can access from smaller thread to the main thread.
+
+                            Eng/Chris will update the demo code. 
+                }   
+
+
+                private void Button_Click(object sender, RoutedEventArgs e)
+                {
+
+                }
+                
+-------------------------------------
+
+(5)- Topic => using an html page ==> (Simulating an angular project.)
+
+           1- CORS policy
+
+            
+
+
+-------------------------------------
+
+(6)- Topic => using the Hub in the controller 
+
+
+-------------------------------------
+
+
+    Assignment 
+
+        1- Add new product 
+
+            in post method => "notify in action" the product Index
+                                To declare it in a div
+
+
+            // Usually the hub is empty... notification is done from the action. 
+
+
+
+ new Product { Name = "Apple MacBook Pro"
+            , Description = "A high-performance laptop with a sleek design",
+                    Price = 2000,
+                    Quantity = 10, 
+                    ProductImage = "/Images/macbook.jpg" }
+
+
+
+
+                     //document.getElementById("GridList").innerHTML = 
+            //    `  <div class="col-md-4 mb-3">
+            //        <div class="card card-cotainer">
+            //            <img class="card-img-top img-fluid" src="@Url.Content(${product.ProductImage})" alt="Product Image">
+            //            <div class="card-body">
+            //                <h5 class="card-title">${product.Name}</h5>
+            //                        <p class="card-text">${product.Description} < /p>
+            //                <a href="@Url.Action("Details", "Product", new { id = ${product.Id }})" class="btn btn-primary">Details</a>
+            //            </div>
+            //        </div>
+            //    </div>
+            //`

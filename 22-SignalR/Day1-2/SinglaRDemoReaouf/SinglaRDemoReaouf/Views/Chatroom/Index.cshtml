@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<input type="text" id="name" />
+<input type="text" id="msg" />
+<input type="text" id="rate" />
+
+<ul id="messages">
+
+</ul>
+
+<input type="button" value="Send" onclick="SendData()" />
+
+
+
+
+@section Scripts {
+
+    <!-- SignalR Client "JS" -->
+
+    <script src="~/lib/microsoft-signalr/signalr.min.js"></script> 
+
+
+    <script>
+
+        //1- Declare Hub
+
+        // AutoComplete doesn't work here. !!! 
+
+        // Interperter will understand all of this due to the library
+        // Due to the library we added
+        var connection = 
+            new signalR.HubConnectionBuilder().withUrl("/MyChatHub").build();
+
+
+        //2- Start Connection with hub server => Clients
+        
+        // Online client on hub on the specific hub we sent in Url 
+
+        connection.start().then(function() {
+            console.log("connection Success !!");
+        }).catch (function (error) {
+            console.error(error);
+        });
+        //3- Send info to hub server
+
+        function SendData(){
+            var name = document.getElementById("name").value;
+            var msg = document.getElementById("msg").value;
+            var r = parseInt(document.getElementById("rate").value);
+            console.log(name + ":"+ msg); // => send to hub server
+
+            //RPC from server 
+
+            connection.invoke("NewMessage", name,msg,r);
+        }
+        //4- recive info come from hub server 
+
+        connection.on("NotifyNewMessage",function(n,m,r){
+
+            console.log("Tried to add to the table.");
+            document.getElementById("messages").innerHTML +=
+                "<li>" + n + ":" + m + r + "</li>";
+        });
+
+
+    </script>
+}

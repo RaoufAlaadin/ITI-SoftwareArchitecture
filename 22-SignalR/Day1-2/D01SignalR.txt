@@ -1,0 +1,140 @@
+
+
+RPC => Remote procedure call 
+        It's when a program causes a procedure to excute in a 
+        different address space. 
+            (Client invokes a method on the server hub)
+
+       
+
+
+1- What is the `Hub` ? 
+
+- It's basically the gateway between the `Client` and `Server` 
+    To listen to the server activity we have to connect to it's hub URL
+
+        Note: This has nothing to do with the browser URL 
+
+
+2- First We create the Hub Class then establish a middleware 
+    That will listen for requests from the client that want to open
+    a `stable connection` with a specfic Hub we have. 
+
+
+         i-  IOC container =>      builder.Services.AddSignalR();
+
+         ii-  Declaring the middleware mapping,This will redirect
+          any client request with this Url to the 
+          `ProductHub` class :<
+
+                      app.MapHub<ProductHub>("/ProductHub");
+
+
+3- Inside Hub we inherite from `Hub` Class as it provide the following: 
+
+    a- clients =>  knowladge of all the Online and connected clients
+    b- context => Info about the client that made an Invokation request 
+                to a method on our server
+
+    c- Groups => Categorizing connected people, Which will allow us to 
+                    Create private chat rooms. 
+
+
+3- So how does the pipeLine works ?
+
+    a- The client makes a connection with our hub, using the `URL` 
+        We specified. 
+
+        var connection =
+            new signalR.HubConnectionBuilder().withUrl("/ProductHub").build();
+
+            // This starts the `connection` variable we Declared 
+
+            connection.start().then(function () {
+            console.log("connection Success !!");
+        }).catch(function (error) {
+            console.error(error);
+        });
+
+
+        Note: The server can now update us on anything actually, 
+                We are listening to it. 
+
+    b- We will try sending something on the Hub by Invoking 
+        A method that it has. 
+    
+    
+      function SendData() {
+             //var productId = @Model.Id;
+            var productId = parseInt(document.getElementById("productId").textContent.split(':')[1].trim());
+
+            //var quantity = @Model.Quantity;
+            // trim removes any white spaces
+            var quantity = parseInt(document.getElementById("quantity").textContent.split(':')[1].trim());
+
+
+            console.log(`ProductId: ${productId},,, quantity: ${quantity}`) // => send to hub server
+            //RPC from server
+
+            connection.invoke("BuyRequest", productId, quantity)
+                .catch(function (err) {
+                    console.error(err.toString());
+                });
+        }
+
+    c- At the end of the `BuyRequest` Method or any method in 
+        The hub actually, we usually set the following to update
+        All the `connected users` with the new data. 
+
+            await Clients.All.SendAsync("NotifyNewMessage", productId, product?.Quantity);
+
+    
+    d- That `SendAsync` Method in turn invokes a method on the client side for
+        Any connected user that has the `NotifyNewMessage` method. 
+
+        Where each client can have different implementation for that method. 
+
+        
+            **** VERY IMPORTANT **** 
+                    //The Id check is necassary before applying anything.
+
+           connection.on("NotifyNewMessage", function (id, count) {
+
+            var productId = parseInt(document.getElementById("productId").textContent.split(':')[1].trim());
+
+            if (productId == id) {
+
+                console.log("innerHTML is weird");
+                console.log(`id: ${id},,, Count: ${count}`)
+
+                if (count === 0)
+                    document.getElementById("quantity").innerHTML =
+                        `Out of stock`;
+                else
+                    document.getElementById("quantity").innerHTML =
+                        `<strong>Quantity: </strong> ${count}`;
+
+
+            }
+
+
+        });
+
+
+    Summary: 
+
+    1- Everyone connects to the same hub 
+    2- When you send something to the hub,
+        The hub sends it back to all the `Connected Clients`
+    3- Each `Connected Client` can display the data it
+        Recived in whatever suitable form. 
+
+        Note: You have to check if the info incoming is suitable for the product
+                that you are viewing !!! 
+                The hub itself doesn't care what you are looking at..
+                    as long as you are connected to hub, you will
+                    Recive the update.. 
+            
+
+
+

@@ -1,0 +1,155 @@
+﻿@model Product
+
+<h1>@Model.Name</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <img class="card-img-top" src="@Url.Content(Model.ProductImage)" alt="Product Image">
+    </div>
+    <div class="col-md-6">
+        <p id="productId"><strong>ProductID:</strong> @Model.Id </p>
+
+        <p>@Model.Description</p>
+        <p><strong>Price:</strong> @Model.Price</p>
+        <p id="quantity"><strong>Quantity:</strong> @Model.Quantity</p>
+        <input type="button" onclick="SendData()" class="btn btn-primary" value="Buy Now">
+    </div>
+</div>
+
+<hr />
+
+<h2>Comments</h2>
+
+@if (Model.Comments?.Count == 0)
+{
+    <p>No comments yet.</p>
+}
+else
+{
+    <ul id="list">
+        @foreach (var comment in Model.Comments)
+        {
+            <li>
+                <h4>@comment.Username</h4>
+                <p>@comment.Text</p>
+            </li>
+        }
+    </ul>
+}
+
+<hr />
+
+<h2>Add Comment</h2>
+
+
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="text">Comment:</label>
+        <textarea id="text" name="text" class="form-control" required></textarea>
+    </div>
+<input type="button" onclick="AddCommentbtn()" value="Add Comment" class="btn btn-primary">
+
+
+
+
+
+
+@section Scripts {
+
+    <!-- SignalR Client "JS" -->
+
+    @*<script src="~/lib/microsoft-signalr/signalr.min.js"></script>*@
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js" integrity="sha512-k8WL9L2jG8KyG3pCJA4mHMdg2YSoWrdB5QNqLIhROv69udwp87WvbqzbsiAL65wy7T9jHU7rAoePr1ToPBc0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        //1- Declare Hub
+        var connection =
+            new signalR.HubConnectionBuilder().withUrl("/ProductHub").build();
+
+        //2- Start Connection with hub server => Clients
+
+        connection.start().then(function () {
+            console.log("connection Success !!");
+        }).catch(function (error) {
+            console.error(error);
+        });
+        //3- Send info to hub server
+
+        function  SendData() {
+             //var productId = @Model.Id;
+            var productId = parseInt(document.getElementById("productId").textContent.split(':')[1].trim());
+            //var quantity = @Model.Quantity;
+            // trim removes any white spaces
+            var quantity = parseInt(document.getElementById("quantity").textContent.split(':')[1].trim());
+
+            console.log(`ProductId: ${productId},,, quantity: ${quantity}`) // => send to hub server
+            //RPC from server
+
+            connection.invoke("BuyRequest", productId, quantity)
+                .catch(function (err) {
+                    console.error(err.toString());
+                });
+        }
+        //4- recive info come from hub server
+
+        function AddCommentbtn(){
+            var productId = parseInt(document.getElementById("productId").textContent.split(':')[1].trim());
+            var userName = document.getElementById("username").value;
+            var text = document.getElementById("text").value;
+
+            console.log(`ProductId: ${productId},,, userName: ${userName},  text: ${text}`);
+            connection.invoke("AddComment", productId, userName, text)
+                .catch(function (err) {
+                    console.error(err.toString());
+                });
+        }
+
+
+        connection.on("NotifyProductStock", function (id, count) {
+
+            var productId = parseInt(document.getElementById("productId").textContent.split(':')[1].trim());
+
+            if (productId == id) {
+
+                console.log("innerHTML is weird");
+                console.log(`id: ${id},,, Count: ${count}`)
+
+                if (count === 0)
+                    document.getElementById("quantity").innerHTML =
+                        `Out of stock`;
+                else
+                    document.getElementById("quantity").innerHTML =
+                        `<strong>Quantity: </strong> ${count}`;
+            }
+        });
+
+
+        connection.on("NotifyNewComment", function (productId, username, text) {
+
+            var currentProductId = parseInt(document.getElementById("productId").textContent.split(':')[1].trim());
+
+            if (currentProductId == productId) {
+
+                console.log("innerHTML is weird");
+                console.log(`ProductId: ${productId},,, userName: ${username},  text: ${text}`);
+
+
+
+                document.getElementById("list").innerHTML +=
+                    `<li>
+                                <h4>${username}</h4>
+                                <p>${text}</p>
+                    </li>`;
+              
+            }
+        });
+
+
+
+
+    </script>
+}
