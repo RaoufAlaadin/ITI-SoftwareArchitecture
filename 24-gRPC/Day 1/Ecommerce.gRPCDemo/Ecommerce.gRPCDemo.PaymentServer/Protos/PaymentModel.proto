@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Ecommerce.gRPCDemo.PaymentServer.Protos";
+
+
+
+import "google/protobuf/timestamp.proto";
+
+
+message OrderDetails {
+	 int32 userId = 1;
+    int32 itemId = 2;
+    string itemName = 3;
+    int32 quantity = 4;
+    int32 price = 5;
+}
+
+message  PaymentResponce {
+	bool IsSuccessful = 1; 
+	google.protobuf.Timestamp stamp = 2;
+
+}

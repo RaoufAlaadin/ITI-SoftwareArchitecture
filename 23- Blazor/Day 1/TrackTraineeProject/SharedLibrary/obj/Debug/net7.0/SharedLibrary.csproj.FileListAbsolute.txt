@@ -1,0 +1,12 @@
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\bin\Debug\net7.0\SharedLibrary.deps.json
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\bin\Debug\net7.0\SharedLibrary.dll
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\bin\Debug\net7.0\SharedLibrary.pdb
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfo.cs
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\SharedLibrary.dll
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\refint\SharedLibrary.dll
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\SharedLibrary.pdb
+E:\ITI intake 43 SD\32-Blazor\Day 1\D1-Task\TrackTraineeProject\SharedLibrary\obj\Debug\net7.0\ref\SharedLibrary.dll

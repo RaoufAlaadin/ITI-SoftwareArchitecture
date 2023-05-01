@@ -1,0 +1,461 @@
+****Main topics****
+--------------------------
+
+
+1-Split File code and html 
+2- pass data between different component
+    (They must have relation to eachother)
+3-Injection 
+4- Form "part1" 
+    latest data stored,
+    but not how to store it in the
+    Database.
+
+
+--------------------------------------------------------------------------------
+
+1- The class generated in-behind is partial, 
+    So if we created a class with the same name that is partial..
+    We can add to the in-behind class
+
+                namespace RaoufBlazorDemo.MyComponent
+                {
+                    public partial class Binding
+                    {
+                    }
+                }
+
+
+2- to have the code under the .razor file 
+
+        Binding.razor.cs when creating the class.
+
+
+3- when you move the code form -- @code {} 
+    To our new class.. 
+
+    It will need some usings because the C# class 
+    Doesn't use the `_Imports.razor` file.
+
+
+
+4- Pass Data from component to Another 
+
+    @page
+
+    a- solo component
+
+    b- Parent and childs
+
+        Binding => Parent
+            First  => childs
+            Second 
+
+    c- Multi-level
+            
+        Binding => Parent
+            First  => child (parent of `second`)
+                Second  => child
+
+
+    ---- Based on these relations, we will decide how to 
+        Pass the data. 
+
+
+
+5-  a- check the type constrain in the url 
+    b- write the attribute [Parameter] to link
+        The id property to the one in the url 
+
+
+        @page "/Person/Details/{id:int}"
+
+            <h3>PersonDetails</h3>
+
+
+            <h1> Your ID: @id</h1>
+            @code {
+
+                [Parameter]
+                public int id { get; set; }
+
+            }
+
+6-     A-  [Parameter] 
+
+            a- searchs the UrlSegment
+            b- then checks the parent
+
+
+            // the bind default is the value of the input
+            // So when we write something, it gets stored in the 
+            // LocalMessage.... and it's valued gets updated in The
+            //   @LocalMessage
+
+                <input @bind ="LocalMessage" />     
+                <Child Msg="@LocalMessage" ></Child>
+
+
+                    ------------------------------------------------------------
+
+        B- to send multiple paramters, It's better to create a dictionary instead of 
+            making tons of properties 
+
+            child ==>           
+                                <input  @attributes="DicAttributes" required="required"/>
+
+
+
+
+                                        [Parameter]
+                                    public Dictionary<string,object> DicAttributes { get; set; }
+
+                                    public Child2 ()
+                                    {
+                                        DicAttributes.Add("MaxLength", "22");
+                                        DicAttributes.Add("PlaceHolder", "EnterName");
+                                        DicAttributes.Add("Type", "text");
+
+                                    }
+
+
+
+            Parent ==>
+
+                        <Child2 DicAttributes="LocalDic"></Child2>
+
+                                        public Dictionary<string,object> LocalDic { get; set; }
+
+                            public Parent2()
+                            {
+                                LocalDic = new Dictionary<string, object>();
+                                LocalDic.Add("placeholder", "EnterSalary");
+                                LocalDic.Add("type", "number");
+
+                            }
+
+                    ------------------------------------------------------------
+        C- The best way instead of writing inside the Dictionary is using the 
+            Following attribute on top of the child Dictionary 
+
+
+             [Parameter(CaptureUnmatchedValues =true)]
+            public Dictionary<string,object> DicAttributes { get; set; }
+
+
+            CaptureUnMatchedValues will collect all the parent attributes that
+            We didn't set a paramter for,
+
+            Then using the @attribute inside the child 
+
+                    <input  @attributes="DicAttributes" required="required"/>
+
+                It will go over all the key,value pairs that got stored in the 
+                Dictionary, and spread them over the tag. 
+
+
+================================================================================================
+
+            ******** Part 2- passing from parent to child at any level ************* 
+
+
+1- From parent to child     
+
+    A-      [CascadingParameter] => makes the attribute accessed, 
+            Even if it's not used on the component tag 
+
+                <h3>Child3</h3>
+
+                        @Msg
+                        @info
+                    @code {
+
+                        [CascadingParameter(Name = "Message")]
+                        public string Msg { get; set; }
+
+                        [CascadingParameter(Name = "info")]
+                        public int info { get; set; }
+
+
+                    }
+
+    B- GrandParent =>
+
+                            @page "/parent3"
+
+                <h3>GrandParent3</h3>
+
+                <CascadingValue Name="Message" Value="@("Hello from Grand Parent")">
+                    <CascadingValue Name="info" Value="22">
+
+
+                    <Parent3></Parent3>
+
+
+                    </CascadingValue>
+                </CascadingValue>
+
+ 
+
+
+2 - The previous was easy, 
+        Now we want to move data from the child to the parent !! 
+        This will need events !!! 
+
+    ***Important***
+        (Harder as you don't have a refrence to what is outside of 
+            your scope as a ChildComponent 
+        )
+
+            a- Declare Event
+            b- Invoke event
+
+            Parent Listens (Subscribe) 
+                        ==> when event invoked ==>  
+                                         ==> The parent handles it. 
+    
+    Child ==> 
+
+                            <h3>Child4</h3>
+
+                <input  @bind-value ="Message"/>
+
+                <input type="button" @onclick ="MessageChange" value="Update Message"/>
+
+                @code {
+
+                    public string Message { get; set; }
+
+                    [Parameter]
+                    public EventCallback<string> MsgChangeEvent { get; set; }
+
+                    public void MessageChange()
+                    {
+                        MsgChangeEvent.InvokeAsync(Message); // new massage
+                    }
+                }
+
+
+                    
+    Parent ==> 
+
+                @page "/parent4"
+
+            <h3>Parent4</h3>
+            <h1>@LocalMsg</h1>
+
+            <Child4 MsgChangeEvent="msgChangeHandler"></Child4>
+
+            @code {
+
+                public string LocalMsg { get; set; }
+                public void msgChangeHandler(string newMsg)
+                {
+                    LocalMsg = newMsg; 
+                    Console.WriteLine(newMsg);
+                }
+            }
+
+
+    ----------------------------------------------------------------------
+
+
+(3)----> Injection 
+
+
+
+Constructor ==> onIntializatin ==> onParameterSet (Everytime a variable changes)
+    So for variables that you want to update their value 
+
+    Put them in the `onParameterSet`......... NOT the onIntializatin
+
+1- Constructor => 
+            -Route - Parent [Paremter]  (ParameterSet)
+            
+                        => OnIntiliziation 
+
+
+        So if we print our variables in the case of OnIntiliziation
+        We will get values unlike the ctor.
+
+                                public EmployeeDetails()
+                                {
+                                    Console.WriteLine("ctor Parameter id = " + id);
+                                }
+
+                                public override Task SetParametersAsync(ParameterView parameters)
+                                {
+                                    Console.WriteLine(" set Parameter id = " + id);
+
+
+                                    return base.SetParametersAsync(parameters);
+                                }
+
+
+        This is why we should use `OnIntiliziation`
+        Instead of the ctor. 
+
+                                        protected override void OnInitialized()
+                    {
+                        Console.WriteLine(" OnIntiliazed Parameter id = " + id);
+                        EmployeeService empService = new EmployeeService();
+
+                        Employee = empService.getByID(id);
+
+                        Console.WriteLine(" OnIntiliazed Parameter id = " + Employee.Name);
+
+                        base.OnInitialized();
+                    }
+
+2- Anytime a parameter is changed,  
+    The following is called. 
+
+            protected override void OnParametersSet()
+            {
+                base.OnParametersSet();
+            }
+
+
+
+3- The anchor **DOES NOT** refresh the page if the path is registered in
+    The Routing table.
+
+                      <a href="\parent3" class="btn btn-primary">See Profile</a>
+
+4- for Injection we can use this keyword ==> 
+
+            ex:    @inject EmployeeService empService
+
+        Instead of injecting using the ctor....
+
+        Keep in mind that you still have to register the service in the IOC container. 
+
+            ex:     builder.Services.AddScoped<EmployeeService>();
+                    builder.Services.AddScoped<DepartmentService>();
+
+        Normally we would have an interface, 
+            But we just skipped it here 😁
+
+
+
+
+    ----------------------------------------------------------------------
+
+
+(4)----> Form (Part 1)
+
+1-  (Submit and reset) here are events connected to 
+    C# methods (Instead of redirecting to the server). 
+
+2- Instead of creating our own forms, 
+
+            Use `EditForm` built-in Component by Microsoft
+
+                a- Binding .. Mode ="obj" ==> gets and sets from that object
+
+                b- Validation, Validates the `obj` we sent
+
+                c- different events => onSubmit , onValidSubmit, onInvalidSubmit
+
+                d- input types 
+                    i- text
+                    ii- number
+                        ...
+
+
+
+
+3-              
+
+            
+                @page "/Emp/Edit/{id:int}"
+
+                @inject EmployeeService EmpSerivce
+                @inject DepartmentService DeptService
+
+
+
+                <h3>EmployeeEdit</h3>
+
+                @if (Employee is not null)
+                {
+                    <EditForm Model="Employee" OnSubmit="Save">
+
+                        <div>
+                            <label>Name</label>
+                            <InputText @bind-Value="Employee.Name" class="form-control"></InputText>
+                        </div>
+                        <div>
+                            <label>Salary</label>
+                            <InputNumber @bind-Value="Employee.Salary" class="form-control"></InputNumber>
+                        </div>
+                        <div>
+                            <label>Image</label>
+                            <InputText @bind-Value="Employee.Image" class="form-control"></InputText>
+                        </div>
+                        <div>
+                            <label>Department</label>
+                            @*<InputNumber @bind-Value="Employee.Dept_Id" class="form-control"></InputNumber>*@
+                            <InputSelect @bind-Value="Employee.Dept_Id" class="form-control">
+                                @foreach(var item in DeptList)
+                                {
+                                <option value="@item.Id">@item.Name </option>
+                                    
+                                }
+
+                            </InputSelect>
+
+                        </div>
+                    
+                        <input type="submit" value="Update" class="btn btn-success">
+                
+
+                    </EditForm>
+
+                    @Employee.Id
+
+                    @Employee.Name
+                    @Employee.Salary
+                    @Employee.Image
+                    @Employee.Dept_Id
+
+                }
+                else{
+                    <h3> Employee Not Found </h3>
+                }
+
+
+            --------------------------------------------------------------------
+
+
+                public partial class EmployeeEdit
+                {
+
+
+                    [Parameter]
+                    public int id { get; set; }
+
+                    public Employee Employee { get; set; }
+
+                    public List<Department> DeptList { get; set; }
+                    protected override void OnInitialized()
+                    {
+                        Employee = EmpSerivce.getByID(id);
+                        Console.WriteLine(Employee);
+
+                        Console.WriteLine("We are done");
+
+                        #region Department
+
+                        DeptList = DeptService.getAll();
+                        #endregion
+
+
+                        base.OnInitialized();
+                    }
+
+                    public void Save()
+                    {
+                        Console.WriteLine("Data Saved");
+                    }
+                }

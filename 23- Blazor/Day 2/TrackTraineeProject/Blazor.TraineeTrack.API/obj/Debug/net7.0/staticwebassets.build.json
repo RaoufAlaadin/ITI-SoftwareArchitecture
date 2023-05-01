@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JXRhpwCozMKVITuIqhyvXHNGRnXbmDPfwjargM0Kvbg=",
+  "Source": "Blazor.TraineeTrack.API",
+  "BasePath": "_content/Blazor.TraineeTrack.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

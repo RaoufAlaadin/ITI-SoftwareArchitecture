@@ -1,0 +1,180 @@
+****Main topics****
+--------------------------
+
+
+1- Validation (blazor is clientSide, 
+                So this is clientSide validation Only.)
+2- Handle Submit
+
+3- Navigate Component
+
+4- Web API
+
+
+Report deadline ==> 7 May 2023
+
+Tasks deadline ==> Sunday 
+
+-------------------------------------------------------
+
+(1) - Validation 
+
+
+1- follow these steps 
+
+    a- Add validation attributes to the model 
+
+    b-  add the following to the `EditForm`
+
+                <DataAnnotationsValidator></DataAnnotationsValidator>
+                <ValidationSummary></ValidationSummary>
+
+                 <div>
+            <label>Name</label>
+            <InputText @bind-Value="Employee.Name" class="form-control"></InputText>
+                                            <ValidationMessage For="() => Employee.Name"></ValidationMessage>
+        </div>
+
+
+    Note how the `for` is give as a delegate 
+
+        you can also wirte it as @( () => Employee.Name )   ===> this is called "As an expression" 
+
+
+2- To take actions based of the `EditForm` Validation result..
+
+            ===>  OnInvalidSubmit="Invalid" OnValidSubmit="Save" 
+
+
+                But note that the button still needs the type="submit" 
+                as all the events related to it 
+
+                --- on valid submit 
+                --- on Invalid submit 
+                --- on submit 
+
+                            You see ? 😂
+
+
+3- (Very Important)
+
+        The validation we did here is similar to the 
+        Unobtrousive.js files we used in MVC for clientSide validation.
+
+
+4- We use `if statements` to specify what appears on the screen,
+    Because on submit doesn't take us to another view like the `Normal form` 
+
+    It just activates a method we choosed. 
+
+
+    This structure is used to allow us to `Input,Validate and send data` 
+    While using a SPA(Single-Page Application)
+
+
+5- We can @inject and use the NavigationManger to navigate using the 
+    C# code instead of using the anchor tag 
+
+                    navManger.NavigateTo("/Employee/Details/" + id);
+
+
+    Implementation => 
+
+                    public void Save()
+                    {
+                        Console.WriteLine("Data Saved" +Employee);
+                        DataSaved = true;
+
+                        navManger.NavigateTo("/Employee/Details/" + id);
+                    }
+
+
+    You can Also write the following in your C# code to injection 
+
+            [Inject]
+            public NavigationManager navManger { get; set; }
+
+
+
+
+6-  (Very Important - on the pipeline order)
+
+
+                    Constructor ==> onIntializatin ==> onParameterSet (Everytime a variable changes)
+                    So for variables that you want to update their value 
+
+                    Put them in the `onParameterSet`......... NOT the onIntializatin.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+                    *********************  Part 2 ********************
+
+1- We are limited by SandBox like Javascript, 
+    So We have to use an API to get data from an App to can 
+    Deal with the server resources. 
+
+2- We create the same Dto from the back on the front, 
+    This provides a seemless transition for the data. 
+
+3- We will use the `HttpClient` to send requests to the API
+
+4- Because both front and back are .Net,
+    We can have them as projects in the same Solution
+
+    Our project structure => 
+
+                    a- Web API (Provider)
+
+                    b- Blazor WebAssembly (Consumer) 
+
+                    c- ClassLibrary (models and Dto) (Common classes)
+                        These are shared between blazor and web API
+                        And we don't expect an output from them.
+
+
+5-  We inject it in the blazor WebAssembly to request the API.. 
+
+          builder.Services.AddScoped(sp => 
+            new HttpClient { 
+                BaseAddress = 
+                new Uri(sp.GetRequiredService<IConfiguration>()["IP"] ?? "http://localhost:5073") }
+            );
+
+
+6- We add the following `using` to get better extension methods 
+    When writing the `HttpClient` commands.
+
+
+7- 
+
+    BAD ====>   builder.Services.AddScoped<IService<Employee>, EmployeeService>();
+                builder.Services.AddScoped<IService<Department>, DepartmentService>();
+
+                // register httpClient & determine base provider address
+                
+                    builder.Services.AddScoped(sp => 
+                        new HttpClient { 
+                            BaseAddress = new Uri(sp.GetRequiredService<IConfiguration>()["ProviderWebApiIp"])
+                        });
+
+
+    Good ==>          builder.Services.AddHttpClient<IService<Employee>, EmployeeService>(
+                //options httpClient
+                (sp,optionsHttpClient)=>
+                   optionsHttpClient.BaseAddress = 
+                   new Uri(sp.GetRequiredService<IConfiguration>()["ProviderWebApiIp"])
+                );
+
+
+            builder.Services.AddHttpClient<IService<Department>, DepartmentService>(
+                //options httpClient
+                (sp, optionsHttpClient) =>
+                   optionsHttpClient.BaseAddress =
+                   new Uri(sp.GetRequiredService<IConfiguration>()["ProviderWebApiIp"])
+                );
+
+
+
+                It allows us to specifiy different `BaseUrl` for each service if needed. 
+                
+                Because each service might be connected to a different API !! 😁

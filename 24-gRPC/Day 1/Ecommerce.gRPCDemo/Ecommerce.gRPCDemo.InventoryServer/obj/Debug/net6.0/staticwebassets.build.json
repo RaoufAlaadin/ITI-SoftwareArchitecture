@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UQnRNxF2r1RZAgjK7ZVJw7WrYhLwQwTF48VjE3dizBk=",
+  "Source": "Ecommerce.gRPCDemo.InventoryServer",
+  "BasePath": "_content/Ecommerce.gRPCDemo.InventoryServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

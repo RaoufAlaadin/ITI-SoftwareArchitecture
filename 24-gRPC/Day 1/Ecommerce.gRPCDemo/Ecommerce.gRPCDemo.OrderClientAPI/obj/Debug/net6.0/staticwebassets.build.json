@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yIg6FTCSYR8sWFKuYYgDaAEWBKsznsu6rDNqy0OiQxc=",
+  "Source": "Ecommerce.gRPCDemo.OrderClientAPI",
+  "BasePath": "_content/Ecommerce.gRPCDemo.OrderClientAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

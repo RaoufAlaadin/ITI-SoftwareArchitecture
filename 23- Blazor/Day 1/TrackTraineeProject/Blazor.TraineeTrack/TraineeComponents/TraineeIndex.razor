@@ -1,0 +1,34 @@
+﻿@page "/Trainee/Index"
+<h3>TraineeIndex</h3>
+
+
+<td> <a href="@($"Trainee/Add")" class="btn btn-outline-primary"> Add Trainee </a> </td>
+
+@if (MockContext.Trainees == null)
+{
+        <p> Loading......... </p>
+}
+else
+{
+        <table class="table">
+            <tr>
+                <th> TraineeID </th>
+                <th> Name </th>
+                <th> IsGraduate </th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+        @foreach (var item in MockContext.Trainees)
+        {
+                    <tr>
+                        <td> @item.Id </td>
+                        <td> @item.Name </td>
+                        <td> @item.IsGraduated </td>
+                        <td> <a href="@($"Trainee/Details/{item.Id}")" class="btn btn-outline-primary"> Details </a> </td>
+                        <td> <a href="@($"Trainee/Edit/{item.Id}")" class="btn btn-outline-primary"> Edit </a> </td>
+                        <td> <a href="@($"Trainee/Delete/{item.Id}")" class="btn btn-outline-primary"> Delete </a> </td>
+
+                    </tr>
+        }
+        </table>
+}

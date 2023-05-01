@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "Ecommerce.gRPCDemo.InventoryServer.Protos";
+
+import "google/protobuf/timestamp.proto";
+
+
+message OrderDetails {
+	 int32 userId = 1;
+    int32 itemId = 2;
+    string itemName = 3;
+    int32 quantity = 4;
+    int32 price = 5;
+}
+
+message  InventoryResponce {
+	bool InStock = 1; 
+	google.protobuf.Timestamp stamp = 2;
+
+}
+
+message IncreaseStockResponse {
+  bool success = 1;
+}

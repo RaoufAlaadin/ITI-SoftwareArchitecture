@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
+    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.52.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\Ecommerce.gRPCDemo.InventoryServer\Protos\Inventory.proto" GrpcServices="Client">
+      <Link>Protos\Inventory.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\Ecommerce.gRPCDemo.InventoryServer\Protos\InventoryModel.proto" GrpcServices="Client">
+      <Link>Protos\InventoryModel.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\Ecommerce.gRPCDemo.PaymentServer\Protos\Payment.proto" GrpcServices="Client">
+      <Link>Protos\Payment.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\Ecommerce.gRPCDemo.PaymentServer\Protos\PaymentModel.proto" GrpcServices="Client">
+      <Link>Protos\PaymentModel.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

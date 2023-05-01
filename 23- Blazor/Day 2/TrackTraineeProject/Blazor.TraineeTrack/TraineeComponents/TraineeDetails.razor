@@ -1,0 +1,61 @@
+﻿@page "/Trainee/Details/{TraineeId:int}"
+
+@if (CurrentTrainee == null)
+{
+    <p>Loading trainee details...</p>
+
+}
+else
+{
+
+    <h3>TraineeDetails for @CurrentTrainee.Name</h3>
+
+
+    <div class="form-group row">
+        <label class="col-form-label"> Trainee Id</label>
+        <label class="form-control"> @CurrentTrainee.Id </label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-form-label"> Name </label>
+        <label class="form-control"> @CurrentTrainee.Name</label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-form-label"> Gender </label>
+        <label class="form-control"> @CurrentTrainee.Gender </label>
+    </div>
+
+
+
+    <div class="form-group row">
+        <label class="col-form-label"> IsGraduated </label>
+        <label class="form-control"> @CurrentTrainee.IsGraduated </label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-form-label"> Birthdate </label>
+        <label class="form-control"> @CurrentTrainee.Birthdate</label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-form-label"> Email </label>
+        <label class="form-control"> @CurrentTrainee.Email </label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-form-label"> Phone Number </label>
+        <label class="form-control"> @CurrentTrainee.MobileNo </label>
+    </div>
+
+
+    <div class="form-group row">
+        <label class="col-form-label"> Track Id </label>
+        <label class="form-control"> @CurrentTrack?.Id </label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-form-label"> Track Name </label>
+        <label class="form-control"> @CurrentTrack?.Name </label>
+    </div>
+}

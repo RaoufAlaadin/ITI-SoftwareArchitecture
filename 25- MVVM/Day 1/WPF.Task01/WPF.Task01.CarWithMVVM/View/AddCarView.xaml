@@ -1,0 +1,102 @@
+﻿<Window x:Class="WPF.Task01.CarWithMVVM.View.AddCarView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.Task01.CarWithMVVM.View"
+        mc:Ignorable="d"
+        Title="AddCarView" Height="450" Width="800"
+        
+        xmlns:Conv="clr-namespace:WPF.Task01.CarWithMVVM.Converters"
+        
+        DataContext="{StaticResource ResourceKey=AddCarVM}"
+        >
+
+    <Window.Resources>
+        
+        <Conv:BackgroundConverter x:Key="BGConv"></Conv:BackgroundConverter>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+
+        <ListView Width="300" Background="LightBlue" 
+                  Name="lst" ItemsSource="{Binding CarsList}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Width="100" 
+                                       Text="{Binding Id}"></TextBlock>
+                            <TextBlock Width="100"
+                                       Text="{Binding Name}"></TextBlock>
+                            <TextBlock Width="100"
+                                       Text="{Binding Manufacturer}"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackPanel Grid.Column="1">
+
+
+            <StackPanel Width="500"
+                        Height="100"
+                        Background="{Binding Manufacturer ,Converter={StaticResource ResourceKey=BGConv}}" 
+                        
+                        DataContext="{Binding ElementName=lst,Path=SelectedItem}">
+                <TextBlock Width="100" Text="{Binding Id}" ></TextBlock>
+                <TextBlock Width="100" Text="{Binding Name}" ></TextBlock>
+                <TextBlock Width="100" Text="{Binding Price}" ></TextBlock>
+                <TextBlock Width="100" Text="{Binding Description}" ></TextBlock>
+
+
+
+            </StackPanel>
+
+            <StackPanel Margin="10">
+                <StackPanel DataContext="{Binding NewCar}"  >
+
+                    <TextBox Width="150"
+                         Height="30"
+                         Margin="5"
+
+                         Text="{Binding Id}"
+                         ></TextBox>
+                    <TextBox Width="150"
+                         Height="30"
+                         Margin="5"
+                         Text="{Binding Name}"
+                         ></TextBox>
+                    <TextBox Width="150"
+                         Height="30"
+                         Text="{Binding Manufacturer}"
+                         ></TextBox>
+                    <TextBox Width="150"
+                         Height="30"
+                         Text="{Binding Price}"
+                         ></TextBox>
+                    <TextBox Width="150"
+                         Height="30"
+                         Text="{Binding Description}"
+                         ></TextBox>
+                </StackPanel>
+                <Button Margin="5"
+                        Width="100"
+                        Height="40"
+                        Content="Add"
+                        Command="{Binding AddCarCommandProp}"
+                        CommandParameter="{Binding NewCar}"
+                        ></Button>
+            </StackPanel>
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>

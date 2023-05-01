@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Uzpic1VSd6olDDWpLAntQZYCJdU9RaxUZz13iuqd0cg=",
+  "Source": "Ecommerce.gRPCDemo.PaymentServer",
+  "BasePath": "_content/Ecommerce.gRPCDemo.PaymentServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,434 @@
+1- Web app using C# that runs on the client using (Web Assembly)
+
+2- http request takes the (html+JS) files from the webserver
+    Ands stores it in the client.
+
+3- Javascript runtime (aka sandbox) ==> interprets JS code.
+
+4- main.wasm => intermiddate code (bit code),
+
+    wasm ===> referes to Web Assembly
+    
+    C# code => bit code => javascript
+
+    (Mono-Runtime) or (Mono.wise)
+
+5- Our goal : running all the possible C# code to run on the client, 
+            As it's going to be faster. 
+
+6- 2 flavors of blazor
+        client blazor => using web Assembly
+        backend blazor => normal web app + signalR
+
+        .cshtml => .razor .... (both are the same,
+                            with small differences.)
+
+7- Code once ... run everywhere??
+    NO !! with blazor, write code everywhere 😁.
+        told by the .net standard
+
+=================================================================================
+
+                ****************** REAL ********************
+1- Web assembly is low level code, 
+    Which makes it faster thant Javascript. 
+                            **** All browsers understand `WebAssmebly`, This is SO POWERFUL!! ****
+
+    So we write high level code and it gets compiled into WebAssmebly standard
+    To run on the client. 
+
+    C# ==> ``compile`` 
+                    => IL(intermiddate language).dll (used to be .exe on desktop app) ==> 
+                                                                         ``Runtime`` ==> machine language 
+                The third line is handeled by (dotnet.wasm), the runtime that runs the
+                C# IL (.dll) files and transform it into wasm (WebAssmebly code) 
+                That is understand by the browser.
+
+        SDK => dll+runtime
+
+        suitable runtime is installed on the target device 
+        to run the machine language.
+
+        for our case the run time transforms(
+                IL == To ==> Web Assembly.
+        )
+
+2- What is the `SandBox` ? (Important security protection)
+
+    Container that holds (JS runtime (JS + WebAssmebly))
+        The container allows Js Code to acces our device using certian
+        API's only !! (Storage-file-DOM)
+
+            ==> This is for security purpose to defend against 
+                malicious JavaScript code (Cross-Site Scripting)
+
+    Both Js and WebAssmebly using the ==> Js Runtime. 
+    So both of them have that `Sandbox` limitations.
+
+
+3- Blazor ?? (Browser + Razor)
+    => Create modern single-page application (SPA)
+
+        Blazor => frontend
+        WebAPI => backend
+
+4- Web assembly benfits 
+        a- Binary code format
+        b- Much faster than javascript
+        c- Allows multi-threading better thant javascript
+            That is single-threaded but handles multi-threading
+            using `Event-loop`
+
+------------------------------------------------------------------
+
+1- Blazor is similar to the updates added to `MVC 6`
+
+
+2- `Blazor WebAssmebly`
+                 Is waaaaay better than `Blazor Server App`
+    
+    as `Blazor WebAssmebly` 
+        a- runs on the client side
+        b- faster
+        c- better scalabitilty as it's not limited
+            by the capacity of a server.
+
+3- `Porgrassive Web Application` 
+        => Automatically refreshes the browser with
+            each update.
+
+
+4- lanuchSetting.json ==> is used at the development time
+                            for running on kestral or IIS.
+
+5- wwwroot/index.html ==> the starting file for our project.
+
+    our contnet loads in the following app like angular (Single-page app)
+                <div id="app">Loading...</div>
+
+
+6-     <script src="_framework/blazor.webassembly.js"></script>
+
+        This code downloads 
+                a- runtime (suitable for running the C# comipled code)
+                b- your dll ( my app)
+                c- .net dll (packages used by `myApp`)
+
+
+7- Browser Refresh ==> It means it went to the server.
+
+8- Blazor goes once to the server ===>
+        Gets all the needed files ==> 
+                Stores it in .... Storage--> CacheStorage --> blazor-resouces.
+
+            You will note that after the first refresh,
+            Nothing is imported from the server in the `Network Tab` 
+
+9- You will find that the intiator for the runtime `dotnet.wasm`
+    Is the following url ==>   _framework/blazor.webassembly.js
+
+    Which links to the Javascript file we said  it was really important in 
+    Our main `index.html`
+
+10- Benfit of the clientSide caching that our application will run fast.
+
+
+----------------------------------------------------------------
+
+1- Blazor: 
+
+        Set component
+        small unit project HTML+C# code
+    
+
+    Component
+            a- Built-in Component
+            b- Custom Navigation
+
+                i- Page "navigational" "Has URL"  (Pages Folder)
+
+                    Has the following attribute =>       @page "/counter"
+                    Where if you got to the url,
+                    You will reach the page.
+
+                ii- Non-Page "used in another component" (Shared Folder)
+
+                    has the following attribute => @inherits LayoutComponentBase
+
+
+2- (VeryImportant) ==> First letter of the componentName MUST be uppercase
+
+                            Ex: "First.razor"
+
+3- We have to add our folder nameSpace in the ==> `_Imports.razor`
+    For our components to be seen globally by the project...
+
+    This is better than using ===>  @using RaoufBlazorDemo.MyComponent
+    In every single page we have 😂
+
+
+    ===============================================================================================
+
+                    ******************** PART 2 - (layouts and binding) **********************
+     
+1- Class First: ComponenteBase => hidden class, Automatically generated
+                                    And holds the code we wrote in the 
+
+    To view that class:
+        Press on your solution => press on the `Show All files` at the top
+                - bin 
+                -obj 
+                    -debug
+                        -.net5
+                            - Razor
+                                -MyComponent (that's my folder name)
+                                    -First.razor.g.cs  ==> .g for generated 
+                                                            .cs for c# 
+                                    -secondary.razor.g.cs  
+
+
+        Code ex: 
+
+                    public partial class First : global::Microsoft.AspNetCore.Components.ComponentBase
+                        {
+                            #pragma warning disable 1998
+                            protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
+                            {
+                                __builder.AddMarkupContent(0, "<h3>First</h3>\r\n");
+                                __builder.AddMarkupContent(1, "<h2>Hello from the first component</h2>");
+                            }
+                            #pragma warning restore 1998
+                        }
+
+
+        -- The generated code basically builds everything you write in your component as a tree. 😁
+        -- editing that code has NO EFFECT as it will regenerate at build based on what 
+            Is written in the component.
+
+2- Program.cs
+
+        i- Host our project. 
+                 var builder = WebAssemblyHostBuilder.CreateDefault(args); 
+
+        
+        ii- We will talk about the injection in Day 3 :         
+                    builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+
+        iii- Root for all the other project components, 
+                    You can think of it as a `tree root`
+
+                                builder.RootComponents.Add<App>("#app");
+
+
+            puts the contnet of the App component and puts it in the ===> (id=app which is #app)
+            
+            App component===>       
+            
+                 <Router AppAssembly="@typeof(Program).Assembly" PreferExactMatches="@true">
+                            <Found Context="routeData">
+                                <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+                            </Found>
+                            <NotFound>
+                                <LayoutView Layout="@typeof(MainLayout)">
+                                    <p>Sorry, there's nothing at this address.</p>
+                                </LayoutView>
+                            </NotFound>
+                        </Router>
+
+
+
+3- Router: built-in component
+
+           a-Creates a routing table containing (url,component)
+                
+                ex: @page ==> '/second'      ,  secondComponent 
+
+           b-Catches the incoming requests from the URL
+
+4-          <NavMenu />
+
+                    => This is the side menu we have
+
+            Inside it we have 
+
+                 <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="second">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> secondComponent
+                    </NavLink>
+                </li> 
+
+                it's like `router-link` from angular and it's used to 
+                redirect us to a component without refreshing the page.
+
+
+                Note: 
+                        The span creates the icon next to the displayed name.
+
+                            <span class="oi oi-list-rich" aria-hidden="true"></span>
+
+5- our build structure is as the following :
+
+        a- App.razor finds the desired component
+
+        b- places it instead of loading..... in the (index.html)
+
+        c- then the (index.html) gets placed inside the `MainLayout.razor`
+
+
+6- We do not place () after the function here, as It's a C# delegate. 
+
+                <input type="button" value="click me" @onclick="MEssage"/>
+
+
+                @code {
+                    public void MEssage()
+                    {
+                        
+                    }
+                }
+
+
+7- Binding 
+
+        a- One way binding 
+
+                i- from c# to html 
+
+                    <h1> @x </h1>
+
+                ii- from html to c# 
+
+                    <input type="button" @onclick = "Increament"  value="Increament"/>
+                    <input  type="text" value="@x"/>
+
+        b- Two way binding 
+
+            Changes the x , gets changed if the x changes
+
+
+                    <h1>Two way binding. C# to,from html</h1>
+                    <input type="text" @bind="x" @bind:event ="onchange" class="form form-control" />
+
+
+                    <h1>Two way binding with Update</h1>
+                    @* Updates while we are writing. *@
+                    <input type="text" @bind="x" @bind:event="oninput" class="form form-control" />
+
+
+                onchange ==> works when the input loses `focus`  ==> use with `selectList`
+                oninput ==> updates immediatly as you write. ===> use with `inputs`
+
+
+                ExtraNote: 
+                        When focusing on the value only 
+
+                      <input type="text" @bind-value="x" @bind-value:event="onchange" class="form form-control" />
+
+    ===============================================================================================
+
+                    ******************** PART 3 - (Models) **********************
+
+1- Models => should have been an outside Dll (like another project)
+            For it to be shared with other projects.
+
+
+2- In 2-way binding, 
+
+        It's usually done with `input` tags, 
+            i-As they accpet input from the user, 
+            ii-And can also show result.
+
+
+         
+                       <select @bind="PersonID" @bind:event="oninput" class="form-control" @onchange="getPersonByID">
+
+                            @foreach (var item in PersonList)
+                            {
+                                <option value="@item.ID"> @item.Name</option>
+                            }
+                        </select>
+
+                        <h2>@PersonID</h2>
+
+
+                        @if(person != null)
+                        {
+                            <h1> @person.ID</h1>
+                            <h1> @person.Name</h1>
+                        }
+
+                        @code {
+
+                                public int PersonID { get; set; }
+                        }
+
+        **Binding Explained**
+
+            a- @bind ="PersonID" ==> this is basically the variable where we
+                        are going to store our value when 
+                        the default event happens (onchange)
+
+                        or any aother event we choosed
+                        ex:    @bind:event="oninput" 
+                        
+                        We store a value, or take the value
+                        From the variable. 
+
+
+            (Important!!!!!!)
+            b- @bind:event ="onchange" => this is the default event 
+                That's why we had to choose something else to use the 
+                @onchange on the select value. 
+
+                I think this is weird but okay. xxxxxxxxxxxxxxxxxxxx
+
+
+                        Explaination : 
+
+                                            the @bind:event ="onchange" just stores the value in the variable
+                                            I used to bind..
+
+                                            But what I want here is to specificy a method to be called !!!! 
+
+                                                @onchange="getPersonByID"
+
+                                            That's why we changed the default to be able to use that event
+                                            With our method 😁
+
+
+------------------------------------------------
+
+    Summary
+
+    1- one way binding 
+
+        from cs to html ====>  <h1>@x 
+
+        from html to cs ===> <input value="@x"
+
+    2-  2 way binding (form,input,select) => because they allow user inputs.
+
+        <input @bind ="x" @bind:event ="oninput"
+
+        <select @bind ="id"
+
+    3- I explained the following behaviour above why ==> 
+          bind:event="oninput" ... and ...  @onchange="getPersonByID"
+    
+    
+    <select @bind="PersonID" @bind:event="oninput" class="form-control" @onchange="getPersonByID">
+
+
+
+       Explaination (repeated from above): 
+
+                                            the @bind:event ="onchange" just stores the value in the variable
+                                            I used to bind..
+
+                                            But what I want here is to specificy a method to be called !!!! 
+
+                                                @onchange="getPersonByID"
+
+                                            That's why we changed the default to be able to use that event
+                                            With our method 😁

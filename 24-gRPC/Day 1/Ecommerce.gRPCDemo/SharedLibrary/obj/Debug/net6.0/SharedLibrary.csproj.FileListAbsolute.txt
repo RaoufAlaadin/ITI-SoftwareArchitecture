@@ -1,0 +1,12 @@
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\bin\Debug\net6.0\SharedLibrary.deps.json
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\bin\Debug\net6.0\SharedLibrary.dll
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\bin\Debug\net6.0\SharedLibrary.pdb
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\SharedLibrary.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\SharedLibrary.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\SharedLibrary.AssemblyInfo.cs
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\SharedLibrary.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\SharedLibrary.dll
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\refint\SharedLibrary.dll
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\SharedLibrary.pdb
+E:\ITI intake 43 SD\33- GRPC\D01\D1-Task\Ecommerce.gRPCDemo\SharedLibrary\obj\Debug\net6.0\ref\SharedLibrary.dll

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Ecommerce.gRPCDemo.InventoryServer.Protos";
+
+
+import "InventoryModel.proto";
+import "google/protobuf/empty.proto";
+
+
+service Inventory {
+	rpc CheckInventory (OrderDetails) returns (InventoryResponce);
+	rpc IncreaseStock(OrderDetails) returns (IncreaseStockResponse);
+}

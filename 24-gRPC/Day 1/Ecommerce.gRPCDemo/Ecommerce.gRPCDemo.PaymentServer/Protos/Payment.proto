@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Ecommerce.gRPCDemo.PaymentServer.Protos";
+
+import "PaymentModel.proto";
+import "google/protobuf/empty.proto";
+
+
+service Payment {
+	rpc CheckBalance (OrderDetails) returns (PaymentResponce);
+}

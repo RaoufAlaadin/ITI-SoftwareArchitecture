@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\obj\\Debug\\net7.0\\build-gz\\+rXZioQ1.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Blazor.TraineeTrack.styles.css",
+      "PackagePath": "staticwebassets\\Blazor.TraineeTrack.styles.css"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\obj\\Debug\\net7.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "E:\\ITI intake 43 SD\\32-Blazor\\Day 1\\D1-Task\\TrackTraineeProject\\Blazor.TraineeTrack\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Blazor.TraineeTrack.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Blazor.TraineeTrack.props",
+      "PackagePath": "build\\Blazor.TraineeTrack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Blazor.TraineeTrack.props",
+      "PackagePath": "buildMultiTargeting\\Blazor.TraineeTrack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Blazor.TraineeTrack.props",
+      "PackagePath": "buildTransitive\\Blazor.TraineeTrack.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

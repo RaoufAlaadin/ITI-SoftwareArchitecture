@@ -1,0 +1,5 @@
+obj\Debug\net6.0/Inventory.cs \
+obj\Debug\net6.0/InventoryGrpc.cs: C:/Users/Reem/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/InventoryModel.proto\
+ C:/Users/Reem/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/empty.proto\
+ Protos/Inventory.proto

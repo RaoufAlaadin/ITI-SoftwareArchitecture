@@ -1,0 +1,78 @@
+﻿@page "/Trainee/Edit/{TraineeId:int}"
+
+<h3>TraineeEdit</h3>
+
+@if (CurrentTrainee is not null)
+{
+
+
+
+    @if (!Saved)
+    {
+        <EditForm Model="@CurrentTrainee" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit" >
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary></ValidationSummary>
+
+            <div class="form-group row">
+                <label for="name" class="col-form-label"> Name: </label>
+                <InputText id="name" class="form-control" @bind-Value="@CurrentTrainee.Name" placeholder="Enter name"></InputText>
+                <ValidationMessage For="@(() => CurrentTrainee.Name)" />
+            </div>
+
+            <div class="form-group row">
+                <label for="gender" class="col-form-label">Gender: </label>
+                <InputSelect id="gender" class="form-control" @bind-Value="@CurrentTrainee.Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </InputSelect>
+            </div>
+
+            <div class="form-group row">
+                <label for="birthdate" class="col-form-label">Birthdate: </label>
+                <InputDate id="birthdate" class="form-control" @bind-Value="@CurrentTrainee.Birthdate" placeholder="Enter birthdate"></InputDate>
+            </div>
+
+            <div class="form-group row">
+                <label for="email" class="col-form-label">Email: </label>
+                <InputText id="email" class="form-control" @bind-Value="@CurrentTrainee.Email" placeholder="Enter email"></InputText>
+                <ValidationMessage For="@(() => CurrentTrainee.Email)" />
+            </div>
+
+            <div class="form-group row">
+                <label for="mobileNo" class="col-form-label">Mobile No: </label>
+                <InputText id="mobileNo" class="form-control" @bind-Value="@CurrentTrainee.MobileNo" placeholder="Enter phone number"></InputText>
+                <ValidationMessage For="@(() => CurrentTrainee.MobileNo)" />
+            </div>
+
+            <div class="form-group row">
+                <label for="isGraduated" class="col-form-label">Is Graduated: </label>
+                <InputCheckbox id="isGraduated"  @bind-Value="@CurrentTrainee.IsGraduated"></InputCheckbox>
+
+            </div>
+
+            <div class="form-group row">
+                <label for="trackId" class="col-form-label">Track: </label>
+                <InputSelect id="trackId" class="form-control" @bind-Value="@CurrentTrainee.TrackId">
+                    @foreach (var track in MockContext.Tracks)
+                    {
+                        <option value="@track.Id">@track.Name</option>
+                    }
+                </InputSelect>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+        </EditForm>
+    }
+    else
+    {
+            <div class="alert-success">
+            Trainee Saved Successfully......
+            </div>
+    }
+
+}
+
+else{
+
+    <h3>.......Trainee was not found.....</h3>
+}

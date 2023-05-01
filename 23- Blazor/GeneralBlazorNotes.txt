@@ -1,0 +1,34 @@
+1-  
+
+    a- One way binding 
+
+        i- from CS to html 
+
+            When we use @x for a C# variable we have to display it in an html. 
+
+        ii- from html to CS 
+
+            When using an `Input tag` to take data from the user,
+            And store it in a C# variable 
+
+    b- Two way 
+
+        using the following tags ==> (input,select and form)
+
+           - CS to html      
+            can display the stored value of the variables.
+
+           - html to CS 
+            can recieve a new value for that variable from the user.
+
+
+2- @bind vs @bind-Value in blazor 
+
+            @bind 
+                ==> binds the value and create a default event of "oninput"
+
+            @bind-Value doesn't create an event, 
+                It will wait for you to decalare one using 
+                    @bind:event = "oninput" 
+                        
+

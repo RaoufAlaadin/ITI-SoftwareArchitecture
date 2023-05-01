@@ -1,0 +1,17 @@
+﻿<Application x:Class="WPF.Task01.CarWithMVVM.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPF.Task01.CarWithMVVM"
+             
+             xmlns:VM="clr-namespace:WPF.Task01.CarWithMVVM.ViewModel"
+             
+             StartupUri="View/AddCarView.xaml">
+    
+    <Application.Resources>
+        
+        <VM:AddCarViewModel x:Key="AddCarVM"></VM:AddCarViewModel>
+        
+    </Application.Resources>
+    
+    
+</Application>
