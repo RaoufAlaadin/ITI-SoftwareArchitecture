@@ -1,0 +1,265 @@
+
+
+
+
+
+
+
+
+==========================================================
+
+    ******* Part 2 ****************
+
+
+
+1- 
+
+    ==> CarService.cs 
+
+        public class CarService {
+
+            private readonly InMemoryContext _InMemoryContext;
+
+            public CarService(){
+
+                _InMemoryContext = new InMemoryContext();
+            }
+
+            public bool IsSold(int carId){
+
+                var car = _InMemoryContext.Cars.FirstOrDefult(c=> c.Id == carId);
+
+                return car?.Owner != null; 
+            }
+        }
+
+    ==> CarRepository.cs 
+
+        public  class CarRepository{
+
+            private readonly InMemoryContext _InMemoryContext; 
+
+            public CarsRepository(InMemoryContext InMemoryContext){
+
+                _InMemoryContext = InMemoryContext; 
+            }
+        }
+    ==>CarServiceTests 
+
+
+        public void IsSolid_valid
+
+
+2- How to test controller ? 
+
+    Like any other function. 
+
+    [TestMethod]
+
+    public void MyTestMethod(){
+
+        Mock<ICarService> mock = new Mock<ICarService>();
+        var Controller = new CarController(mock.Object);
+
+        mock.Setup( m => m.IsSold(1)).Returns(true);
+
+------------------------------------------------------
+
+
+New topic, no task on it, but good knowladge.. 
+
+
+3- ATTD ==> Acceptance Test Driven Development
+
+        exstension ==> specflow  ======> 2:08:00
+
+        package ==> specflow.mstest ,, specflow.tools.msbuild.generation
+    }
+
+4-  
+
+    ===> FizzBuzz.Feature
+                Feature: Fizzbuzz
+                
+                    @tag1 
+                    
+                    Scenario: Print Fizz
+                        Given User enters number 3 
+                        When Print function is called
+                        Then "Fizz" should be printed
+
+
+
+    ==> PrintFizzSteps.cs  --> Generated from the feature scenario. ( I think ? )
+    
+            [Binding]
+
+            public class PrintFizzSteps{
+
+                private int _userNumber;
+                private string _result; 
+
+                [Given(@"User enters number (.*)")]
+
+            }
+
+
+
+==========================================
+
+Task 
+
+1- Make it versions for each requirement 
+
+    and keep commenting and copying and adding to the code. 
+    Dividing it using regions..
+
+    We are doing this 
+
+
+
+
+    using System;
+using System.Linq;
+
+namespace ConsoleApp
+{
+    public class StringCalculator
+    {
+        #region Version 1
+        /*public int Add(string numbers)
+        {
+            return 0;
+        }*/
+        #endregion
+
+        #region Version 2
+        /*public int Add(string numbers)
+        {
+            if (string.IsNullOrEmpty(numbers))
+                return 0;
+
+            return int.Parse(numbers);
+        }*/
+        #endregion
+
+        #region Version 3
+        /*public int Add(string numbers)
+        {
+            if (string.IsNullOrEmpty(numbers))
+                return 0;
+
+            var stringNumbers = numbers.Split(',');
+
+            return stringNumbers.Select(int.Parse).Sum();
+        }*/
+        #endregion
+
+        #region Version 4
+        public int Add(string numbers)
+        {
+            if (string.IsNullOrEmpty(numbers))
+                return 0;
+                                                            (VeryImportant)
+            var delimiters = new[] { ',', '\n' };  =====> // use '' instead of "" to show that it's a signle char.
+
+            var stringNumbers = numbers.Split(delimiters);
+
+            var intNumbers = stringNumbers.Select(int.Parse).ToArray();
+
+            var negatives = intNumbers.Where(x => x < 0).ToArray();
+            if (negatives.Any())
+                throw new ArgumentException($"Negatives not allowed: {string.Join(", ", negatives)}");
+
+            return intNumbers.Sum();
+        }
+        #endregion
+    }
+}
+
+
+-------------------------------------------------------------------------------
+
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace ConsoleApp.Tests
+{
+    [TestClass]
+    public class StringCalculatorTests
+    {
+        private StringCalculator _calculator;
+
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            _calculator = new StringCalculator();
+        }
+
+        #region Version 1 Tests
+        /*[TestMethod]
+        public void Add_EmptyString_ReturnsZero()
+        {
+            var result = _calculator.Add("");
+            Assert.AreEqual(0, result);
+        }*/
+        #endregion
+
+        #region Version 2 Tests
+        /*[TestMethod]
+        public void Add_SingleNumber_ReturnsNumber()
+        {
+            var result = _calculator.Add("1");
+            Assert.AreEqual(1, result);
+        }*/
+        #endregion
+
+        #region Version 3 Tests
+        /*[TestMethod]
+        public void Add_TwoNumbers_ReturnsSum()
+        {
+            var result = _calculator.Add("1,2");
+            Assert.AreEqual(3, result);
+        }
+
+        [TestMethod]
+        public void Add_UnknownNumberOfNumbers_ReturnsSum()
+        {
+            var result = _calculator.Add("1,2,3,4");
+            Assert.AreEqual(10, result);
+        }*/
+        #endregion
+
+        #region Version 4 Tests
+        [TestMethod]
+        public void Add_NewLineDelimiter_ReturnsSum()
+        {
+            var result = _calculator.Add("1\n2,3");
+            Assert.AreEqual(6, result);
+        }
+
+        [TestMethod]
+        public void Add_NegativeNumber_ThrowsException()
+        {
+            Assert.ThrowsException<ArgumentException>(() => _calculator.Add("-1"));
+        }
+
+        [TestMethod]
+        public void Add_MultipleNegativeNumbers_ThrowsException()
+        {
+            var exception = Assert.ThrowsException<ArgumentException>(() => _calculator.Add("-1,-2"));
+            Assert.AreEqual("Negatives not allowed: -1, -2", exception.Message);
+        }
+        #endregion
+
+
+        // Extra.. using the exception attribute from the lecture
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException), "Negatives not allowed: -1, -2")]
+        public void Add_MultipleNegativeNumbers_ThrowsException()
+        {
+            _calculator.Add("-1,-2");
+        }
+    }
+}

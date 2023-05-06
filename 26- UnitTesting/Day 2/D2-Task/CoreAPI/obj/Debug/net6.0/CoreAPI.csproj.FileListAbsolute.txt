@@ -1,0 +1,96 @@
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.exe
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.deps.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.runtimeconfig.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.pdb
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.AssemblyReference.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.AssemblyInfoInputs.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.AssemblyInfo.cs
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.CoreAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.CoreAPI.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CoreAPI.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CoreAPI.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\scopedcss\bundle\CoreAPI.styles.css
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.CopyComplete
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\refint\CoreAPI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.pdb
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.genruntimeconfig.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT - Menofia\Day 2\CoreAPI\obj\Debug\net6.0\ref\CoreAPI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.exe
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.deps.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.runtimeconfig.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\CoreAPI.pdb
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.AssemblyReference.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.AssemblyInfoInputs.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.AssemblyInfo.cs
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.CoreAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.CoreAPI.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CoreAPI.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CoreAPI.props
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\scopedcss\bundle\CoreAPI.styles.css
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.CopyComplete
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\refint\CoreAPI.dll
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.pdb
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\CoreAPI.genruntimeconfig.cache
+C:\Users\waleed.elwakeel\Desktop\UnitTest\UT-Smart\Day 2\CoreAPI\obj\Debug\net6.0\ref\CoreAPI.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\appsettings.Development.json
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\appsettings.json
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\CoreAPI.exe
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\CoreAPI.deps.json
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\CoreAPI.runtimeconfig.json
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\CoreAPI.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\CoreAPI.pdb
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.AssemblyInfo.cs
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.CoreAPI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.CoreAPI.props
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CoreAPI.props
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CoreAPI.props
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\staticwebassets.pack.json
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\staticwebassets.build.json
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\staticwebassets.development.json
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\scopedcss\bundle\CoreAPI.styles.css
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.csproj.CopyComplete
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\refint\CoreAPI.dll
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.pdb
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\CoreAPI.genruntimeconfig.cache
+E:\ITI intake 43 SD\35- Unit testing\Day 2\D2-Task\CoreAPI\obj\Debug\net6.0\ref\CoreAPI.dll

@@ -1,0 +1,250 @@
+
+
+
+1- Unit tests? 
+
+    Low level tests as it focus on small parts (functions)
+
+    High level would be a whole feature with one test. 
+
+
+2- Integration Testing 
+        => Testing behaviors with eachother
+    Acceptance Testing  (UAT user accpetance test)
+        => done by client to test the software before
+            Accepting it. 
+
+3-  unit test project (.net framework) ===> We will use Core tomrrow.
+
+
+4-      Run using ===> Test Explorer
+
+    1-  
+        [TestMethod]
+    
+        public void TimeToCoverProvidedDistance_Distance100Velocity25_Time4()
+        {
+                // Arrange 
+
+
+            
+            Car.car = new Car();
+            car.Velocity = 25; 
+            double distance = 100; 
+            double expectedTime = 4; 
+
+            // Act 
+
+            double actualResult = car.TimeToCoverProvidedDistance(distance);
+
+            // assert 
+            Assert.AreEqual(expectedTime, actualResult);
+
+        }
+
+    2-
+        [TestMethod]
+
+
+        // WE have to override the equal, not ignore the reference Comparison.  ===> done in the car class. 
+
+
+        publicc void TwoCarsDifferentInstancesSameState_EqualCars()
+        {
+                // Arrange 
+
+                Car car1 = new Car( CarType.Audi, 100, DrivingMode.Forward);
+                Car car2 = new Car(CarType.Audi,100,DrivingMode.Forward)
+
+                //Act 
+
+                Assert.AreEqual(car1,car2)
+
+            
+        }
+
+    3- IsNotNull , instanceof
+
+
+    4- ...
+    
+
+    5-  public override bool Equals(object obj){
+
+        Car car = obj as Car; 
+         
+        return car.Type == this.Type;  
+    }
+
+    6- AreSame , AreNotSame ==> the compare refrences.  
+
+    7- Naming       name of method we are Testing
+                                            _  decsribeFn (it's output)
+                                                        _  AssertUsed 
+
+
+    8- String Assert ==> using regex to compare. 
+
+    9 - [ExpectedException (Typeof(NotImplementedExcpetion))]
+
+        The test is good if an excpetion happen, because it's the
+        expected output, this means the test is correct. 
+
+    10- [TestClass] , [TestMethod]
+
+    11- Collection Assert
+
+            a- Contians ==> Check if Car1 is actullay part of the Cars List... 
+            b- IsSubsSetOf ==> checks if an array of cars is part of the cars List 
+
+    12- When comparing 2 lists, if their items have the same order, 
+        and the Eqaul is overriden, then the test ==> passes. 
+
+
+        switch the order,, and it will fail.. 
+
+        using AreEquivelant instead of areEqual will focus only
+        On the reference... doesn't matter anything else. 
+
+
+========================================================================
+
+1-  [Owner("Ahmed")]
+    [Piriority(1)]
+    [TestCategory("Equality)]
+
+
+            ==> Build to see the attributes u sat 
+                in the traits column.
+
+
+
+    [Ignore] ==> Will put a yellow triangle on the test
+                And it's going to be skipped.
+
+
+
+2-      public TestContext TestContext { get; set;}
+
+    ==> Assembly is the first thing that runs. 
+
+        a- [AssemblyInitialize]
+
+            i-[TestInitialize]  
+
+                ==> used as a constructor if we need some objects
+                    for the test case we are running .
+            ii-[ClassInitialize]
+
+
+        b- [AssemblyCleanup]
+
+            i-[TestCleanup]
+
+            ii-[ClassCleanup]
+
+
+     
+    -- Each unit test has it's own separate instance to 
+        not get effected by another test.
+
+3- How can we test a void method? 
+
+    It's better to get every fn to have a return. 
+
+    ==> to test it you need to track the 
+        changes that happens to an object. 
+
+4- testing a private method ?
+
+    ==>  We test the public method
+        Which is combined of different little private methods. 
+
+        So we don't actually test private methods directly.
+
+========================================================================
+
+
+
+    Task    
+-----------
+    (pick different one each time)
+
+    1- 4 Unit tests using assert class
+    2- 2 unit tests using stringAssert class
+    3- 2 unit tests using CollectionAsssert class
+
+
+
+        MethodName_
+
+
+
+        public void Brake()
+        {
+            switch (Type)
+            {
+                case CarType.Toyota:
+                    Velocity -= 10;
+                    break;
+                case CarType.BMW:
+                    Velocity -= 15;
+                    break;
+                case CarType.Mercedes:
+                    Velocity -= 20;
+                    break;
+                case CarType.Audi:
+                    Velocity -= 25;
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
+        }
+
+
+
+  [TestMethod]
+        public void TimeToCoverProvidedDistance_Distance100Velocity25_Time4()
+        {
+            // Arrange
+            Car car = new Car
+            {
+                Velocity = 25
+            };
+            double distance = 100;
+            double expectedResult = 4;
+
+            // Act
+            double actualResult = car.TimeToCoverProvidedDistance(distance);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
+
+    MethodName_ConditionWeAreTesting_ExpectedOutPut 
+
+
+
+
+
+    rentOperations
+
+        -Client Email
+        -Seller Email  ==> beside it is a get button, 
+                            to get all the items that this 
+                            seller sells. 
+        - Dropdownlist with seller items
+
+        - return date 
+
+                sumbit(){
+
+                    --available stock 
+                    from that product because it's
+                    currently rented. 
+                }
+
+    
+    purpose of ===> isListed in items?

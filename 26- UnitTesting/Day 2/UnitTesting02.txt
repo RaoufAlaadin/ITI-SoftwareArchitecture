@@ -1,0 +1,557 @@
+***Mocking***
+
+We will talk more about design and not unit testing. 
+
+1- Car 
+    Owner  repo 
+    Owner service 
+    Owner Controller
+    Cash Service 
+
+2- dependent the class that relaies on other services. 
+    dependencies ==> things that a class relay on.
+
+3-  public Class CardService 
+    {
+
+    }
+
+4- dependency injection: 
+
+    The dependency gets injected instead of creating 
+    an object directly from inside the class. 
+
+
+    _ownerService = new OwnerService( 
+        new OwnerRepo (new ...( new .... )))
+
+    You see how deep it gets if you handle creating the objects?
+
+    Dependecy injection has nothing to do 
+    with interfaces and who passes the objects to 
+    The class. 
+
+5- Dependency Inerversion principal (D in SOLID)
+
+High level module do not depened on low level modules,
+both of the them depends on abstractions 
+
+so both classes depend on an interface. (Abstraction)
+
+
+single responsibility 
+    => class itself have one purpose.
+
+6- Why do low level depend on an interface? 
+
+    because we start our design using abstraction
+    where we say we need the following methods
+    without giving an implementation. 
+
+    while high modules depend on the interface
+    no matter what will be the incoming implementation
+    For that interface. 
+
+7- `new is glue` 
+
+    because it makes clases `tightly coupled`
+
+
+8- Testing Containers with ===> `Unity` package .. Deprecated.
+
+    2 stesp ==> Register and Resolve.
+
+    UnityResolver ==> 
+    
+    Register in WebAPIConfig ===> 
+
+    {
+
+
+            config DependencyResolver = new UnityResolver()
+
+
+    public static IUnityContainer RegisterServices(){
+
+        var container = new UnityContainer().AddExtension(new di);
+
+        container.RegisterType<InMemoryContext>();
+        container.RegisterType<ICarsRepository,CarsRepository>();
+        container.RegisterType<ICarsRepository,CarsRepository>("CoolCars"); ==> named registeration
+        .
+        .
+        .
+
+    }
+
+    }
+
+
+    public class UnityREsolver : IDependencyREsolver 
+    {
+
+        private readyonly Iunitycontainer _unityContainer; 
+
+        public UnityResolver(IUnitycontainer unityContainer)
+        {
+
+        }
+
+        beiginScope
+        Disponse
+
+        GetService
+        GetServices
+    }
+
+
+
+9-  I get a huge flexibility due to IOC (Inversion of control)
+
+    By deceiding which implementation I need for 
+    That interface. 
+
+
+ if(input.Method == PaymentMethod.Cash)
+    paymentService = _container.Resolve<IpaymentService("Cash");
+
+    else if (input.Method == PaymentMethod.Card)
+        -------
+
+
+        
+10- Dependency injection vs Dependency inversion principal vs IOC ===> (Important Interview Question)
+
+        Dependency injection:
+            Design pattern to inject objects in  a class
+            insteaad of creating it.
+
+        Dependency inversion principal: 
+            one of the SOLID principles where modules
+            Should depend on abstractions. 
+
+            High level do not depend on low level 
+            Both depend on abstraction.
+
+        IOC (Ineversion of control):
+            Creation and injection of dependencies 
+            Are handled by a container.. 
+
+            Inside it we decide which implementation of 
+            That interface we want to send as an object
+            To the depenent. 
+
+========================================================================================
+    **Let's check the problems that might happen in testing**
+        **If we didn't use Dependency Injection **
+
+
+1- [TestMethod]
+
+public void BuyCar_NotSoldCarId3Owner3_PrintSuccessful(){
+
+    // Arrange 
+
+        // no DP ==> inject everything by hand. 
+
+    var ownerService = new OwnerService(
+
+        new OwnerRepository( new CarAPI.Entities.InMemoryContext()),
+        new Cars
+        new Cash 
+
+    )
+
+    // Act
+
+    var input = new BuyCarInput()
+    {
+        Amount = 200,
+        CarId = 3, 
+        OwnerId = 3
+    }
+
+    var expected = "Successful"
+
+
+}
+
+
+    ===> What is the problem that we might face? 
+
+            We are depending on many stuff, so 
+            This mean we are not only testing the 
+            The small function we are targeting. 
+
+            This makes the test useless I guess? 
+
+     1- Depend on direct implementations of dependencies 
+
+     2- State change in DB 
+
+        first run => car bought successfully 
+
+        second run => car already sold 
+
+            -because we are using database. 
+
+    ===> This goes against the test being stateless
+        Which we mentioned in Day 1 (Static classes I guess) 
+
+        We have to be statless to not be effected 
+        By these changes and have a corret test. 
+
+
+==================================================================================
+
+    ***** Part2 : Mocking **************
+
+
+1-   package ==> Moq 
+
+        create a mock for the dependencies I need 
+        To run our test. 
+
+
+        Mock<IOwnerRepository> mockOwnerRepo= new Mock<IOwnerRepository>(); 
+
+        Mock<ICarsRepository> mockCarsRepo = new Mock<ICarsRepository>(); 
+        Mock<IPaymentRepository> mockPaymentRepo = new Mock<IPaymentRepository>(); 
+
+
+        var ownerService = new OwnerService
+        (mockOwnerRepo.Object, mockCarsRepo.Object, mockPaymentRepo.Object)
+
+        // Now we need to adjust the methods I am going to call 
+
+        var input = new BuyCarInput()
+        {
+            Amout = 
+            CarId = 
+            OwnerId =
+        };
+
+        var car = new Car (input.CarId, CarType.Audi, 0); 
+
+        var Owner = new Owner (input.OwnerId, "Mostafa");
+
+        mockOwnerRepo.Setup(m =m.GetOwnerById(input.OwnerId)).Returns(owner);
+
+        mockCarsRepo 
+        mockPayment
+        
+
+    ===> we basically seperated ourself from the original code 
+        And the original database. 
+
+                                            .... Complete..Isolation.. 😁
+
+
+
+
+2-  We will need the Initilizer ==> ClassInitializer because I need to 
+                                Initialize per test class 
+
+
+        We take everyhting in the arrange tab,
+        And place it inside the ClassInitializer
+
+
+    [TestClass]
+    public class OwnerServiceTests ===> 45:00
+    {
+
+         Mock ..
+         Mock ..
+         Mock .. 
+         Mock .. 
+
+
+        public static void CreateOwnerService  (TestContext context)
+        {
+            _ownerRepositoryMock = new Mock<IOwnerRepository>();
+            _ownerRepositoryMock = new Mock<IOwnerRepository>(); car
+            _ownerRepositoryMock = new Mock<IOwnerRepository>(); payment
+            _ownerRepositoryMock = new Mock<IOwnerRepository>(); owner 
+
+        }
+
+    }
+
+
+3- Let's check how it looks in the .net core 
+
+
+4- Parameterized Unit tests 
+
+    => Instead of repeating the code
+
+
+    [DataTestMethod]
+    [DataRow(1,2,3)]
+    [DataRow(-1,-2,-3)]
+    [DataRow(1,-2,-1)]
+
+    public void Add_aAnd2_3 (int val1, int val2, int val3){
+
+
+        var calc = new Calc();
+
+        var result = calc.Add(val1,val2)
+
+        .
+        .
+        .
+
+    }
+
+
+
+
+Task 
+-----
+
+
+- 3 Test Methods on Repositories classes 
+- 3 Test Methods on Services classes 
+
+
+    martinfowler 
+
+
+
+================= 
+
+**Previous lab note*** 
+
+- We are testing the specific output. 
+        
+===============================================================================
+
+1-  Mocking helps us create a `CopyCat` like enviroment,
+    Where we will be able to run our test in... 
+
+        Note: 
+
+            We mocked all the things that gets injected into the 
+            OwnerService,
+            But we are using the normal OwnerService injection
+            As it's the one that we are testing it's
+            BuyCar() method... 
+
+
+    a-  We create a [ClassInitializer] to basically 
+        inject the repos once in the class.
+
+        Instead of doing it for each [TestMethod]
+    
+            private static Mock<IOwnersRepository> _ownersRepositoryMock;
+            private static Mock<ICarsRepository> _carsRepositoryMock;
+            private static Mock<IPaymentService> _paymentServiceMock;
+            private static OwnersService _ownersService;
+
+            [ClassInitialize]
+            public static void CreateOwnerService(TestContext context) 
+            {
+                _ownersRepositoryMock = new Mock<IOwnersRepository>();
+                _carsRepositoryMock = new Mock<ICarsRepository>();
+                _paymentServiceMock = new Mock<IPaymentService>();
+                _ownersService = new OwnersService(_ownersRepositoryMock.Object, _carsRepositoryMock.Object, _paymentServiceMock.Object);
+            }
+
+
+    b-  
+            // BuyCarInput is like a dto where we collect 
+            // All the our needed input. 
+
+            var input = new BuyCarInput()
+                {
+                    Amount = 200,
+                    CarId = 1,
+                    OwnerId = 1
+                };
+
+            // We create also the expected output for each
+            // sub-method that is going to be used 
+            // inside the method we are testing  ====> BuyCar()
+
+            var car = new Car(input.CarId, CarType.Audi, 0);
+            var owner = new Owner(input.OwnerId, "Moustafa");
+
+
+    c- We setup our mock for each of the sub-methods 
+        That are called inside buyCar(). 
+
+        So They would have an expected input/output 
+        When they are called.. 
+
+        So they will flow normally, and if there
+        Is any fault, We would know that it's 
+        From the BuyCar() method itself. 
+
+        _ownersRepositoryMock.Setup(m => m.GetOwnerById(input.OwnerId)).Returns(owner);
+
+         _carsRepositoryMock.Setup(m => m.GetCarById(input.CarId)).Returns(car);
+
+         _paymentServiceMock.Setup(m => m.Pay(input.Amount)).Returns("");
+
+
+    d- Then we write the expcted output to complete our arrange 
+
+                    var expected = "Successfull";
+
+    e- 
+            // Act ==> by calling the method with 
+                        the input we made 
+
+            var result = _ownersService.BuyCar(input);
+
+
+            // Asert ==> To compare the results. 
+
+
+            StringAssert.Contains(result, expected);
+
+            
+===============================================================
+
+           public class BuyCarInput
+            {
+                public int CarId { get; set; }
+                public int OwnerId { get; set; }
+                public int Amount { get; set; }
+                public PaymentMethod Method { get; set; }
+            }
+
+
+             public string BuyCar(BuyCarInput input)
+                {
+                    if (input.Amount <= 0)
+                        return "Amount should be positive";
+
+
+                    var car = _carsRepository.GetCarById(input.CarId); ----->
+                    if (car == null)
+                        return "Car doesn't exist";
+                    if (car.Owner != null)
+                        return "Already sold";
+
+
+                    var owner = _ownerRepository.GetOwnerById(input.OwnerId);  ----->
+                    if (owner == null)
+                        return "Owner doesn't exist";
+
+                    owner.Car = car;
+                    car.Owner = owner;
+
+                    var paymentResult = _paymentService.Pay(input.Amount); ----->
+                    
+                    return $"Successfull \r\nCar of Id: {input.CarId} is bought by {owner.Name} with payment result {paymentResult}";
+                }
+
+
+=========================================
+
+
+        private readonly InMemoryContext _context;
+
+        public CarsRepository(InMemoryContext context)
+        {
+            _context = context;
+        }
+
+
+      public List<Car> GetAllCars()
+        {
+            // Get cars from dependency
+            // Logic
+            return _context.Cars;
+        }
+
+
+
+            public bool AddCar(Car car)
+        {
+            _context.Cars.Add(car);
+            return true;
+        }
+
+        public bool Remove(int carId)
+        {
+            var car = _context.Cars.Find(c => c.Id == carId);
+            return _context.Cars.Remove(car);
+        }
+
+
+
+=======================================================
+
+   public List<Car> GetAll()
+        {
+            var cars = _carsRepository.GetAllCars();
+            // Logic on cars
+            return cars;
+        }
+
+
+        public bool AddCar(Car car)
+    {
+        return _carsRepository.AddCar(car);
+    }
+
+    public bool Remove(int carId)
+    {
+        return _carsRepository.Remove(carId);
+    }
+
+
+
+    
+        [TestMethod]
+        public void AddCar_AddCarToList_IncreaseBy1()
+        {
+            // Arrange
+
+            var carsList = new List<Car>() {
+                new Car(1,CarType.Audi,20),
+                new Car(2,CarType.BMW,50),
+                new Car(3,CarType.BMW,10)};
+
+            var car = new Car(4, CarType.BMW, 10);
+
+            _InMemoryContextMock.Setup(c => c.Cars).Returns(carsList);
+
+            var expected = 4;
+
+            // Act
+            var result = _CarRepository.AddCar(car);
+
+            // Assert
+
+            Assert.AreEqual(expected, carsList.Count);
+        }
+
+
+        [TestMethod]
+        public void Remove_RemoveCarFromList_DecreaseBy1()
+        {
+            // Arrange
+
+            var carsList = new List<Car>() {
+                new Car(1,CarType.Audi,20),
+                new Car(2,CarType.BMW,50),
+                new Car(3,CarType.BMW,10)};
+
+            _InMemoryContextMock.Setup(c => c.Cars).Returns(carsList);
+
+            var expected = 2;
+
+            var CarId = 1; 
+
+            // Act
+            var result = _CarRepository.Remove(CarId);
+
+            // Assert
+
+            Assert.AreEqual(expected, carsList.Count);
+        }

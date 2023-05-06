@@ -1,0 +1,64 @@
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\appsettings.json
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\API.exe
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\API.deps.json
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\API.runtimeconfig.json
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\API.dll
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\API.pdb
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.build.API.props
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.API.props
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.csproj.CopyComplete
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.dll
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\refint\API.dll
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.pdb
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\API.genruntimeconfig.cache
+C:\Users\waleed.elwakeel\Desktop\TDD\TDD-Smart\TDD\API\obj\Debug\net6.0\ref\API.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\appsettings.Development.json
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\appsettings.json
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\API.exe
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\API.deps.json
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\API.runtimeconfig.json
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\API.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\API.pdb
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.build.API.props
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.API.props
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\staticwebassets.pack.json
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\staticwebassets.build.json
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\staticwebassets.development.json
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.csproj.CopyComplete
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\refint\API.dll
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.pdb
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\API.genruntimeconfig.cache
+E:\ITI intake 43 SD\36- TestDrivenDevelopment(TTD)\TDD\API\obj\Debug\net6.0\ref\API.dll
